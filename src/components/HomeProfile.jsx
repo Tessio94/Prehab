@@ -60,7 +60,7 @@ const HomeProfile = () => {
             <img
               src="/images/Nikola/masažni stol 1.png"
               alt=""
-              className="h-full w-full  rounded-custom_radius object-fill"
+              className="h-full w-full  rounded-custom_radius object-cover object-center"
             />
           </div>
           <div className="flex flex-col gap-2 items-start sm:basis-[50%] basis-[45%]">
