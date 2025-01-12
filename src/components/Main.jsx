@@ -1,0 +1,72 @@
+import Button from "../shared/Button";
+import { GoTriangleDown } from "react-icons/go";
+import { FaLocationDot } from "react-icons/fa6";
+import sr from "../library/ScrollReveal";
+import { useEffect, useRef } from "react";
+
+const Main = () => {
+  const grid1 = useRef(null);
+  const grid2 = useRef(null);
+  const grid3 = useRef(null);
+
+  useEffect(() => {
+    sr.reveal(grid1.current, {
+      duration: 1000,
+      delay: 50,
+      distance: "300px",
+      easing: "ease-in-out",
+      origin: "left",
+      reset: false,
+    });
+    sr.reveal(grid2.current, {
+      duration: 1000,
+      delay: 150,
+      distance: "250px",
+      easing: "ease-in-out",
+      origin: "top",
+      reset: false,
+    });
+    sr.reveal(grid3.current, {
+      duration: 1000,
+      delay: 250,
+      distance: "200px",
+      easing: "ease-in-out",
+      origin: "right",
+      reset: false,
+    });
+  }, []);
+
+  return (
+    <section className="relative h-[1080px] sm:h-screen w-full z-10">
+      <div className="absolute top-1/4 left-10  right-4 xsm:translate-x-0 xsm:left-12 sm:left-16 md:left-24  lg:left-48  flex flex-col gap-3 z-10">
+        <h1
+          className="text-3xl sm:text-4xl font-oswald text-stone-50 mb-3"
+          ref={grid1}
+        >
+          Prehabilitation Therapy Center
+        </h1>
+        <div ref={grid2}>
+          <h3 className="text-xl sm:text-2xl font-oswald text-stone-50 mb-3 flex gap-3 items-center">
+            <FaLocationDot /> Zadar, Splitska ulica 3
+          </h3>
+          <h3 className="text-xl  sm:text-2xl font-oswald text-stone-50 mb-3 flex gap-3 items-center">
+            <FaLocationDot /> Biograd na Moru, Bukovačka 15
+          </h3>
+        </div>
+        <ul
+          className="flex flex-col gap-3 text-stone-50 text-lg sm:text-xl list-disc mb-5"
+          ref={grid3}
+        >
+          <li>Diplomirani fizioterapeut</li>
+          <li>Centar za rehabilitaciju i pripremu</li>
+          <li>Procjena posture, dijagnostika i tretman</li>
+        </ul>
+        <Button type="red" href="#intro">
+          Pročitajte više <GoTriangleDown />
+        </Button>
+      </div>
+    </section>
+  );
+};
+
+export default Main;

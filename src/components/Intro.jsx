@@ -1,0 +1,288 @@
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
+import { RiArrowRightWideFill } from "react-icons/ri";
+import { RiArrowLeftWideFill } from "react-icons/ri";
+import { useEffect, useRef, useState } from "react";
+import { GoDotFill } from "react-icons/go";
+import { GoDot } from "react-icons/go";
+
+const Intro = () => {
+  const [sliderIndex, setSliderIndex] = useState(1);
+
+  const slide1 = useRef(null);
+  const slide2 = useRef(null);
+  const slide3 = useRef(null);
+
+  function handleKeyEvent(e) {
+    if (e.key === "ArrowRight") {
+      setSliderIndex(sliderIndex + 1);
+    } else if (e.key === "ArrowLeft") {
+      setSliderIndex(sliderIndex - 1);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleKeyEvent);
+    return () => window.removeEventListener("keydown", handleKeyEvent);
+  });
+
+  useEffect(() => {
+    if (sliderIndex < 1) {
+      setSliderIndex(3);
+    } else if (sliderIndex > 3) {
+      setSliderIndex(1);
+    }
+
+    if (slide1.current && slide2.current && slide3.current) {
+      const slides = [slide1.current, slide2.current, slide3.current];
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+        slide.classList.remove("previous");
+        slide.classList.remove("next");
+        if (sliderIndex === +slide.dataset.number) {
+          slide.classList.add("active");
+        } else if (sliderIndex - 1 === +slide.dataset.number) {
+          slide.classList.add("previous");
+        } else if (sliderIndex + 1 === +slide.dataset.number) {
+          slide.classList.add("next");
+        } else {
+          slide.classList.add("previous");
+        }
+      });
+    }
+  }, [sliderIndex]);
+
+  return (
+    <section
+      id="intro"
+      className="h-[1500px] sm:h-[1080px] w-[100vw] overflow-hidden relative"
+    >
+      <div
+        className="absolute top-[45%] left-[50%]  flex flex-col lg:flex-row items-center justify-center lg:bg-slate-300 w-[80%] h-[80%] rounded-xl transition-all duration-1000"
+        ref={slide1}
+        data-number="1"
+      >
+        <div className="relative w-[100%] lg:w-[50%] h-[100%] py-10 px-4 xsm:px-8 bg-slate-300 lg:bg-transparent rounded-t-xl lg:rounded-t-none">
+          <h2 className="text-5xl xl:text-6xl font-oswald text-center mb-7 mt-5 xsm:mt-0">
+            Prehab Zadar
+          </h2>
+          <p className="text-2xl  xl:text-3xl font-oswald text-justify lg:mb-5 xxl:mb-10">
+            <strong className="text-red_preh">Prehabilitation</strong> nudi
+            profesionalnu fizioterapiju za brži oporavak. Specijalizirani smo za
+            prevenciju ozljeda, rehabilitaciju i poboljšanje pokretljivosti.
+          </p>
+          <ul>
+            <li className="text-xl xl:text-2xl font-oswald mt-5">
+              <span className="text-red_preh">1) Prevencija ozljeda:</span> Naše
+              usluge pomažu u sprječavanju ozljeda kroz individualizirane
+              programe vježbanja i savjete o pravilnom kretanju.
+            </li>
+            <li className="text-xl xl:text-2xl   font-oswald mt-5">
+              <span className="text-red_preh">2) Brži oporavak:</span>{" "}
+              Specijalizirani tretmani i rehabilitacijski programi ubrzavaju
+              proces oporavka nakon ozljeda ili operacija.
+            </li>
+            <li className="text-xl xl:text-2xl font-oswald mt-5 mb-5">
+              <span className="text-red_preh">
+                3) Poboljšanje kvalitete života:
+              </span>{" "}
+              Redovita fizioterapija poboljšava pokretljivost, smanjuje bolove i
+              povećava ukupnu kvalitetu života.
+            </li>
+          </ul>
+          <p className="absolute bottom-[95%] lg:bottom-0 left-0 w-full h-[10%] xsm:h-[15%] flex justify-between xsm:justify-center items-center gap-5 text-2xl xsm:text-3xl font-oswald  text-red_preh bg-slate-400 mx-auto  py-3 px-4 xsm:px-8 rounded-t-xl lg:rounded-bl-xl lg:rounded-r-none lg:rounded-none font-bold">
+            <span>
+              <img src="/images/logo/ikona.png" alt="" className="w-10" />
+            </span>
+            Posjetite nas
+            <span>
+              <img src="/images/logo/ikona.png" alt="" className="w-10" />
+            </span>
+          </p>
+        </div>
+        <div className="w-[100%] lg:w-[50%] h-[100%] rounded-b-xl lg:rounded-none lg:rounded-r-xl overflow-hidden">
+          <img
+            src="/images/zadar/slika 1.jpg"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+      <div
+        className="absolute top-[45%] left-[50%]  flex flex-col lg:flex-row items-center justify-center lg:bg-slate-300 w-[80%]  h-[80%] rounded-xl transition-all duration-1000"
+        ref={slide2}
+        data-number="2"
+      >
+        <div className="relative w-[100%] lg:w-[50%] h-[100%] rounded-t-xl lg:rounded-t-none lg:rounded-tl-xl overflow-hidden flex lg:block basis-[40%]">
+          <img
+            src="/images/certifikati/slika12.jpg"
+            alt=""
+            className="w-[100%] h-[100%] lg:h-[50%] object-right basis-[50%]"
+          />
+          <img
+            src="/images/certifikati/slika 7.jpg"
+            alt=""
+            className="hidden sm:block lg:w-[100%] h-[100%] lg:h-[50%] object-cover basis-[50%]"
+          />
+        </div>
+        <div className="w-[100%] lg:w-[50%] h-[100%] rounded-b-xl lg:rounded-none lg:rounded-r-xl overflow-hidden py-4 px-4 xsm:px-8 bg-slate-300 lg:bg-transparent basis-[60%]">
+          <h2 className="text-5xl lg:text-6xl font-oswald text-center mb-5 lg:mb-7">
+            Obrazovanje
+          </h2>
+          <p className="text-xl md:text-xl lg:text-2xl xl:text-3xl font-oswald text-justify">
+            <strong className="text-red_preh">Moje obrazovanje</strong> započelo
+            je sa završenim fakultetom, gdje sam stekao temeljna znanja i
+            vještine potrebne za moj profesionalni razvoj. Nakon uspješnog
+            završetka fakulteta, nastavio sam ulagati u svoje znanje i
+            kompetencije putem različitih certifikata.
+          </p>
+          <ul>
+            <li className="text-lg xsm:text-xl lg:text-xl font-oswald mt-10   xsm:mt-4  md:mt-5 lg:mt-6 ">
+              <span className="text-red_preh">1)</span> Bacc. physioth - Zagreb
+            </li>
+            <li className="text-lg xsm:text-xl  lg:text-xl font-oswald mt-4  xsm:mt-4 md:mt-5 lg:mt-6 ">
+              <span className="text-red_preh">2)</span> Stecco fascial
+              manipulation lvl 3
+            </li>
+            <li className="text-lg xsm:text-xl  lg:text-xl font-oswald mt-4  xsm:mt-4 md:mt-5 lg:mt-6 ">
+              <span className="text-red_preh">3)</span> ISST Schroth therapist
+            </li>
+            <li className="text-lg xsm:text-xl  lg:text-xl font-oswald mt-4  xsm:mt-4 md:mt-5 lg:mt-6 ">
+              <span className="text-red_preh">4)</span> Basic pro coach
+            </li>
+            <li className="text-lg xsm:text-xl  lg:text-xl font-oswald mt-4  xsm:mt-4 md:mt-5 lg:mt-6 ">
+              <span className="text-red_preh">5)</span> Student Osteopathy,
+              neuro medicine, functional medicine
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        className="absolute top-[45%] left-[50%] flex flex-col lg:flex-row items-center justify-center bg-slate-300 w-[80%] h-[80%] rounded-xl transition-all duration-1000"
+        ref={slide3}
+        data-number="3"
+      >
+        <div className="relative w-[100%] lg:w-[50%] h-[100%] py-10 px-4 xsm:px-8">
+          <h2 className="text-5xl font-oswald text-center mb-7">Usluge</h2>
+          <p className="text-2xl lg:text-2xl xl:text-3xl font-oswald text-justify">
+            U <strong className="text-red_preh">Prehabilitation</strong> klinici
+            nudimo razne profesionalne usluge fizioterapije te usluge
+            individualnog i grupnog treninga kako bi vaše zdravlje nastavilo
+            biti na svom maksimumu.
+          </p>
+
+          <div className="text-xl font-oswald mt-5 mb-10 flex flex-col gap-3 items-center justify-center">
+            <p className="flex gap-1 text-lg lg:text-xl xxl:text-2xl underline xsm:no-underline items-center text-justify">
+              <span className="hidden text-red_preh xsm:flex items-center gap-1 underline  font-bold">
+                Usluge <FaArrowRight />
+              </span>{" "}
+              Listu usluga i dodatne informacije pogledajte u sekciji "Usluge"
+            </p>
+            <button className="mx-auto py-2 px-5 bg-red_preh rounded-xl text-xl font-oswald border-2 font-bold text-white hover:text-red_preh hover:bg-slate-100 hover:border-red_preh hover:border-2 transition-all duration-500 group">
+              <a href="#usluge" className="flex gap-2 items-center">
+                Usluge{" "}
+                <FaArrowDown className="transform transition-transform duration-500 group-hover:translate-y-1" />
+              </a>
+            </button>
+          </div>
+
+          <div className="text-xl font-oswald mt-5 flex flex-col gap-2 items-center justify-center">
+            <p className="flex gap-1 text-lg lg:text-xl xxl:text-2xl underline xsm:no-underline items-center text-justify">
+              <span className="hidden text-red_preh xsm:flex items-center gap-1 underline font-bold">
+                Trening <FaArrowRight />
+              </span>{" "}
+              Vrste treninga i dodatne informacije pronađite u sekciji "Trening"
+            </p>
+            <button className="mx-auto py-2 px-5 bg-red_preh rounded-xl text-xl font-oswald border-2 font-bold text-white hover:text-red_preh hover:bg-slate-100 hover:border-red_preh hover:border-2 transition-all duration-500 group">
+              <a href="#trening" className="flex gap-2 items-center">
+                Trening{" "}
+                <FaArrowDown className="transform transition-transform duration-500 group-hover:translate-y-1" />
+              </a>
+            </button>
+          </div>
+        </div>
+        <div className="w-[100%] lg:w-[50%] h-[100%] rounded-b-xl lg:rounded-r-xl overflow-hidden">
+          <img
+            src="/images/zadar/slika 1.jpg"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+          <p className="absolute bottom-0 left-0 w-full h-[8%] xsm:h-[10%] lg:h-[15%] flex justify-between xsm:justify-center items-center gap-5 text-2xl xsm:text-3xl font-oswald  text-red_preh bg-slate-400 mx-auto  py-3 px-4 xsm:px-8 rounded-b-xl font-bold">
+            <span>
+              <img src="/images/logo/ikona.png" alt="" className="w-10" />
+            </span>
+            Posjetite nas
+            <span>
+              <img src="/images/logo/ikona.png" alt="" className="w-10" />
+            </span>
+          </p>
+        </div>
+      </div>
+      <button
+        className="absolute top-[90%] left-[10%] xl:top-[50%] xl:left-[2rem] translate-y-[-50%] z-10 flex items-center text-4xl font-oswald  text-red_preh bg-slate-400  py-3 px-8 rounded-xl hover:bg-red_preh hover:text-slate-100 transition-all duration-500 group"
+        onClick={() => setSliderIndex((index) => index - 1)}
+      >
+        {" "}
+        <RiArrowLeftWideFill className="transform transition-transform duration-500 group-hover:-translate-x-2" />{" "}
+      </button>
+      <button
+        className="absolute top-[90%] right-[10%] xl:top-[50%] xl:right-[2rem] translate-y-[-50%] z-10 flex items-center text-4xl font-oswald  text-red_preh bg-slate-400 py-3 px-8  hover:bg-red_preh hover:text-slate-100 transition-all duration-500 rounded-xl group"
+        onClick={() => setSliderIndex((index) => index + 1)}
+      >
+        <RiArrowRightWideFill className="transform transition-transform duration-500 group-hover:translate-x-2" />
+      </button>
+      <div className="absolute bottom-[5.5rem] xsm:bottom-[2rem] sm:bottom-[1.7rem]  left-0 w-full h-[15%] flex justify-center items-center gap-5 text-3xl font-oswald">
+        {sliderIndex === 1 ? (
+          <>
+            <GoDotFill
+              onClick={() => setSliderIndex(1)}
+              className="cursor-pointer"
+            />
+            <GoDot
+              onClick={() => setSliderIndex(2)}
+              className="cursor-pointer"
+            />
+            <GoDot
+              onClick={() => setSliderIndex(3)}
+              className="cursor-pointer"
+            />
+          </>
+        ) : sliderIndex === 2 ? (
+          <>
+            <GoDot
+              onClick={() => setSliderIndex(1)}
+              className="cursor-pointer"
+            />
+            <GoDotFill
+              onClick={() => setSliderIndex(2)}
+              className="cursor-pointer"
+            />
+            <GoDot
+              onClick={() => setSliderIndex(3)}
+              className="cursor-pointer"
+            />
+          </>
+        ) : (
+          <>
+            {" "}
+            <GoDot
+              onClick={() => setSliderIndex(1)}
+              className="cursor-pointer"
+            />
+            <GoDot
+              onClick={() => setSliderIndex(2)}
+              className="cursor-pointer"
+            />
+            <GoDotFill
+              onClick={() => setSliderIndex(3)}
+              className="cursor-pointer"
+            />
+          </>
+        )}
+      </div>
+    </section>
+  );
+};
+
+export default Intro;
