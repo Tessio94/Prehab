@@ -4,14 +4,14 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        Nikola: "url('/public/images/Nikola/prehab Nikola.jpg')",
-        Nikola1: "url('/public/images/Nikola/prehab Nikola1.jpg')",
-        Nikolaxsm: "url('/public/images/Nikola/prehab Nikolaxsm.jpg')",
-        Nikolasm: "url('/public/images/Nikola/prehab Nikolasm.jpg')",
-        Nikolamd: "url('/public/images/Nikola/prehab Nikolamd.jpg')",
-        Nikolalg: "url('/public/images/Nikola/prehab Nikolalg.jpg')",
-        Nikolaxl: "url('/public/images/Nikola/prehab Nikolaxl.jpg')",
-        cucanj: "url('/public/images/Nikola/cucanj_krug.png')",
+        Nikola: "url('/src/assets/images/prehab Nikola.jpg')",
+        Nikola1: "url('/src/assets/images/prehab Nikola1.jpg')",
+        Nikolaxsm: "url('/src/assets/images/prehab Nikolaxsm.jpg')",
+        Nikolasm: "url('/src/assets/images/prehab Nikolasm.jpg')",
+        Nikolamd: "url('/src/assets/images/prehab Nikolamd.jpg')",
+        Nikolalg: "url('/src/assets/images/prehab Nikolalg.jpg')",
+        Nikolaxl: "url('/src/assets/images/prehab Nikolaxl.jpg')",
+        cucanj: "url('/src/assets/images/cucanj_krug.png')",
       },
       fontFamily: {
         oswald: ["Oswald", "sans-serif"],
