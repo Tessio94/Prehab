@@ -10,7 +10,7 @@ const Button = ({ children, type, href }) => {
         className={
           base +
           " " +
-          "bg-red-500 hover:bg-stone-50 hover:text-red-500  focus:ring focus:ring-red-500  hover:border-red-500 hover:shadow-red-300"
+          "bg-red-500 hover:bg-stone-50 hover:text-red-500  focus:ring focus:ring-red-500  hover:border-red-500 hover:shadow-red-300 group"
         }
         href={href}
       >
