@@ -15,10 +15,10 @@ import { Helmet } from "react-helmet-async";
 
 const AppLayout = () => {
   const location = useLocation();
-  console.log(location.pathname);
-  console.log(document.querySelector("meta"));
+  // console.log(location.pathname);
+  // console.log(document.querySelector("meta"));
   const meta = metadata[location.pathname];
-  console.log(meta);
+  // console.log(meta);
 
   const [showScrollToTop, setShowScrollToTop] = useState(false);
   // console.log(location.hash);
@@ -29,8 +29,8 @@ const AppLayout = () => {
 
   useEffect(() => {
     if (location.pathname !== "/") return;
-    console.log(location.hash);
-    console.log(usluge.current.offsetTop);
+    // console.log(location.hash);
+    // console.log(usluge.current.offsetTop);
 
     const scrollTo = () => {
       if (location.hash === "#usluge") {
@@ -57,7 +57,7 @@ const AppLayout = () => {
     let header = document.querySelector("header");
     if (location.pathname === "/") {
       window.onscroll = () => {
-        console.log(window.scrollY);
+        // console.log(window.scrollY);
 
         // sticky navbar
         header.classList.remove("relative");
