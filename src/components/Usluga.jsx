@@ -4,7 +4,7 @@ import sr from "../library/ScrollReveal";
 import { useEffect, useRef } from "react";
 
 const Usluga = ({ usluga }) => {
-  const { id, name, img, description } = usluga;
+  const { id, name, img, description, imageDesc } = usluga;
   const [active, setActive] = useState(false);
 
   //   const refs = [useRef(null), useRef(null), useRef(null)];
@@ -25,7 +25,7 @@ const Usluga = ({ usluga }) => {
   return (
     <div className="bg-slate-300 py-5 rounded-xl">
       <div className="relative flex justify-center items-center" ref={grid1}>
-        <img src={img} alt="" className="w-40 z-0" />
+        <img src={img} alt={imageDesc} className="w-40 z-0" />
       </div>
       <h2 className="text-center text-[1.2rem] font-bold font-oswald mb-3">
         {name}

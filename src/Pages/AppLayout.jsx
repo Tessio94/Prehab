@@ -10,11 +10,17 @@ import Footer from "../components/Footer";
 import Intro from "../components/Intro";
 import { useEffect, useState, useRef } from "react";
 import { FaArrowUp } from "react-icons/fa";
+import metadata from "../data/metaData";
+import { Helmet } from "react-helmet-async";
 
 const AppLayout = () => {
-  const [showScrollToTop, setShowScrollToTop] = useState(false);
   const location = useLocation();
   console.log(location.pathname);
+  console.log(document.querySelector("meta"));
+  const meta = metadata[location.pathname];
+  console.log(meta);
+
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
   // console.log(location.hash);
   const usluge = useRef(null);
   const suradnje = useRef(null);
@@ -80,25 +86,54 @@ const AppLayout = () => {
 
   if (location.pathname === "/") {
     return (
-      <div className="relative h-[1080px] sm:h-screen bg-auto bg-fixed bg-no-repeat bg-left_top bg-Nikola1 xsm:bg-Nikolaxsm  sm:bg-Nikolasm md:bg-Nikolamd lg:bg-Nikolalg xl:bg-Nikolaxl xxl:bg-Nikola shadow-2xl after:linear_shadow2 after:sm:linear_shadow after:bg-gradient-to-r from-black  after:absolute after:top-[7.5rem] after:left-0 after:w-[70%]  after:bg-opacity-50  after:z-0">
-        {showScrollToTop && (
-          <div
-            onClick={scrollToTop}
-            className="fixed bottom-5 right-2 h-[3rem] w-[3rem] bg-red_preh bg-opacity-35 p-3 flex items-center justify-center cursor-pointer rounded-xl z-50"
-          >
-            <FaArrowUp className="text-5xl text-red_preh" />
-          </div>
-        )}
-        <Header header={header} />
-        <Main />
-        <Quote />
-        <HomeProfile />
-        <Intro />
-        <Usluge usluge={usluge} />
-        <Trening />
-        <Suradnje suradnje={suradnje} />
-        <Footer />
-      </div>
+      <>
+        <Helmet>
+          <title>{meta.title || "Prehab Zadar"}</title>
+          <meta
+            property="og:image"
+            content="https://prehabilitationtherapycenter.hr/images/Nikola/prehab nikola.jpg"
+          ></meta>
+          <meta
+            name="description"
+            content={
+              meta.description ||
+              "Dobrodošli u fizioterapeutsku kliniku Prehab Zadar."
+            }
+          />
+          <script type="application/ld+json">
+            {`
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Prehabilitation Therapy Center Zadar",
+          "alternateName": "Prehab Zadar",
+          "url": "https://prehabilitationtherapycenter.hr/",
+          "logo": "https://prehabilitationtherapycenter.hr/images/logo/ikona.png",
+          "image": "https://prehabilitationtherapycenter.hr/images/Nikola/prehab nikola.jpg"
+        }
+        `}
+          </script>
+        </Helmet>
+        <div className="relative h-[1080px] sm:h-screen bg-auto bg-fixed bg-no-repeat bg-left_top bg-Nikola1 xsm:bg-Nikolaxsm  sm:bg-Nikolasm md:bg-Nikolamd lg:bg-Nikolalg xl:bg-Nikolaxl xxl:bg-Nikola shadow-2xl after:linear_shadow2 after:sm:linear_shadow after:bg-gradient-to-r from-black  after:absolute after:top-[7.5rem] after:left-0 after:w-[70%]  after:bg-opacity-50  after:z-0">
+          {showScrollToTop && (
+            <div
+              onClick={scrollToTop}
+              className="fixed bottom-5 right-2 h-[3rem] w-[3rem] bg-red_preh bg-opacity-35 p-3 flex items-center justify-center cursor-pointer rounded-xl z-50"
+            >
+              <FaArrowUp className="text-5xl text-red_preh" />
+            </div>
+          )}
+          <Header header={header} />
+          <Main />
+          <Quote />
+          <HomeProfile />
+          <Intro />
+          <Usluge usluge={usluge} />
+          <Trening />
+          <Suradnje suradnje={suradnje} />
+          <Footer />
+        </div>
+      </>
     );
   }
 

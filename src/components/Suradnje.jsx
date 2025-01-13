@@ -63,6 +63,7 @@ const Suradnje = ({ suradnje }) => {
             <img
               src="/images/suradnje/Nk Rudeš.jpg"
               className="w-full h-full"
+              alt="NK Rudeš"
             />
             <div className="bg-gradient-to-t  from-red_preh_t to-black  absolute top-0 left-0 right-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-all duration-1000 text-white font-bold font-oswald flex items-center justify-center text-3xl">
               NK Rudeš
@@ -72,7 +73,11 @@ const Suradnje = ({ suradnje }) => {
             className="relative rounded-xl overflow-hidden group border-red_preh border-4"
             ref={grid2}
           >
-            <img src="/images/suradnje/abeceda.jpg" className="w-full h-full" />
+            <img
+              src="/images/suradnje/abeceda.jpg"
+              className="w-full h-full"
+              alt="NK Abeceda"
+            />
             <div className="bg-gradient-to-t  from-red_preh_t to-black  absolute top-0 left-0 right-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-all duration-1000 text-white font-bold font-oswald flex items-center justify-center text-3xl">
               NK Abeceda
             </div>
@@ -81,9 +86,13 @@ const Suradnje = ({ suradnje }) => {
             className="relative rounded-xl overflow-hidden group border-red_preh border-4"
             ref={grid3}
           >
-            <img src="/images/suradnje/sonik.jpg" className="w-full h-full" />
+            <img
+              src="/images/suradnje/sonik.jpg"
+              className="w-full h-full"
+              alt="KK Aleta Puntamika"
+            />
             <div className="bg-gradient-to-t  from-red_preh_t to-black  absolute top-0 left-0 right-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-all duration-1000 text-white font-bold font-oswald flex items-center justify-center text-xl">
-              KK Sonik Puntamika
+              KK Aleta Puntamika
             </div>
           </div>
           <div
@@ -93,6 +102,7 @@ const Suradnje = ({ suradnje }) => {
             <img
               src="/images/suradnje/plivački klub zadar.png"
               className="w-full h-full"
+              alt="PK Zadar"
             />
             <div
               className="bg-gradient-to-t  from-red_preh_t to-black  absolute top-0 left-0 right-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-all duration-1000 text-white font-bold font-oswald flex items-center justify-center text-3xl"
@@ -108,6 +118,7 @@ const Suradnje = ({ suradnje }) => {
             <img
               src="/images/suradnje/vaterpolo klub zadar.png"
               className="w-full h-full"
+              alt="VK Zadar"
             />
             <div className="bg-gradient-to-t from-red_preh_t to-black absolute top-0 left-0 right-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-all duration-1000 text-white font-bold font-oswald flex items-center justify-center text-3xl">
               VK Zadar

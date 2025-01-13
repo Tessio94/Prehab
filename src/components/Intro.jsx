@@ -93,18 +93,22 @@ const Intro = () => {
           </ul>
           <p className="absolute bottom-[95%] lg:bottom-0 left-0 w-full h-[10%] xsm:h-[15%] flex justify-between xsm:justify-center items-center gap-5 text-2xl xsm:text-3xl font-oswald  text-red_preh bg-slate-400 mx-auto  py-3 px-4 xsm:px-8 rounded-t-xl lg:rounded-bl-xl lg:rounded-r-none lg:rounded-none font-bold">
             <span>
-              <img src="/images/logo/ikona.png" alt="" className="w-10" />
+              <img src="/images/logo/ikona.png" alt="logo" className="w-10" />
             </span>
             Posjetite nas
             <span>
-              <img src="/images/logo/ikona.png" alt="" className="w-10" />
+              <img
+                src="/images/logo/ikona.png"
+                alt="logo prehab"
+                className="w-10"
+              />
             </span>
           </p>
         </div>
         <div className="w-[100%] lg:w-[50%] h-[100%] rounded-b-xl lg:rounded-none lg:rounded-r-xl overflow-hidden">
           <img
             src="/images/zadar/slika 1.jpg"
-            alt=""
+            alt="prehab zadar klinika"
             className="w-full h-full object-cover"
           />
         </div>
@@ -117,12 +121,12 @@ const Intro = () => {
         <div className="relative w-[100%] lg:w-[50%] h-[100%] rounded-t-xl lg:rounded-t-none lg:rounded-tl-xl overflow-hidden flex lg:block basis-[40%]">
           <img
             src="/images/certifikati/slika12.jpg"
-            alt=""
+            alt="certifikati"
             className="w-[100%] h-[100%] lg:h-[50%] object-right basis-[50%]"
           />
           <img
             src="/images/certifikati/slika 7.jpg"
-            alt=""
+            alt="diplome prehab"
             className="hidden sm:block lg:w-[100%] h-[100%] lg:h-[50%] object-cover basis-[50%]"
           />
         </div>
@@ -204,17 +208,17 @@ const Intro = () => {
         </div>
         <div className="w-[100%] lg:w-[50%] h-[100%] rounded-b-xl lg:rounded-r-xl overflow-hidden">
           <img
-            src="/images/zadar/slika 1.jpg"
-            alt=""
+            src="/images/zadar/slika 2.jpg"
+            alt="prehab klinika"
             className="w-full h-full object-cover"
           />
           <p className="absolute bottom-0 left-0 w-full h-[8%] xsm:h-[10%] lg:h-[15%] flex justify-between xsm:justify-center items-center gap-5 text-2xl xsm:text-3xl font-oswald  text-red_preh bg-slate-400 mx-auto  py-3 px-4 xsm:px-8 rounded-b-xl font-bold">
             <span>
-              <img src="/images/logo/ikona.png" alt="" className="w-10" />
+              <img src="/images/logo/ikona.png" alt="logo" className="w-10" />
             </span>
             Posjetite nas
             <span>
-              <img src="/images/logo/ikona.png" alt="" className="w-10" />
+              <img src="/images/logo/ikona.png" alt="logo" className="w-10" />
             </span>
           </p>
         </div>

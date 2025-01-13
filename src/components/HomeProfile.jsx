@@ -43,7 +43,7 @@ const HomeProfile = () => {
           <div className="overflow-hidden w-full h-full aspect-square basis-1/2">
             <img
               src="/images/Nikola/O nikoli 2.png"
-              alt=""
+              alt="Nikola Lukić slika"
               className="h-full w-full object-cover rounded-custom_radius object-center"
             />
           </div>
@@ -59,7 +59,7 @@ const HomeProfile = () => {
           <div className="overflow-hidden w-full h-full aspect-square rounded-custom_radius basis-1/2">
             <img
               src="/images/Nikola/masažni stol 1.png"
-              alt=""
+              alt="masažni stol prehab"
               className="h-full w-full  rounded-custom_radius object-cover object-center"
             />
           </div>
@@ -77,7 +77,7 @@ const HomeProfile = () => {
           <div className="overflow-hidden w-full h-full aspect-square rounded-custom_radius basis-1/2">
             <img
               src="/images/Nikola/višnjik 1.png"
-              alt=""
+              alt="zadar višnjik"
               className="h-full w-full object-cover rounded-custom_radius"
             />
           </div>

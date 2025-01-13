@@ -123,7 +123,7 @@ const OpisGrid = () => {
           >
             <img
               src="/images/logo/Prehab1.svg"
-              alt="Prehab prostor"
+              alt="Prehab ilustracija"
               className="max-h-[35rem] hover:scale-110 transition-all duration-1000"
               loading="lazy"
             />
@@ -227,7 +227,7 @@ const OpisGrid = () => {
           >
             <img
               src="/images/Nikola/leđnjak2.png"
-              alt="masažni stol Prehab"
+              alt="leđnjak Prehab"
               className="w-full h-full object-cover object-bottom hover:scale-110 transition-all duration-1000"
               loading="lazy"
             />
