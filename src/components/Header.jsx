@@ -147,20 +147,23 @@ const Header = ({ header }) => {
           </div>
           <ul className="flex gap-3 text-md text-stone-100">
             <li className="cursor-pointer hover:text-stone-400 hover:scale-125 transition-all duration-500 text-xl">
-              <a href="http://facebook.com" target="_blank">
+              <a
+                href="https://www.facebook.com/prehabilitationtherapycenter"
+                target="_blank"
+              >
                 <FaFacebook />
               </a>
             </li>
             <li className="cursor-pointer hover:text-stone-400 hover:scale-125 transition-all duration-500 text-xl">
-              <a href="http://instagram.com" target="_blank">
+              <a href="https://www.instagram.com/prehabcentar/" target="_blank">
                 <FaInstagram />
               </a>
             </li>
-            <li className="cursor-pointer hover:text-stone-400 hover:scale-125 transition-all duration-500 text-xl">
+            {/* <li className="cursor-pointer hover:text-stone-400 hover:scale-125 transition-all duration-500 text-xl">
               <a href="http://twitter.com" target="_blank">
                 <FaTwitter />
               </a>
-            </li>
+            </li> */}
 
             {/* <li className="cursor-pointer hover:text-stone-400 hover:scale-125 transition-all duration-500 text-xl">
               <a href="http://youtube.com" target="_blank">

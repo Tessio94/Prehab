@@ -41,14 +41,14 @@ const Footer = () => {
         </a>
         <div className="flex gap-3">
           <a
-            href="http://facebook.com"
+            href="https://www.facebook.com/prehabilitationtherapycenter"
             target="_blank"
             className=" hover:text-stone-400 hover:scale-125 transition-all duration-500 text-2xl"
           >
             <FaFacebook />
           </a>
           <a
-            href="http://instagram.com"
+            href="https://www.instagram.com/prehabcentar/"
             target="_blank"
             className=" hover:text-stone-400 hover:scale-125 transition-all duration-500 text-2xl"
           >
