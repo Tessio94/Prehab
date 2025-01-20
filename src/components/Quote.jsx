@@ -8,7 +8,7 @@ const Quote = () => {
       />
       <h3 className="font-oswald py-10 flex justify-center items-center gap-3 text-wrap">
         <em className="text-2xl md:text-3xl lg:text-4xl text-center quote  text-transparent bg-clip-text pr-5">
-          "Započmite svoj put prema ozdravljenju sa prehabom"
+          "Započnite svoj put prema ozdravljenju sa prehabom"
         </em>
       </h3>
       <img
