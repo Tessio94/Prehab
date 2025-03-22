@@ -17,7 +17,7 @@ const Footer = () => {
           />
           <h1 className="text-3xl font-bold font-oswald">Prehab</h1>
         </Link>
-        <div className="w-[26rem] sm:text-start text-center">
+        <div className="sm:w-[26rem] sm:text-start text-center">
           <h3 className="sm:text-xl text-md font-oswald">
             <span className="sm:text-[1.5rem] text-[1rem] text-red_preh">
               Lokacija br. 1:
@@ -25,7 +25,7 @@ const Footer = () => {
             Splitska ulica 3, 23000 Zadar
           </h3>
         </div>
-        <div className="w-[26rem] sm:text-start text-center">
+        <div className="sm:w-[26rem] sm:text-start text-center">
           <h3 className="sm:text-xl text-md font-oswald">
             <span className="sm:text-[1.5rem] text-[1rem] text-red_preh">
               Lokacija br. 2:

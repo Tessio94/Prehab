@@ -20,94 +20,109 @@ const OpisGrid = () => {
   const grid11 = useRef(null);
 
   useEffect(() => {
-    sr.reveal(grid1.current, {
-      duration: 1000,
-      delay: 50,
-      distance: "200px",
-      easing: "ease-in-out",
-      origin: "left",
-      reset: false,
-    });
-    sr.reveal(grid2.current, {
-      duration: 1000,
-      delay: 50,
-      distance: "200px",
-      easing: "ease-in-out",
-      origin: "right",
-      reset: false,
-    });
-    sr.reveal(grid3.current, {
-      duration: 1000,
-      delay: 50,
-      distance: "200px",
-      easing: "ease-in-out",
-      origin: "bottom",
-      reset: false,
-    });
-    sr.reveal(grid4.current, {
-      duration: 1000,
-      delay: 50,
-      distance: "200px",
-      easing: "ease-in-out",
-      origin: "left",
-      reset: false,
-    });
-    sr.reveal(grid5.current, {
-      duration: 1000,
-      delay: 50,
-      distance: "200px",
-      easing: "ease-in-out",
-      origin: "right",
-      reset: false,
-    });
-    sr.reveal(grid6.current, {
-      duration: 1000,
-      delay: 50,
-      distance: "200px",
-      easing: "ease-in-out",
-      origin: "bottom",
-      reset: false,
-    });
-    sr.reveal(grid7.current, {
-      duration: 1000,
-      delay: 50,
-      distance: "200px",
-      easing: "ease-in-out",
-      origin: "bottom",
-      reset: false,
-    });
-    sr.reveal(grid8.current, {
-      duration: 1000,
-      delay: 50,
-      distance: "200px",
-      easing: "ease-in-out",
-      origin: "left",
-      reset: false,
-    });
-    sr.reveal(grid9.current, {
-      duration: 1000,
-      delay: 50,
-      distance: "200px",
-      easing: "ease-in-out",
-      origin: "left",
-      reset: false,
-    });
-    sr.reveal(grid10.current, {
-      duration: 1000,
-      delay: 50,
-      distance: "200px",
-      easing: "ease-in-out",
-      origin: "bottom",
-      reset: false,
-    });
-    sr.reveal(grid11.current, {
-      duration: 1000,
-      delay: 50,
-      distance: "200px",
-      easing: "ease-in-out",
-      origin: "right",
-      reset: false,
-    });
+    sr.reveal(
+      [
+        grid1.current,
+        grid2.current,
+        grid3.current,
+        grid4.current,
+        grid5.current,
+        grid6.current,
+        grid7.current,
+        grid8.current,
+        grid9.current,
+        grid10.current,
+        grid11.current,
+      ],
+      {
+        duration: 1000,
+        delay: 50,
+        distance: "100px",
+        easing: "ease-in-out",
+        origin: "bottom",
+        reset: false,
+      }
+    );
+    // sr.reveal(grid2.current, {
+    //   duration: 1000,
+    //   delay: 50,
+    //   distance: "200px",
+    //   easing: "ease-in-out",
+    //   origin: "right",
+    //   reset: false,
+    // });
+    // sr.reveal(grid3.current, {
+    //   duration: 1000,
+    //   delay: 50,
+    //   distance: "200px",
+    //   easing: "ease-in-out",
+    //   origin: "bottom",
+    //   reset: false,
+    // });
+    // sr.reveal(grid4.current, {
+    //   duration: 1000,
+    //   delay: 50,
+    //   distance: "200px",
+    //   easing: "ease-in-out",
+    //   origin: "left",
+    //   reset: false,
+    // });
+    // sr.reveal(grid5.current, {
+    //   duration: 1000,
+    //   delay: 50,
+    //   distance: "200px",
+    //   easing: "ease-in-out",
+    //   origin: "right",
+    //   reset: false,
+    // });
+    // sr.reveal(grid6.current, {
+    //   duration: 1000,
+    //   delay: 50,
+    //   distance: "200px",
+    //   easing: "ease-in-out",
+    //   origin: "bottom",
+    //   reset: false,
+    // });
+    // sr.reveal(grid7.current, {
+    //   duration: 1000,
+    //   delay: 50,
+    //   distance: "200px",
+    //   easing: "ease-in-out",
+    //   origin: "bottom",
+    //   reset: false,
+    // });
+    // sr.reveal(grid8.current, {
+    //   duration: 1000,
+    //   delay: 50,
+    //   distance: "200px",
+    //   easing: "ease-in-out",
+    //   origin: "left",
+    //   reset: false,
+    // });
+    // sr.reveal(grid9.current, {
+    //   duration: 1000,
+    //   delay: 50,
+    //   distance: "200px",
+    //   easing: "ease-in-out",
+    //   origin: "left",
+    //   reset: false,
+    // });
+    // sr.reveal(grid10.current, {
+    //   duration: 1000,
+    //   delay: 50,
+    //   distance: "200px",
+    //   easing: "ease-in-out",
+    //   origin: "bottom",
+    //   reset: false,
+    // });
+    // sr.reveal(grid11.current, {
+    //   duration: 1000,
+    //   delay: 50,
+    //   distance: "200px",
+    //   easing: "ease-in-out",
+    //   origin: "right",
+    //   reset: false,
+    // });
   }, []);
 
   return (
