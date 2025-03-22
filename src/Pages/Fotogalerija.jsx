@@ -16,6 +16,8 @@ const Fotogalerija = () => {
       thumbnailLoading: "eager",
       originalAlt: "prehab prostor",
       thumbnailAlt: "prehab prostor sličica",
+      originalHeight: 1000,
+      originalWidth: 1920,
     },
     {
       original: "/images/resized/original/original2.png",
@@ -24,6 +26,8 @@ const Fotogalerija = () => {
       thumbnailLoading: "lazy",
       originalAlt: "prehab prostor",
       thumbnailAlt: "prehab prostor sličica",
+      originalHeight: 1000,
+      originalWidth: 1920,
     },
     {
       original: "/images/resized/original/original3.png",
@@ -32,6 +36,8 @@ const Fotogalerija = () => {
       thumbnailLoading: "lazy",
       originalAlt: "prehab prostor",
       thumbnailAlt: "prehab prostor sličica",
+      originalHeight: 1000,
+      originalWidth: 1920,
     },
     {
       original: "/images/resized/original/original4.png",
@@ -40,6 +46,8 @@ const Fotogalerija = () => {
       thumbnailLoading: "lazy",
       originalAlt: "prehab prostor",
       thumbnailAlt: "prehab prostor sličica",
+      originalHeight: 1000,
+      originalWidth: 1920,
     },
     {
       original: "/images/resized/original/original5.png",
@@ -48,6 +56,8 @@ const Fotogalerija = () => {
       thumbnailLoading: "lazy",
       originalAlt: "prehab uteg",
       thumbnailAlt: "prehab prostor sličica",
+      originalHeight: 1000,
+      originalWidth: 1920,
     },
     {
       original: "/images/resized/original/original6.png",
@@ -56,6 +66,8 @@ const Fotogalerija = () => {
       thumbnailLoading: "lazy",
       originalAlt: "prehab masaža",
       thumbnailAlt: "prehab prostor sličica",
+      originalHeight: 1000,
+      originalWidth: 1920,
     },
     {
       original: "/images/resized/original/original7.png",
@@ -64,6 +76,8 @@ const Fotogalerija = () => {
       thumbnailLoading: "lazy",
       originalAlt: "prehab prostor",
       thumbnailAlt: "prehab prostor sličica",
+      originalHeight: 1000,
+      originalWidth: 1920,
     },
     {
       original: "/images/resized/original/original8.png",
@@ -72,6 +86,8 @@ const Fotogalerija = () => {
       thumbnailLoading: "lazy",
       originalAlt: "prehab uteg",
       thumbnailAlt: "prehab prostor sličica",
+      originalHeight: 1000,
+      originalWidth: 1920,
     },
     {
       original: "/images/resized/original/original9.png",
@@ -80,6 +96,8 @@ const Fotogalerija = () => {
       thumbnailLoading: "lazy",
       originalAlt: "prehab diplome",
       thumbnailAlt: "prehab prostor sličica",
+      originalHeight: 1000,
+      originalWidth: 1920,
     },
     {
       original: "/images/resized/original/original10.png",
@@ -88,6 +106,8 @@ const Fotogalerija = () => {
       thumbnailLoading: "lazy",
       originalAlt: "prehab diplome",
       thumbnailAlt: "prehab prostor sličica",
+      originalHeight: 1000,
+      originalWidth: 1920,
     },
     {
       original: "/images/resized/original/original11.png",
@@ -96,6 +116,8 @@ const Fotogalerija = () => {
       thumbnailLoading: "lazy",
       originalAlt: "prehab diplome",
       thumbnailAlt: "prehab prostor sličica",
+      originalHeight: 1000,
+      originalWidth: 1920,
     },
   ];
 

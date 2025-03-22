@@ -140,8 +140,8 @@ const OpisGrid = () => {
               src="/images/logo/Prehab1.svg"
               alt="Prehab ilustracija"
               className="max-h-[35rem] hover:scale-110 transition-all duration-1000"
-              // width="400"
-              // height="288"
+              width="400"
+              height="288"
               // loading="lazy"
             />
           </div>
@@ -184,6 +184,8 @@ const OpisGrid = () => {
               src="/images/Nikola/masažni stol.jpg"
               alt="masažni stol Prehab"
               className="w-full h-full object-cover object-bottom hover:scale-110 transition-all duration-1000"
+              width="748"
+              height="400"
               loading="lazy"
             />
           </div>
@@ -196,6 +198,8 @@ const OpisGrid = () => {
               src="/images/Nikola/čečanj.jpg"
               alt="čučanj prehab"
               className="w-full h-full object-cover object-bottom hover:scale-110 transition-all duration-1000"
+              width="748"
+              height="400"
               loading="lazy"
             />
           </div>
@@ -246,6 +250,8 @@ const OpisGrid = () => {
               src="/images/Nikola/leđnjak2.png"
               alt="leđnjak Prehab"
               className="w-full h-full object-cover object-bottom hover:scale-110 transition-all duration-1000"
+              width="748"
+              height="400"
               loading="lazy"
             />
           </div>
