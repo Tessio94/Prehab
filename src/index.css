@@ -178,8 +178,12 @@ html {
     transform: none !important;
   }
 
+  .image-gallery-thumbnail.active {
+    transform: none;
+  }
+
   .active {
-    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
     opacity: 1;
   }
   .next {
