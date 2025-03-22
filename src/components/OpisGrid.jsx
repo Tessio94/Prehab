@@ -125,7 +125,9 @@ const OpisGrid = () => {
               src="/images/logo/Prehab1.svg"
               alt="Prehab ilustracija"
               className="max-h-[35rem] hover:scale-110 transition-all duration-1000"
-              loading="lazy"
+              width="400"
+              height="288"
+              // loading="lazy"
             />
           </div>
           <div

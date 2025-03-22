@@ -1,13 +1,13 @@
 const metadata = {
   "/": {
-    title: "Prehab Zadar",
+    title: "Prehab Fizioterapija Zadar | Biograd",
     description:
-      "Osnova djelatnosti Prehab klinike Zadar je rehabilitacija te priprema klijenata za povratak svom potpunom zdravlju. Nudimo sljedeće usluge: korekcija posture, masaža, elektro stimulacija, terapija ultrazvukom, terapijske vježbe u vodi, face lifting te anticelulitne tretmane",
+      "Prehab klinika za fizikalnu medicinu i rehabilitaciju u Zadru te Biogradu. Nudimo sljedeće usluge: dijagnostika problema, korekcija posture, masaža, elektro stimulacija, terapija ultrazvukom, terapijske vježbe u vodi, face lifting te anticelulitne tretmane",
   },
   "/o-nama": {
     title: "Prehab Zadar | O nama",
     description:
-      "Pristupamo svakom klijentu sa potpunom pažnjom. Tim diplomiranih fizioterapeuta je spreman brinuti se o vama",
+      "Naš rad temelji se na individualnom pristupu pacijentu. Prehab je fizioteraputska klinika otvorena od strane fizioterapeuta Nikole Lukića u Zadru i Biogradu.",
   },
   "/fotogalerija": {
     title: "Prehab Zadar | Fotogalerija",
