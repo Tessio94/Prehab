@@ -67,6 +67,8 @@ const Header = ({ header }) => {
             src="/images/logo/ikona.png"
             alt="logo"
             className="w-20 h-20 rounded-xl shadow-2xl"
+            height="80"
+            width="80"
           />
           <h1 className="lg:text-3xl text-2xl font-bold font-oswald">Prehab</h1>
         </Link>
