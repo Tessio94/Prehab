@@ -6,6 +6,40 @@ html {
   scroll-behavior: smooth;
 }
 
+.loading-page {
+  height: 100vh;
+  background-image: url("/images/Nikola/prehab Nikolaxl.jpg");
+  background-size: auto;
+  background-attachment: fixed;
+  background-position: left top -10rem;
+  background-repeat: no-repeat;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 1600px) {
+  .loading-page {
+    background-image: url("/images/Nikola/prehab Nikolalg.jpg");
+  }
+}
+
+@media (max-width: 1200px) {
+  .loading-page {
+    background-image: url("/images/Nikola/prehab Nikolamd.jpg");
+  }
+}
+
+@media (max-width: 768px) {
+  .loading-page {
+    background-image: url("/images/Nikola/prehab Nikolasm.jpg");
+  }
+}
+
+@media (max-width: 450px) {
+  .loading-page {
+    background-image: url("/images/Nikola/prehab Nikolaxsm.jpg");
+  }
+}
+
 @layer utilities {
   .linear_shadow {
     height: calc(100vh - 7.5rem);
