@@ -216,11 +216,15 @@ const Kontakt = () => {
               src="/images/akcije/besplatni pregled za djecu.jpg"
               className="rounded-xl"
               alt="letak prehab screening"
+              width="559"
+              height="559"
             />
             <img
               src="/images/akcije/grupe za vježbanje.jpg"
               className="rounded-xl"
               alt="letak prehab grupe za vježbanje"
+              width="559"
+              height="559"
             />
           </div>
           <div className="w-[100%] sm:w-[40%] hidden lg:flex lg:flex-col lg:flex-1 gap-5 rounded-xl overflow-hidden">
@@ -241,6 +245,8 @@ const Kontakt = () => {
                 src="/images/zadar/letak 1png.png"
                 className="rounded-xl"
                 alt="letak prehab"
+                width="851"
+                height="315"
               />
             </div>
           </div>

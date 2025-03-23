@@ -7,28 +7,12 @@ const HomeProfile = () => {
   const grid3 = useRef(null);
 
   useEffect(() => {
-    sr.reveal(grid1.current, {
+    sr.reveal([grid1.current, grid2.current, grid3.current], {
       duration: 1000,
       delay: 50,
-      distance: "300px",
+      distance: "100px",
       easing: "ease-in-out",
-      origin: "left",
-      reset: false,
-    });
-    sr.reveal(grid2.current, {
-      duration: 1000,
-      delay: 150,
-      distance: "250px",
-      easing: "ease-in-out",
-      origin: "left",
-      reset: false,
-    });
-    sr.reveal(grid3.current, {
-      duration: 1000,
-      delay: 250,
-      distance: "200px",
-      easing: "ease-in-out",
-      origin: "left",
+      origin: "bottom",
       reset: false,
     });
   }, []);

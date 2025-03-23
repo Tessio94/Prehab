@@ -10,30 +10,26 @@ const Main = () => {
   const grid3 = useRef(null);
 
   useEffect(() => {
-    sr.reveal(grid1.current, {
+    const screenWidth = window.innerWidth;
+
+    const revealConfig = (origin, distance) => ({
       duration: 1000,
-      delay: 50,
-      distance: "300px",
+      delay: 100,
+      distance: distance,
       easing: "ease-in-out",
-      origin: "left",
+      origin: origin,
       reset: false,
     });
-    sr.reveal(grid2.current, {
-      duration: 1000,
-      delay: 150,
-      distance: "250px",
-      easing: "ease-in-out",
-      origin: "top",
-      reset: false,
-    });
-    sr.reveal(grid3.current, {
-      duration: 1000,
-      delay: 250,
-      distance: "200px",
-      easing: "ease-in-out",
-      origin: "right",
-      reset: false,
-    });
+
+    if (screenWidth < 768) {
+      sr.reveal(grid1.current, revealConfig("top", "200px"));
+      sr.reveal(grid2.current, revealConfig("bottom", "200px"));
+      sr.reveal(grid3.current, revealConfig("top", "150px"));
+    } else {
+      sr.reveal(grid1.current, revealConfig("left", "300px"));
+      sr.reveal(grid2.current, revealConfig("top", "250px"));
+      sr.reveal(grid3.current, revealConfig("right", "200px"));
+    }
   }, []);
 
   return (
