@@ -157,7 +157,7 @@ const Fotogalerija = () => {
         <h1 className="text-6xl font-oswald pt-[5rem] mb-10 text-center">
           Fotogalerija
         </h1>
-        <ImageGallery items={images} />;
+        <ImageGallery items={images} />
       </section>
     </>
   );
