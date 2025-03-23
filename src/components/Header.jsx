@@ -105,7 +105,7 @@ const Header = ({ header }) => {
             <li>
               <NavLink
                 to="/"
-                className="relative hover:text-stone-400 !text-stone-100 before:content-[''] before:absolute before:bottom-[-0.2rem] before:left-0 before:w-0 before:bg-stone-300 before:h-0.5 before:transition-all before:duration-500 hover:before:w-full transition-all duration-500"
+                className="relative hover:text-stone-400 text-stone-100 before:content-[''] before:absolute before:bottom-[-0.2rem] before:left-0 before:w-0 before:bg-stone-300 before:h-0.5 before:transition-all before:duration-500 hover:before:w-full transition-all duration-500"
               >
                 Naslovnica
               </NavLink>
