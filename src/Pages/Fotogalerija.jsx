@@ -152,7 +152,7 @@ const Fotogalerija = () => {
       </Helmet>
       <section
         id="fotogalerija"
-        className="preh-background px-[2rem] sm:px-[1rem] lg:px-[0rem]"
+        className="preh-background px-[2rem] sm:px-[1rem] lg:px-[0rem] pb-[5rem]"
       >
         <h1 className="text-6xl font-oswald pt-[5rem] mb-10 text-center">
           Fotogalerija
