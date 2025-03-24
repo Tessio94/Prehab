@@ -93,7 +93,13 @@ const Intro = () => {
           </ul>
           <p className="absolute bottom-[95%] lg:bottom-0 left-0 w-full h-[10%] xsm:h-[15%] flex justify-between xsm:justify-center items-center gap-5 text-2xl xsm:text-3xl font-oswald  text-red_preh bg-slate-400 mx-auto  py-3 px-4 xsm:px-8 rounded-t-xl lg:rounded-bl-xl lg:rounded-r-none lg:rounded-none font-bold">
             <span>
-              <img src="/images/logo/ikona.png" alt="logo" className="w-10" />
+              <img
+                src="/images/logo/ikona.png"
+                alt="logo"
+                className="w-10"
+                height="20"
+                width="20"
+              />
             </span>
             Posjetite nas
             <span>
@@ -101,6 +107,8 @@ const Intro = () => {
                 src="/images/logo/ikona.png"
                 alt="logo prehab"
                 className="w-10"
+                height="20"
+                width="20"
               />
             </span>
           </p>
@@ -110,6 +118,8 @@ const Intro = () => {
             src="/images/zadar/slika 1.jpg"
             alt="prehab zadar klinika"
             className="w-full h-full object-cover"
+            width="768"
+            height="864"
           />
         </div>
       </div>
@@ -123,11 +133,15 @@ const Intro = () => {
             src="/images/certifikati/slika12.jpg"
             alt="certifikati"
             className="w-[100%] h-[100%] lg:h-[50%] object-right basis-[50%]"
+            width="614"
+            height="432"
           />
           <img
             src="/images/certifikati/slika 7.jpg"
             alt="diplome prehab"
             className="hidden sm:block lg:w-[100%] h-[100%] lg:h-[50%] object-cover basis-[50%]"
+            width="614"
+            height="432"
           />
         </div>
         <div className="w-[100%] lg:w-[50%] h-[100%] rounded-b-xl lg:rounded-none lg:rounded-r-xl overflow-hidden py-4 px-4 xsm:px-8 bg-slate-300 lg:bg-transparent basis-[60%]">
@@ -211,14 +225,28 @@ const Intro = () => {
             src="/images/zadar/slika 2.jpg"
             alt="prehab klinika"
             className="w-full h-full object-cover"
+            width="768"
+            height="864"
           />
           <p className="absolute bottom-0 left-0 w-full h-[8%] xsm:h-[10%] lg:h-[15%] flex justify-between xsm:justify-center items-center gap-5 text-2xl xsm:text-3xl font-oswald  text-red_preh bg-slate-400 mx-auto  py-3 px-4 xsm:px-8 rounded-b-xl font-bold">
             <span>
-              <img src="/images/logo/ikona.png" alt="logo" className="w-10" />
+              <img
+                src="/images/logo/ikona.png"
+                alt="logo"
+                className="w-10"
+                width="20"
+                height="20"
+              />
             </span>
             Posjetite nas
             <span>
-              <img src="/images/logo/ikona.png" alt="logo" className="w-10" />
+              <img
+                src="/images/logo/ikona.png"
+                alt="logo"
+                className="w-10"
+                width="20"
+                height="20"
+              />
             </span>
           </p>
         </div>

@@ -32,7 +32,7 @@ const Suradnje = ({ suradnje }) => {
     <section id="suradnje" ref={suradnje}>
       <div className="p-8 sm:p-16">
         <h2 className="text-5xl font-oswald mb-5">Suradnje</h2>
-        <div className="custom_grid2 auto-rows-[12rem] sm:auto-rows-[10rem]">
+        <div className="custom_grid2 auto-rows-max sm:auto-rows-[10rem]">
           <div
             className="relative rounded-xl overflow-hidden group border-red_preh border-4"
             ref={grid1}

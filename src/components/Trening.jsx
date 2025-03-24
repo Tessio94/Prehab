@@ -71,13 +71,20 @@ const Trening = () => {
           </div>
         </div>
         <div className="hidden xl:block absolute rounded-[60%] overflow-hidden w-[50rem] top-[-8rem] right-[-28%] xxl:right-[-20%]">
-          <img src="/images/Nikola/čečanj.jpg" alt="čučanj vježba" />
+          <img
+            src="/images/Nikola/čečanj.jpg"
+            alt="čučanj vježba"
+            width="512"
+            height="640"
+          />
         </div>
         <div className="absolute  xl:w-[30rem] bottom-[-13.5rem] left-[-8rem] md:left-[-23%] md2:left-[-19%] lg:left-[-8%]">
           <img
             src="/images/Nikola/leđnjak 1.png"
             alt="leđnjak vježba"
             className="bg-cover bg-center"
+            height="585"
+            width="480"
           />
         </div>
         <button className="block mx-auto py-2 px-5 bg-red_preh rounded-xl text-xl font-oswald border-2 font-bold text-white hover:text-red_preh hover:bg-slate-100 hover:border-red_preh hover:border-2 transition-all duration-500 group">
