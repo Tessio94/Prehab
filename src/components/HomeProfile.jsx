@@ -29,6 +29,7 @@ const HomeProfile = () => {
               src="/images/Nikola/O nikoli 2.png"
               alt="Nikola Lukić slika"
               className="h-full w-full object-cover rounded-custom_radius object-center"
+              loading="lazy"
             />
           </div>
           <div className="flex flex-col gap-2 items-start sm:basis-[50%] basis-[45%]">
@@ -45,6 +46,7 @@ const HomeProfile = () => {
               src="/images/Nikola/masažni stol 1.png"
               alt="masažni stol prehab"
               className="h-full w-full  rounded-custom_radius object-cover object-center"
+              loading="lazy"
             />
           </div>
           <div className="flex flex-col gap-2 items-start sm:basis-[50%] basis-[45%]">
@@ -63,6 +65,7 @@ const HomeProfile = () => {
               src="/images/Nikola/višnjik 1.png"
               alt="zadar višnjik"
               className="h-full w-full object-cover rounded-custom_radius"
+              loading="lazy"
             />
           </div>
           <div className="flex flex-col gap-2 items-start sm:basis-[50%] basis-[45%]">

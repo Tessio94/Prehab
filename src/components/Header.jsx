@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 const Header = () => {
   const location = useLocation();
+  console.log(location);
 
   const [hambActive, setHambActive] = useState(false);
 
@@ -40,19 +41,25 @@ const Header = () => {
 
   useEffect(() => {
     if (window.screen.width < 640) return;
+
+    const handleScroll = () => {
+      if (window.scrollY > 0 && window.scrollY < 900) {
+        navbar.current.classList.remove("relative");
+        navbar.current.classList.add("fixed");
+        navbar.current.classList.toggle("opacity-0", window.scrollY > 700);
+      }
+    };
+
     if (location.pathname === "/") {
-      window.onscroll = () => {
-        if (window.scrollY > 0 && window.scrollY < 900) {
-          navbar.current.classList.remove("relative");
-          navbar.current.classList.add("fixed");
-          navbar.current.classList.toggle("opacity-0", window.scrollY > 700);
-        }
-      };
+      window.addEventListener("scroll", handleScroll);
     } else {
       navbar.current.classList.remove("fixed");
       navbar.current.classList.add("relative");
-      // navbar.current.style.opacity = "0.5";
     }
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [location.pathname]);
 
   return (
