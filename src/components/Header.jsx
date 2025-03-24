@@ -1,37 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaTwitter,
-  FaYoutube,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { BsTelephone } from "react-icons/bs";
-import { RxHamburgerMenu } from "react-icons/rx";
 import { useEffect, useRef, useState } from "react";
-import { VscChromeClose } from "react-icons/vsc";
 
-const Header = ({ header }) => {
+const Header = () => {
   const [hambActive, setHambActive] = useState(false);
   const dropdown = useRef(null);
   const hamb = useRef(null);
+  const header = useRef();
+  const navbar = useRef(null);
 
   useEffect(() => {
-    // function () {
-    //   hamb.current.addEventListener("click", function () {
-    //     setHambActive(() => !hambActive);
-
-    //     if (hambActive) {
-    //       console.log("do");
-
-    //       hamb.current.classList.add("open");
-    //       dropdown.current.classList.remove("translate-x-[100%]");
-    //     } else {
-    //       hamb.current.classList.remove("open");
-    //       dropdown.current.classList.add("translate-x-[100%]");
-    //     }
-    //   });
-    // },
     const handleHambClick = () => {
       setHambActive((prevState) => {
         const newState = !prevState;
@@ -56,12 +35,29 @@ const Header = ({ header }) => {
     };
   }, [hambActive]);
 
+  useEffect(() => {
+    if (window.screen.width < 640) return;
+    if (location.pathname === "/") {
+      window.onscroll = () => {
+        if (window.scrollY > 0 && window.scrollY < 900) {
+          navbar.current.classList.remove("relative");
+          navbar.current.classList.add("fixed");
+          navbar.current.classList.toggle("opacity-0", window.scrollY > 700);
+        }
+      };
+    } else {
+      navbar.current.classList.remove("fixed");
+      navbar.current.classList.add("relative");
+      // navbar.current.style.opacity = "0.5";
+    }
+  }, [location.pathname]);
+
   return (
-    <header
-      className="relative w-full h-[7.5rem] bg-black bg-opacity-50 px-10 md:px-10 lg:px-16 py-5  z-50 transition-all duration-500"
-      ref={header}
-    >
-      <div className="flex justify-between items-center">
+    <header className="relative w-full h-[7.5rem]" ref={header}>
+      <div
+        className="flex w-full relative justify-between items-center px-10 md:px-10 lg:px-16 py-5 bg-black bg-opacity-50 z-50 transition-all duration-500"
+        ref={navbar}
+      >
         <Link to="/" className="flex items-center gap-4 text-stone-100">
           <img
             src="/images/logo/ikona.png"
@@ -74,23 +70,6 @@ const Header = ({ header }) => {
         </Link>
 
         <nav>
-          {/* {hambActive ? (
-            <VscChromeClose
-              className="text-3xl  text-stone-100 sm:hidden z-50 relative cursor-pointer"
-              onClick={() => {
-                dropdown.current.classList.toggle("translate-x-[100%]");
-                setHambActive(!hambActive);
-              }}
-            />
-          ) : (
-            <RxHamburgerMenu
-              className="text-3xl text-stone-100 sm:hidden z-50 relative cursor-pointer"
-              onClick={() => {
-                dropdown.current.classList.toggle("translate-x-[100%]");
-                setHambActive(!hambActive);
-              }}
-            />
-          )} */}
           <div
             id="nav-icon1"
             className="text-3xl  text-stone-100 sm:hidden z-50 relative cursor-pointer"
@@ -161,22 +140,6 @@ const Header = ({ header }) => {
                 <FaInstagram />
               </a>
             </li>
-            {/* <li className="cursor-pointer hover:text-stone-400 hover:scale-125 transition-all duration-500 text-xl">
-              <a href="http://twitter.com" target="_blank">
-                <FaTwitter />
-              </a>
-            </li> */}
-
-            {/* <li className="cursor-pointer hover:text-stone-400 hover:scale-125 transition-all duration-500 text-xl">
-              <a href="http://youtube.com" target="_blank">
-                <FaYoutube />
-              </a>
-            </li>
-            <li className="cursor-pointer hover:text-stone-400 hover:scale-125 transition-all duration-500 text-xl">
-              <a href="http://linkedin.com" target="_blank">
-                <FaLinkedin />
-              </a>
-            </li> */}
           </ul>
         </div>
       </div>

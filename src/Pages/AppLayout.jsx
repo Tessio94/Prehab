@@ -15,22 +15,15 @@ import { Helmet } from "react-helmet-async";
 
 const AppLayout = () => {
   const location = useLocation();
-  // console.log(location.pathname);
-  // console.log(document.querySelector("meta"));
+
   const meta = metadata[location.pathname];
-  // console.log(meta);
 
   const [showScrollToTop, setShowScrollToTop] = useState(false);
-  // console.log(location.hash);
   const usluge = useRef(null);
   const suradnje = useRef(null);
 
-  const header = useRef();
-
   useEffect(() => {
     if (location.pathname !== "/") return;
-    // console.log(location.hash);
-    // console.log(usluge.current.offsetTop);
 
     const scrollTo = () => {
       if (location.hash === "#usluge") {
@@ -51,25 +44,6 @@ const AppLayout = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
-  useEffect(() => {
-    if (window.screen.width < 640) return;
-    let header = document.querySelector("header");
-    if (location.pathname === "/") {
-      window.onscroll = () => {
-        // console.log(window.scrollY);
-
-        // sticky navbar
-        header.classList.remove("relative");
-        header.classList.add("fixed");
-        header.classList.toggle("opacity-0", window.scrollY > 700);
-        header.classList.toggle("hidden", window.scrollY > 900);
-      };
-    } else {
-      header.classList.remove("fixed");
-      header.classList.add("relative");
-    }
-  }, [location.pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -123,7 +97,7 @@ const AppLayout = () => {
               <FaArrowUp className="text-5xl text-red_preh" />
             </div>
           )}
-          <Header header={header} />
+          <Header />
           <Main />
           <Quote />
           <HomeProfile />
