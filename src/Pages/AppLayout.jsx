@@ -114,7 +114,7 @@ const AppLayout = () => {
         `}
           </script>
         </Helmet>
-        <div className="relative h-[1080px] sm:h-screen bg-auto bg-fixed bg-no-repeat bg-left_top bg-Nikola1 xsm:bg-Nikolaxsm  sm:bg-Nikolasm md:bg-Nikolamd lg:bg-Nikolalg xl:bg-Nikolaxl xxl:bg-Nikola shadow-2xl after:linear_shadow2 after:sm:linear_shadow after:bg-gradient-to-r from-black  after:absolute after:top-[7.5rem] after:left-0 after:w-[70%]  after:bg-opacity-50  after:z-0">
+        <div className="relative h-screen bg-auto bg-fixed bg-no-repeat bg-left_top bg-Nikola1 xsm:bg-Nikolaxsm  sm:bg-Nikolasm md:bg-Nikolamd lg:bg-Nikolalg xl:bg-Nikolaxl xxl:bg-Nikola shadow-2xl after:linear_shadow2 after:sm:linear_shadow after:bg-gradient-to-r from-black  after:absolute after:top-[7.5rem] after:left-0 after:w-[70%]  after:bg-opacity-50  after:z-0">
           {showScrollToTop && (
             <div
               onClick={scrollToTop}

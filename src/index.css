@@ -11,7 +11,7 @@ html {
     height: calc(100vh - 7.5rem);
   }
   .linear_shadow2 {
-    height: calc(1080px - 7.5rem);
+    height: calc(100vh - 7.5rem);
   }
   .quote {
     background-image: linear-gradient(to right, #1b1a20, #df0707);
