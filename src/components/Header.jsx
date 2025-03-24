@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from "react";
 
 const Header = () => {
   const location = useLocation();
-  console.log(location);
 
   const [hambActive, setHambActive] = useState(false);
 

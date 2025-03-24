@@ -12,6 +12,7 @@ import { useEffect, useState, useRef } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import metadata from "../data/metaData";
 import { Helmet } from "react-helmet-async";
+import { preloadImages } from "../utils/preload";
 
 const AppLayout = () => {
   const location = useLocation();
@@ -56,6 +57,17 @@ const AppLayout = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    preloadImages();
+
+    const handleResize = () => preloadImages();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // Cleanup
+    };
   }, []);
 
   if (location.pathname === "/") {
