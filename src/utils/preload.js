@@ -7,15 +7,20 @@ export function preloadImages() {
   let preloadUrl = "";
 
   if (screenSize >= 1536) {
-    preloadUrl = "/images/Nikola/prehab Nikolaxl.jpg"; // XL breakpoint
+    preloadUrl =
+      "https://prehabilitationtherapycenter.hr//images/Nikola/prehab Nikolaxl.jpg"; // XL breakpoint
   } else if (screenSize >= 1280) {
-    preloadUrl = "/images/Nikola/prehab Nikolalg.jpg"; // LG breakpoint
+    preloadUrl =
+      "https://prehabilitationtherapycenter.hr//images/Nikola/prehab Nikolalg.jpg"; // LG breakpoint
   } else if (screenSize >= 1024) {
-    preloadUrl = "/images/Nikola/prehab Nikolamd.jpg"; // MD breakpoint
+    preloadUrl =
+      "https://prehabilitationtherapycenter.hr//images/Nikola/prehab Nikolamd.jpg"; // MD breakpoint
   } else if (screenSize >= 640) {
-    preloadUrl = "/images/Nikola/prehab Nikolasm.jpg"; // SM breakpoint
+    preloadUrl =
+      "https://prehabilitationtherapycenter.hr//images/Nikola/prehab Nikolasm.jpg"; // SM breakpoint
   } else {
-    preloadUrl = "/images/Nikola/prehab Nikolaxsm.jpg"; // XSM breakpoint
+    preloadUrl =
+      "https://prehabilitationtherapycenter.hr//images/Nikola/prehab Nikolaxsm.jpg"; // XSM breakpoint
   }
 
   // Create a preload link element
