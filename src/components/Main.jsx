@@ -33,7 +33,7 @@ const Main = () => {
   }, []);
 
   return (
-    <section className="relative h-[calc(100vh-120px)] sm:h-screen w-full z-10">
+    <section className="relative h-[calc(100vh-120px)] w-full z-10">
       <div className="absolute top-1/4 left-10  right-4 xsm:translate-x-0 xsm:left-12 sm:left-16 md:left-24  lg:left-48  flex flex-col gap-3 z-10">
         <h1
           className="text-3xl sm:text-4xl font-oswald text-stone-50 mb-3"
