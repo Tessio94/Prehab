@@ -74,6 +74,7 @@ const Trening = () => {
           <img
             src="/images/Nikola/čečanj.jpg"
             alt="čučanj vježba"
+            loading="lazy"
             width="512"
             height="640"
           />
@@ -83,6 +84,7 @@ const Trening = () => {
             src="/images/Nikola/leđnjak 1.png"
             alt="leđnjak vježba"
             className="bg-cover bg-center"
+            loading="lazy"
             height="585"
             width="480"
           />

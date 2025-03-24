@@ -1,10 +1,13 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { BsTelephone } from "react-icons/bs";
 import { useEffect, useRef, useState } from "react";
 
 const Header = () => {
+  const location = useLocation();
+
   const [hambActive, setHambActive] = useState(false);
+
   const dropdown = useRef(null);
   const hamb = useRef(null);
   const header = useRef();

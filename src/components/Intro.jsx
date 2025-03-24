@@ -97,6 +97,7 @@ const Intro = () => {
                 src="/images/logo/ikona.png"
                 alt="logo"
                 className="w-10"
+                loading="lazy"
                 height="20"
                 width="20"
               />
@@ -107,6 +108,7 @@ const Intro = () => {
                 src="/images/logo/ikona.png"
                 alt="logo prehab"
                 className="w-10"
+                loading="lazy"
                 height="20"
                 width="20"
               />
@@ -118,6 +120,7 @@ const Intro = () => {
             src="/images/zadar/slika 1.jpg"
             alt="prehab zadar klinika"
             className="w-full h-full object-cover"
+            loading="lazy"
             width="768"
             height="864"
           />
@@ -133,6 +136,7 @@ const Intro = () => {
             src="/images/certifikati/slika12.jpg"
             alt="certifikati"
             className="w-[100%] h-[100%] lg:h-[50%] object-right basis-[50%]"
+            loading="lazy"
             width="614"
             height="432"
           />
@@ -140,6 +144,7 @@ const Intro = () => {
             src="/images/certifikati/slika 7.jpg"
             alt="diplome prehab"
             className="hidden sm:block lg:w-[100%] h-[100%] lg:h-[50%] object-cover basis-[50%]"
+            loading="lazy"
             width="614"
             height="432"
           />
@@ -225,6 +230,7 @@ const Intro = () => {
             src="/images/zadar/slika 2.jpg"
             alt="prehab klinika"
             className="w-full h-full object-cover"
+            loading="lazy"
             width="768"
             height="864"
           />
@@ -234,6 +240,7 @@ const Intro = () => {
                 src="/images/logo/ikona.png"
                 alt="logo"
                 className="w-10"
+                loading="lazy"
                 width="20"
                 height="20"
               />

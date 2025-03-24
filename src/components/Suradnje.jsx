@@ -41,6 +41,7 @@ const Suradnje = ({ suradnje }) => {
               src="/images/suradnje/Nk Rudeš.jpg"
               className="w-full h-full"
               alt="NK Rudeš"
+              loading="lazy"
             />
             <div className="bg-gradient-to-t  from-red_preh_t to-black  absolute top-0 left-0 right-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-all duration-1000 text-white font-bold font-oswald flex items-center justify-center text-3xl">
               NK Rudeš
@@ -54,6 +55,7 @@ const Suradnje = ({ suradnje }) => {
               src="/images/suradnje/abeceda.jpg"
               className="w-full h-full"
               alt="NK Abeceda"
+              loading="lazy"
             />
             <div className="bg-gradient-to-t  from-red_preh_t to-black  absolute top-0 left-0 right-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-all duration-1000 text-white font-bold font-oswald flex items-center justify-center text-3xl">
               NK Abeceda
@@ -67,6 +69,7 @@ const Suradnje = ({ suradnje }) => {
               src="/images/suradnje/sonik.jpg"
               className="w-full h-full"
               alt="KK Aleta Puntamika"
+              loading="lazy"
             />
             <div className="bg-gradient-to-t  from-red_preh_t to-black  absolute top-0 left-0 right-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-all duration-1000 text-white font-bold font-oswald flex items-center justify-center text-xl">
               KK Aleta Puntamika
@@ -80,6 +83,7 @@ const Suradnje = ({ suradnje }) => {
               src="/images/suradnje/plivački klub zadar.png"
               className="w-full h-full"
               alt="PK Zadar"
+              loading="lazy"
             />
             <div
               className="bg-gradient-to-t  from-red_preh_t to-black  absolute top-0 left-0 right-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-all duration-1000 text-white font-bold font-oswald flex items-center justify-center text-3xl"
@@ -96,6 +100,7 @@ const Suradnje = ({ suradnje }) => {
               src="/images/suradnje/vaterpolo klub zadar.png"
               className="w-full h-full"
               alt="VK Zadar"
+              loading="lazy"
             />
             <div className="bg-gradient-to-t from-red_preh_t to-black absolute top-0 left-0 right-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-all duration-1000 text-white font-bold font-oswald flex items-center justify-center text-3xl">
               VK Zadar
