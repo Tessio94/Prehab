@@ -19,6 +19,16 @@ const metadata = {
     description:
       "Pronađite Prehab kliniku u Zadru na adresi Splitska ulica 3 te u Biogradu na moru na adresi Bukovačka 15, BnM",
   },
+  "/zdravlje": {
+    title: "Prehab Zadar | Zdravlje",
+    description:
+      "U ovom kutku pronađite stručne uvide, savjete i inspiraciju vezanu uz zdravlje, pokret i prevenciju od strane diplomiranog fizioterapeuta.",
+  },
+  "/zdravlje/skolioza-kamp": {
+    title: "Prehab Zadar | Zdravlje - Skolioza Kamp",
+    description:
+      "Skolioza kamp u Biogradu na Moru 2025. 7-dnevni program koji obuhvaća testove skolioze, fleksibilnosti, mobilnosti, izdržljivosti i još mnogo toga.",
+  },
   // Add more routes here...
 };
 

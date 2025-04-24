@@ -2,9 +2,14 @@ import sr from "../library/ScrollReveal";
 import { FaArrowRight } from "react-icons/fa";
 import Button from "../shared/Button";
 import { useEffect, useRef } from "react";
-import { Outlet } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
+import metadata from "../data/metaData";
 
 const Zdravlje = () => {
+  const location = useLocation();
+  const meta = metadata[location.pathname];
+
   const grid1 = useRef(null);
   const grid2 = useRef(null);
   const grid3 = useRef(null);
@@ -45,6 +50,33 @@ const Zdravlje = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{meta.title || "Prehab Zadar"}</title>
+        <meta
+          property="og:image"
+          content="https://prehabilitationtherapycenter.hr/images/Nikola/prehab nikola.jpg"
+        ></meta>
+        <meta
+          name="description"
+          content={
+            meta.description ||
+            "Dobrodošli u fizioterapeutsku kliniku Prehab Zadar."
+          }
+        />
+        <script type="application/ld+json">
+          {`
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Prehabilitation Therapy Center Zadar",
+          "alternateName": "Prehab Zadar",
+          "url": "https://prehabilitationtherapycenter.hr/",
+          "logo": "https://prehabilitationtherapycenter.hr/images/logo/ikona.png",
+          "image": "https://prehabilitationtherapycenter.hr/images/Nikola/prehab nikola.jpg"
+        }
+        `}
+        </script>
+      </Helmet>
       <section className="bg-stone-100 pb-[60px]">
         <h1 className="text-5xl font-oswald py-[5rem] text-center preh-background">
           Zdravlje
