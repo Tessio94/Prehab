@@ -89,7 +89,7 @@ const Header = () => {
             <span></span>
           </div>
           <ul
-            className="z-10 fixed translate-x-[100%]  flex flex-col items-start justify-start gap-10  h-[100vh] top-[0rem] px-10  pb-5 pt-36 right-0 left-[50%] xsm:left-[50%]  rounded-bl-xl bg-slate-400 text-2xl sm:translate-x-0  sm:relative sm:top-0 sm:left-0 sm:h-fit  sm:text-base sm:bg-transparent sm:flex sm:flex-row sm:items-center sm:justify-between sm:p-0 sm:gap-6 md:text-lg lg:text-xl font-oswald transition-all duration-500"
+            className="z-10 fixed translate-x-[100%]  flex flex-col items-start justify-start gap-10  h-[100vh] top-[0rem] px-10  pb-5 pt-36 right-0 left-[50%] xsm:left-[50%]  rounded-bl-xl bg-slate-400 text-2xl sm:translate-x-0  sm:relative sm:top-0 sm:left-0 sm:h-fit  sm:text-base sm:bg-transparent sm:flex sm:flex-row sm:items-center sm:justify-between sm:p-0 sm:gap-4 xl:gap-6 md:text-lg lg:text-xl font-oswald transition-all duration-500"
             ref={dropdown}
           >
             <li>
@@ -106,6 +106,14 @@ const Header = () => {
                 className="relative hover:text-stone-400 text-stone-100 before:content-[''] before:absolute before:bottom-[-0.2rem] before:left-0 before:w-0 before:bg-stone-300 before:h-0.5 before:transition-all before:duration-500 hover:before:w-full transition-all duration-500"
               >
                 O nama
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/zdravlje"
+                className="relative hover:text-stone-400 text-stone-100 before:content-[''] before:absolute before:bottom-[-0.2rem] before:left-0 before:w-0 before:bg-stone-300 before:h-0.5 before:transition-all before:duration-500 hover:before:w-full transition-all duration-500"
+              >
+                Zdravlje
               </NavLink>
             </li>
             <li>

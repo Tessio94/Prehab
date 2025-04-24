@@ -250,3 +250,16 @@ html {
 header .active {
   color: red;
 }
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: red;
+}
+
+.swiper-scrollbar-drag {
+  background-color: red;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: red;
+}
