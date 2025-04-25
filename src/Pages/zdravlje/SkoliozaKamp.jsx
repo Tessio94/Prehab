@@ -95,7 +95,7 @@ const SkoliozaKamp = () => {
 									</div>
 								</div>
 							</div>
-							<p className="bg-slate-500 text-white rounded-2xl py-2 px-5">
+							<p className="bg-slate-500 text-white rounded-2xl py-2 px-5 w-fit">
 								#ScoliosisKamp #Skolioza #Zdravlje #Vježbanje #BiogradNaMoru
 								#ZajednoSmoJači
 							</p>
