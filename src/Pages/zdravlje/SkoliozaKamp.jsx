@@ -77,21 +77,21 @@ const SkoliozaKamp = () => {
                   <FaWhatsapp />
                   <div>
                     <span>Ridesanum | </span>
-                    <a href="tel:+38523236566">091/9355-858</a>
+                    <a href="tel:+385919355858">091/9355-858</a>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <FaWhatsapp />
                   <div>
                     <span>Balboa Gym | </span>
-                    <a href="tel:+38523236566">099/4099-033</a>
+                    <a href="tel:+385994099033">099/4099-033</a>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <FaWhatsapp />
                   <div>
                     <span>Prehab Centar | </span>
-                    <a href="tel:+38523236566">095/9064-240</a>
+                    <a href="tel:+385959064240">095/9064-240</a>
                   </div>
                 </div>
               </div>
