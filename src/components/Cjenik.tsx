@@ -163,7 +163,7 @@ const Cjenik = () => {
 								</li>
 								<li className="gap-2 flex justify-between py-2 px-2 md:px-5 border-b-[1px] border-b-white">
 									{" "}
-									<p>Histroterapija</p>
+									<p>Hidroterapija</p>
 									<p className="text-red_preh bg-white rounded-lg p-1 min-w-[54px] flex items-center justify-center font-bold max-h-[36px]">
 										27€
 									</p>
