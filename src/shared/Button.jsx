@@ -10,7 +10,7 @@ const Button = ({ children, type, href, header }) => {
 				className={
 					base +
 					" " +
-					"bg-red-500 hover:bg-stone-50 hover:text-red-500  focus:ring focus:ring-red-500  hover:border-red-500 hover:shadow-red-300 group w-[190px]"
+					"bg-red-500 hover:bg-stone-50 hover:text-red-500  focus:ring focus:ring-red-500  hover:border-red-500 hover:shadow-red-300 group !w-[190px]"
 				}
 				href={href}
 			>
@@ -54,7 +54,7 @@ const Button = ({ children, type, href, header }) => {
 				className={
 					base +
 					" " +
-					"bg-blue-900  hover:bg-stone-50 hover:text-blue-900   focus:ring-blue-900 hover:border-blue-900  hover:shadow-blue-300 cursor w-[190px]"
+					"bg-blue-900  hover:bg-stone-50 hover:text-blue-900   focus:ring-blue-900 hover:border-blue-900  hover:shadow-blue-300 cursor !w-[190px]"
 				}
 				href={href}
 			>
