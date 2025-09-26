@@ -32,14 +32,14 @@ const Suradnje = ({ suradnje }) => {
 		<section id="suradnje" ref={suradnje} className="bg-slate-200">
 			<div className="p-8 sm:p-16">
 				<h2 className="text-5xl font-oswald mb-5">Suradnje</h2>
-				<div className="custom_grid2 auto-rows-max sm:auto-rows-[10rem]">
+				<div className="custom_grid2 auto-rows-max  md:auto-rows-[10rem]">
 					<div
 						className="relative rounded-xl overflow-hidden group border-red_preh border-4"
 						ref={grid1}
 					>
 						<img
 							src="/images/suradnje/Nk Rudeš.jpg"
-							className="w-full h-full"
+							className="w-full h-full sm:object-cover md:object-fill"
 							alt="NK Rudeš"
 							loading="lazy"
 						/>
@@ -67,7 +67,7 @@ const Suradnje = ({ suradnje }) => {
 					>
 						<img
 							src="/images/suradnje/sonik.jpg"
-							className="w-full h-full"
+							className="w-full h-full sm:object-cover md:object-fill"
 							alt="KK Aleta Puntamika"
 							loading="lazy"
 						/>

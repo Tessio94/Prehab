@@ -1,19 +1,8 @@
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Suspense } from "react";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import { HelmetProvider } from "react-helmet-async";
 import AppLayout from "./Pages/AppLayout";
 import LoadingSpinner from "./components/LoadingSpinner";
-// import Home from "./Pages/Home";
-// import Kontakt from "./Pages/Kontakt";
-// import Fotogalerija from "./Pages/Fotogalerija";
-// import Opis from "./Pages/Opis";
-// import PagesNotFound from "./Pages/PagesNotFound";
-// import Zdravlje from "./Pages/Zdravlje";
-// import SkoliozaKamp from "./Pages/zdravlje/SkoliozaKamp";
-// import LoadingSpinner from "./components/LoadingSpinner";
 
 const router = createBrowserRouter([
 	{
@@ -23,6 +12,7 @@ const router = createBrowserRouter([
 				<AppLayout />
 			</Suspense>
 		),
+		HydrateFallback: () => null,
 		children: [
 			{
 				index: true,
@@ -77,13 +67,6 @@ const router = createBrowserRouter([
 					return { Component: PagesNotFound };
 				},
 			},
-			// { index: true, element: <Home /> },
-			// { path: "o-nama", element: <Opis /> },
-			// { path: "zdravlje", element: <Zdravlje /> },
-			// { path: "zdravlje/skolioza-kamp", element: <SkoliozaKamp /> },
-			// { path: "fotogalerija", element: <Fotogalerija /> },
-			// { path: "kontakt", element: <Kontakt /> },
-			// { path: "*", element: <PagesNotFound /> },
 		],
 	},
 ]);

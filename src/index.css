@@ -626,3 +626,9 @@ header .active {
 		transform: rotate(-130deg);
 	}
 }
+
+@media screen and (max-width: 640px) {
+	.custom_grid2 {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+}

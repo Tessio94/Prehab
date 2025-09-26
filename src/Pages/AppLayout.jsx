@@ -1,15 +1,12 @@
-import { Outlet, useLocation, useNavigation } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useEffect, useRef } from "react";
-
 import { preloadImages } from "../utils/preload";
 import LoadingSpinner from "../components/LoadingSpinner";
 
 const AppLayout = () => {
 	const location = useLocation();
-	const navigation = useNavigation();
-	// console.log("navigation", navigation);
 
 	const usluge = useRef(null);
 	const suradnje = useRef(null);

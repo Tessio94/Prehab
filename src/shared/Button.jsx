@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Button = ({ children, type, href, header }) => {
 	const base =
@@ -65,16 +66,16 @@ const Button = ({ children, type, href, header }) => {
 
 	if (type === "blue") {
 		return (
-			<a
+			<Link
 				className={
 					base +
 					" " +
 					"bg-blue-900  hover:bg-stone-50 hover:text-blue-900   focus:ring-blue-900 hover:border-blue-900  hover:shadow-blue-300 cursor"
 				}
-				href={href}
+				to={href}
 			>
 				{children}
-			</a>
+			</Link>
 		);
 	}
 

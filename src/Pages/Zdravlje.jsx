@@ -98,9 +98,12 @@ const Zdravlje = () => {
 								Ne čekaj! Rezerviraj svoje mjesto već danas!
 							</span>
 						</p>
-						<Button type="blue" href="/zdravlje/skolioza-kamp">
+						<Button type="blue" href="skolioza-kamp">
 							Pročitaj više <FaArrowRight />
 						</Button>
+						{/* <Link href="skolioza-kamp">
+							Pročitaj više <FaArrowRight />
+						</Link> */}
 					</div>
 					<div
 						className="rounded-xl overflow-hidden hover:scale-105 transition-all duration-1000"
