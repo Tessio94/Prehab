@@ -6,7 +6,7 @@ import { preloadImages } from "../utils/preload";
 import LoadingSpinner from "../components/LoadingSpinner";
 
 const AppLayout = () => {
-  const [bg, setBg] = useState("/public/images/Nikola/prehab Nikola1.jpg");
+  const [bg, setBg] = useState("/images/Nikola/prehab Nikola1.jpg");
 
   const location = useLocation();
 
@@ -46,29 +46,29 @@ const AppLayout = () => {
   useLayoutEffect(() => {
     const updateBg = () => {
       const w = window.innerWidth;
-      let path = "/public/images/Nikola/prehab Nikola1.jpg"; // default
+      let path = "/images/Nikola/prehab Nikola1.jpg"; // default
 
       switch (true) {
         case w >= 1600:
-          path = "/public/images/Nikola/prehab Nikola.jpg";
+          path = "/images/Nikola/prehab Nikola.jpg";
           break;
         case w >= 1280:
-          path = "/public/images/Nikola/prehab Nikolaxl.jpg";
+          path = "/images/Nikola/prehab Nikolaxl.jpg";
           break;
         case w >= 1024:
-          path = "/public/images/Nikola/prehab Nikolalg.jpg";
+          path = "/images/Nikola/prehab Nikolalg.jpg";
           break;
         case w >= 768:
-          path = "/public/images/Nikola/prehab Nikolamd.jpg";
+          path = "/images/Nikola/prehab Nikolamd.jpg";
           break;
         case w >= 640:
-          path = "/public/images/Nikola/prehab Nikolasm.jpg";
+          path = "/images/Nikola/prehab Nikolasm.jpg";
           break;
         case w >= 450:
-          path = "/public/images/Nikola/prehab Nikolaxsm.jpg";
+          path = "/images/Nikola/prehab Nikolaxsm.jpg";
           break;
         default:
-          path = "/public/images/Nikola/prehab Nikola1.jpg";
+          path = "/images/Nikola/prehab Nikola1.jpg";
       }
 
       setBg(path);
