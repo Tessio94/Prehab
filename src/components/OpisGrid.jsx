@@ -1,9 +1,6 @@
 import sr from "../library/ScrollReveal";
-import { FaArrowDown } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 import Button from "../shared/Button";
-import Suradnje from "./Suradnje";
-import Certifikati from "./Certifikati";
 import { useEffect, useRef } from "react";
 
 const OpisGrid = () => {
@@ -43,86 +40,6 @@ const OpisGrid = () => {
         reset: false,
       }
     );
-    // sr.reveal(grid2.current, {
-    //   duration: 1000,
-    //   delay: 50,
-    //   distance: "200px",
-    //   easing: "ease-in-out",
-    //   origin: "right",
-    //   reset: false,
-    // });
-    // sr.reveal(grid3.current, {
-    //   duration: 1000,
-    //   delay: 50,
-    //   distance: "200px",
-    //   easing: "ease-in-out",
-    //   origin: "bottom",
-    //   reset: false,
-    // });
-    // sr.reveal(grid4.current, {
-    //   duration: 1000,
-    //   delay: 50,
-    //   distance: "200px",
-    //   easing: "ease-in-out",
-    //   origin: "left",
-    //   reset: false,
-    // });
-    // sr.reveal(grid5.current, {
-    //   duration: 1000,
-    //   delay: 50,
-    //   distance: "200px",
-    //   easing: "ease-in-out",
-    //   origin: "right",
-    //   reset: false,
-    // });
-    // sr.reveal(grid6.current, {
-    //   duration: 1000,
-    //   delay: 50,
-    //   distance: "200px",
-    //   easing: "ease-in-out",
-    //   origin: "bottom",
-    //   reset: false,
-    // });
-    // sr.reveal(grid7.current, {
-    //   duration: 1000,
-    //   delay: 50,
-    //   distance: "200px",
-    //   easing: "ease-in-out",
-    //   origin: "bottom",
-    //   reset: false,
-    // });
-    // sr.reveal(grid8.current, {
-    //   duration: 1000,
-    //   delay: 50,
-    //   distance: "200px",
-    //   easing: "ease-in-out",
-    //   origin: "left",
-    //   reset: false,
-    // });
-    // sr.reveal(grid9.current, {
-    //   duration: 1000,
-    //   delay: 50,
-    //   distance: "200px",
-    //   easing: "ease-in-out",
-    //   origin: "left",
-    //   reset: false,
-    // });
-    // sr.reveal(grid10.current, {
-    //   duration: 1000,
-    //   delay: 50,
-    //   distance: "200px",
-    //   easing: "ease-in-out",
-    //   origin: "bottom",
-    //   reset: false,
-    // });
-    // sr.reveal(grid11.current, {
-    //   duration: 1000,
-    //   delay: 50,
-    //   distance: "200px",
-    //   easing: "ease-in-out",
-    //   origin: "right",
-    //   reset: false,
-    // });
   }, []);
 
   return (
@@ -140,6 +57,9 @@ const OpisGrid = () => {
               src="/images/logo/Prehab1.svg"
               alt="Prehab ilustracija"
               className="max-h-[35rem] hover:scale-110 transition-all duration-1000"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
               width="400"
               height="288"
               // loading="lazy"
