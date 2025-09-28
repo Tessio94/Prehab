@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Button = ({ children, type, href, header }) => {
   const base =
@@ -66,7 +66,8 @@ const Button = ({ children, type, href, header }) => {
 
   if (type === "blue") {
     return (
-      <Link
+      <HashLink
+        smooth
         className={
           base +
           " " +
@@ -75,7 +76,7 @@ const Button = ({ children, type, href, header }) => {
         to={href}
       >
         {children}
-      </Link>
+      </HashLink>
     );
   }
 

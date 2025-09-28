@@ -26,7 +26,7 @@ const HomeProfile = () => {
         >
           <div className="overflow-hidden w-full h-full aspect-square basis-1/2">
             <img
-              src="/images/Nikola/O nikoli 2.png"
+              src="/images/Nikola/O_nikoli_2.png"
               alt="Nikola Lukić slika"
               className="h-full w-full object-cover rounded-custom_radius object-center"
               loading="lazy"
@@ -43,7 +43,7 @@ const HomeProfile = () => {
         >
           <div className="overflow-hidden w-full h-full aspect-square rounded-custom_radius basis-1/2">
             <img
-              src="/images/Nikola/masažni stol 1.png"
+              src="/images/Nikola/masažni_stol_1.png"
               alt="masažni stol prehab"
               className="h-full w-full  rounded-custom_radius object-cover object-center"
               loading="lazy"
@@ -62,7 +62,7 @@ const HomeProfile = () => {
         >
           <div className="overflow-hidden w-full h-full aspect-square rounded-custom_radius basis-1/2">
             <img
-              src="/images/Nikola/višnjik 1.png"
+              src="/images/Nikola/višnjik_1.png"
               alt="zadar višnjik"
               className="h-full w-full object-cover rounded-custom_radius"
               loading="lazy"

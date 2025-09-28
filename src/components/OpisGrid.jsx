@@ -48,7 +48,7 @@ const OpisGrid = () => {
         <h1 className="text-5xl font-oswald py-[5rem] text-center preh-background">
           O nama
         </h1>
-        <div className="custom_grid px-10 py-5 bg-slate-200 mb-10">
+        <div className="custom_grid md:px-10 py-2 md:py-5 bg-slate-200 mb-1 sm:mb-10">
           <div
             className="p-5 flex justify-center hover:scale-105 transition-all duration-1000"
             ref={grid8}
@@ -101,7 +101,7 @@ const OpisGrid = () => {
             ref={grid2}
           >
             <img
-              src="/images/Nikola/masažni stol.jpg"
+              src="/images/Nikola/masažni_stol.jpg"
               alt="masažni stol Prehab"
               className="w-full h-full object-cover object-bottom hover:scale-110 transition-all duration-1000"
               width="748"

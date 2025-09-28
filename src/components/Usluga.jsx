@@ -35,8 +35,8 @@ const Usluga = ({ usluga }) => {
           onClick={() => setActive(!active)}
           className={
             active
-              ? `px-5 py-1 bg-slate-100 text-red_preh font-oswald rounded-xl flex justify-center items-center hover:text-slate-100 hover:bg-red_preh border-red_preh border-2 transition-all duration-500 gap-1`
-              : `px-5 py-1 bg-red_preh text-slate-100 font-oswald rounded-xl flex justify-center items-center hover:text-red_preh hover:bg-slate-100 border-red_preh border-2 transition-all duration-500 gap-1`
+              ? `px-5 py-1 bg-slate-100 text-red_preh font-oswald rounded-xl flex justify-center items-center lg:hover:text-slate-100 lg:hover:bg-red_preh border-red_preh border-2 transition-all duration-500 gap-1`
+              : `px-5 py-1 bg-red_preh text-slate-100 font-oswald rounded-xl flex justify-center items-center lg:hover:text-red_preh lg:hover:bg-slate-100 border-red_preh border-2 transition-all duration-500 gap-1`
           }
         >
           {active ? "Minimiziraj" : "Pogledaj više"}
