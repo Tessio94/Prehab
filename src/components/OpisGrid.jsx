@@ -58,7 +58,7 @@ const OpisGrid = () => {
               alt="Prehab ilustracija"
               className="max-h-[35rem] hover:scale-110 transition-all duration-1000"
               loading="eager"
-              fetchPriority="high"
+              fetchpriority="high"
               decoding="async"
               width="400"
               height="288"
