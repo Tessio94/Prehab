@@ -6,9 +6,9 @@ import LoadingSpinner from "../components/LoadingSpinner";
 // import { preloadImages } from "../utils/preload";
 
 const AppLayout = () => {
-  const [bg, setBg] = useState("/public/images/Nikola/prehab Nikola1.jpg");
+  const [bg, setBg] = useState("/images/Nikola/prehab Nikola1.jpg");
   const [bgSmall, setBgSmall] = useState(
-    "/public/images/Nikola/prehab Nikola1_low.webp"
+    "/images/Nikola/prehab Nikola1_low.webp"
   );
   const [loaded, setLoaded] = useState(false);
 
@@ -52,37 +52,37 @@ const AppLayout = () => {
 
     const updateBg = () => {
       const w = window.innerWidth;
-      let path = "/public/images/Nikola/prehab Nikola1.jpg";
-      let pathLow = "/public/images/Nikola/prehab Nikola1_low.webp";
+      let path = "/images/Nikola/prehab Nikola1.jpg";
+      let pathLow = "/images/Nikola/prehab Nikola1_low.webp";
 
       switch (true) {
         case w >= 1600:
-          path = "/public/images/Nikola/prehab Nikola.jpg";
-          pathLow = "/public/images/Nikola/prehab Nikola_low.webp";
+          path = "/images/Nikola/prehab Nikola.jpg";
+          pathLow = "/images/Nikola/prehab Nikola_low.webp";
           break;
         case w >= 1280:
-          path = "/public/images/Nikola/prehab Nikolaxl.jpg";
-          pathLow = "/public/images/Nikola/prehab Nikolaxl_low.webp";
+          path = "/images/Nikola/prehab Nikolaxl.jpg";
+          pathLow = "/images/Nikola/prehab Nikolaxl_low.webp";
           break;
         case w >= 1024:
-          path = "/public/images/Nikola/prehab Nikolalg.jpg";
-          pathLow = "/public/images/Nikola/prehab Nikolalg_low.webp";
+          path = "/images/Nikola/prehab Nikolalg.jpg";
+          pathLow = "/images/Nikola/prehab Nikolalg_low.webp";
           break;
         case w >= 768:
-          path = "/public/images/Nikola/prehab Nikolamd.jpg";
-          pathLow = "/public/images/Nikola/prehab Nikolamd_low.webp";
+          path = "/images/Nikola/prehab Nikolamd.jpg";
+          pathLow = "/images/Nikola/prehab Nikolamd_low.webp";
           break;
         case w >= 640:
-          path = "/public/images/Nikola/prehab Nikolasm.jpg";
-          pathLow = "/public/images/Nikola/prehab Nikolasm_low.webp";
+          path = "/images/Nikola/prehab Nikolasm.jpg";
+          pathLow = "/images/Nikola/prehab Nikolasm_low.webp";
           break;
         case w >= 450:
-          path = "/public/images/Nikola/prehab Nikolaxsm.jpg";
-          pathLow = "/public/images/Nikola/prehab Nikolaxsm_low.webp";
+          path = "/images/Nikola/prehab Nikolaxsm.jpg";
+          pathLow = "/images/Nikola/prehab Nikolaxsm_low.webp";
           break;
         default:
-          path = "/public/images/Nikola/prehab Nikola1.jpg";
-          pathLow = "/public/images/Nikola/prehab Nikola1_low.webp";
+          path = "/images/Nikola/prehab Nikola1.jpg";
+          pathLow = "/images/Nikola/prehab Nikola1_low.webp";
       }
 
       setLoaded(false);
