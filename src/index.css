@@ -275,6 +275,10 @@ header .active {
   transform: none;
 }
 
+.image-gallery-image {
+  min-height: fit-content;
+}
+
 /*-------------------------spinner/preloader------------------------*/
 .preloader {
   /* Body Overlay */
