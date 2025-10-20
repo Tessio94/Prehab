@@ -57,9 +57,11 @@ html {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
+		background-size: 60px 45px;
 		background: repeat
 				linear-gradient(rgba(235, 82, 82, 0.534), rgba(39, 33, 39, 0.425)),
-			url(/public/images/logo/ikona_small.svg);
+			url(/public/images/logo/ikona_banner.png);
+		border-bottom: 1px solid #ffffff;
 	}
 
 	.preh-background {
