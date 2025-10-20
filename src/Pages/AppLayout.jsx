@@ -37,7 +37,7 @@ const AppLayout = () => {
       <div
         className={
           location.pathname === "/"
-            ? "relative h-screen shadow-2xl overflow-x-clip after:linear_shadow2 after:sm:linear_shadow after:bg-gradient-to-r from-black  after:absolute after:top-[7.5rem] after:left-0 after:w-[70%]  after:bg-opacity-50  after:z-0"
+            ? "relative h-screen shadow-2xl overflow-x-clip after:h-screen after:bg-gradient-to-r from-black  after:absolute after:top-0 after:left-0 after:w-[70%]  after:bg-opacity-50  after:z-0"
             : ""
         }
       >
