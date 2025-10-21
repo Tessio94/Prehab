@@ -1,6 +1,6 @@
 const Cjenik = () => {
 	return (
-		<section id="cjenik" className="mb-12 bg-slate-200">
+		<section id="cjenik" className="pb-12 bg-slate-200">
 			<div className="p-8">
 				<h1 className="text-5xl font-oswald mb-10">Cjenik</h1>
 				<div className="flex flex-row flex-wrap justify-between text-white">
