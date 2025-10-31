@@ -61,13 +61,14 @@ const OpisGrid = () => {
 					O nama
 				</h1>
 				<div className="custom_grid md:px-10 py-2 md:py-5 bg-slate-200 mb-1 sm:mb-10">
-					<div className="p-5 flex justify-center" ref={grid8}>
+					<div className="p-5 flex justify-center">
 						<img
+							ref={grid8}
 							src="/images/logo/Prehab1.svg"
 							alt="Prehab ilustracija"
 							className="max-h-[35rem]"
 							loading="eager"
-							fetchpriority="high"
+							fetchriority="high"
 							decoding="async"
 							width="400"
 							height="288"
