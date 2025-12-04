@@ -48,12 +48,16 @@ export const handler = async (event) => {
 		};
 
 		const transporter = nodemailer.createTransport({
-			host: "smtpout.secureserver.net",
+			host: "smtp.gmail.com",
 			secure: true,
 			port: 465,
 			auth: {
+				type: "OAuth2",
 				user: process.env.EMAIL_FROM,
-				pass: process.env.PASS,
+				clientId: process.env.OAUTH_CLIENT_ID,
+				clientSecret: process.env.OAUTH_SECRET,
+				refreshToken: process.env.OAUTH_REFRESH_TOKEN,
+				accessToken: process.env.OAUTH_ACCESS_TOKEN,
 			},
 		});
 
