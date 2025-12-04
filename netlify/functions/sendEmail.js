@@ -30,13 +30,13 @@ export const handler = async (event) => {
 			subject: "Novi upit sa Prehab stranice",
 			html: `
     <p>
-        <span style="font-weight: bold;">Ime: </span> ${data.user}
+        <span style="font-weight: bold;">Ime i prezime: </span> ${data.user}
     </p>
     <p>
         <span style="font-weight: bold;">Email: </span> ${data.email}
     </p>
     <p>
-        <span style="font-weight: bold;">Email: </span> ${data.location}
+        <span style="font-weight: bold;">Lokacija: </span> ${data.location}
     </p>
     <p>
         <span style="font-weight: bold;">Poruka: </span>${data.message}
