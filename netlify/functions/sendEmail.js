@@ -13,7 +13,7 @@ export const handler = async (event) => {
 	try {
 		const body = JSON.parse(event.body);
 
-		const data = contactSchema.parse(body);
+		const data = contactSchema.parse(...body);
 
 		if (data.botfield) {
 			// bot detected

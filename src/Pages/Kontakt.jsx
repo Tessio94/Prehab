@@ -323,7 +323,7 @@ const Kontakt = () => {
 							</div>
 							<button
 								type="submit"
-								className="w-full mx-auto py-2 px-5 bg-red_preh rounded-xl text-xl font-oswald border-2 font-bold text-white hover:text-red_preh hover:bg-slate-100 hover:border-red_preh hover:border-2 transition-all duration-500 group"
+								className="w-full mx-auto py-2 px-5 bg-red_preh rounded-xl text-xl font-oswald border-2 font-bold text-white hover:text-red_preh hover:bg-slate-100 hover:border-red_preh hover:border-2 transition-all duration-500 group flex items-center justify-center"
 							>
 								{loading ? (
 									<svg
