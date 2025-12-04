@@ -13,7 +13,7 @@ export const handler = async (event) => {
 	try {
 		const body = JSON.parse(event.body);
 
-		const data = contactSchema.parse(...body);
+		const data = contactSchema.parse(body);
 
 		if (data.botfield) {
 			// bot detected
@@ -78,34 +78,4 @@ export const handler = async (event) => {
 			};
 		}
 	}
-	// const { name, email, message } = JSON.parse(req.body);
-
-	// const transporter = nodemailer.createTransport({
-	// 	host: "smtp.gmail.com",
-	// 	port: 587,
-	// 	secure: false,
-	// 	auth: {
-	// 		user: process.env.EMAIL_USER,
-	// 		pass: process.env.EMAIL_PASS,
-	// 	},
-	// });
-
-	// try {
-	// 	await transporter.sendMail({
-	// 		from: email,
-	// 		to: process.env.EMAIL_USER,
-	// 		subject: `New message from ${name}`,
-	// 		text: message,
-	// 	});
-
-	// 	return {
-	// 		statusCode: 200,
-	// 		body: JSON.stringify({ success: true }),
-	// 	};
-	// } catch (err) {
-	// 	return {
-	// 		statusCode: 500,
-	// 		body: JSON.stringify({ error: err.message }),
-	// 	};
-	// }
 };

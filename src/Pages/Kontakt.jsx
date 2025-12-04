@@ -37,9 +37,7 @@ const Kontakt = () => {
 			const res = await fetch("/.netlify/functions/sendEmail", {
 				method: "POST",
 				cache: "no-cache",
-				body: JSON.stringify({
-					formValues,
-				}),
+				body: JSON.stringify(formValues),
 				headers: {
 					"Content-Type": "application/json",
 				},
