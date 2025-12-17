@@ -46,7 +46,7 @@ export const handler = async (event) => {
 				"X-Entity-Ref-ID": "newmail",
 			},
 		};
-
+		console.log("aaaaaaaaaaaaaaa");
 		const transporter = nodemailer.createTransport({
 			host: "smtp.gmail.com",
 			secure: true,
@@ -57,7 +57,7 @@ export const handler = async (event) => {
 				clientId: process.env.OAUTH_CLIENT_ID,
 				clientSecret: process.env.OAUTH_SECRET,
 				refreshToken: process.env.OAUTH_REFRESH_TOKEN,
-				// accessToken: process.env.OAUTH_ACCESS_TOKEN,
+				accessToken: process.env.OAUTH_ACCESS_TOKEN,
 			},
 		});
 
@@ -76,6 +76,7 @@ export const handler = async (event) => {
 			};
 		}
 		if (err instanceof Error) {
+			console.log("errr", err.message);
 			return {
 				statusCode: 500,
 				body: JSON.stringify({ error: err.message }),
