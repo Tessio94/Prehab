@@ -48,7 +48,7 @@ const Header = () => {
 				navbar.current.classList.toggle("opacity-0", window.scrollY > 700);
 				navbar.current.classList.toggle(
 					"pointer-events-none",
-					window.scrollY > 700
+					window.scrollY > 700,
 				);
 			}
 		};
@@ -85,7 +85,7 @@ const Header = () => {
 						height="80"
 						width="80"
 					/>
-					<h1 className="lg:text-3xl text-2xl font-bold font-oswald">Prehab</h1>
+					<p className="lg:text-3xl text-2xl font-bold font-oswald">Prehab</p>
 				</Link>
 
 				<nav>

@@ -80,12 +80,3 @@ const HomeProfile = () => {
 };
 
 export default HomeProfile;
-
-/*
-1) naslovnica, staviti na prvi grid prijelaz after elementa sa tipa pogledaj više o meni itd.
-2) Drugo na naslovnici sa velikom slikom ide teskt o prehabu
-3) onda idu usluge (potencijalno grid icon sa ikonama i tekstom)
-3.1) ubaciti u usluge grid di se preko dvije kolumen nalaze plakati
-4) ubaciti hyperplexed slider te dodatno link sa više
-** neam hrvoja, dovrštii stranici na poslu
-*/

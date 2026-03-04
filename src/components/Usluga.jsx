@@ -27,9 +27,9 @@ const Usluga = ({ usluga }) => {
 			<div className="relative flex justify-center items-center" ref={grid1}>
 				<img src={img} alt={imageDesc} className="w-40 z-0" />
 			</div>
-			<h2 className="text-center text-[1.2rem] font-bold font-oswald mb-3">
+			<h3 className="text-center text-[1.2rem] font-bold font-oswald mb-3">
 				{name}
-			</h2>
+			</h3>
 			<div className="flex justify-center items-center">
 				<button
 					onClick={() => setActive(!active)}

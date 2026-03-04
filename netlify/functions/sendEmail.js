@@ -46,7 +46,7 @@ export const handler = async (event) => {
 				"X-Entity-Ref-ID": "newmail",
 			},
 		};
-		console.log("aaaaaaaaaaaaaaa");
+
 		const transporter = nodemailer.createTransport({
 			host: "smtp.gmail.com",
 			secure: true,
@@ -76,7 +76,6 @@ export const handler = async (event) => {
 			};
 		}
 		if (err instanceof Error) {
-			console.log("errr", err.message);
 			return {
 				statusCode: 500,
 				body: JSON.stringify({ error: err.message }),

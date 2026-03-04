@@ -37,7 +37,7 @@ const OpisGrid = () => {
 				easing: "ease-in-out",
 				origin: "bottom",
 				reset: false,
-			}
+			},
 		);
 
 		sr.reveal(
@@ -50,7 +50,7 @@ const OpisGrid = () => {
 				easing: "ease-in-out",
 				origin: "left",
 				reset: false,
-			}
+			},
 		);
 	}, []);
 
@@ -68,7 +68,7 @@ const OpisGrid = () => {
 							alt="Prehab ilustracija"
 							className="max-h-[35rem]"
 							loading="eager"
-							fetchriority="high"
+							fetchPriority="high"
 							decoding="async"
 							width="400"
 							height="288"

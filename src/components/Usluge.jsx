@@ -2,18 +2,18 @@ import data from "../data/data";
 import Usluga from "./Usluga";
 
 const Usluge = ({ usluge }) => {
-  return (
-    <section id="usluge" className="mb-12" ref={usluge}>
-      <div className="p-8">
-        <h1 className="text-5xl font-oswald mb-10">Usluge</h1>
-        <div className="custom_grid2 auto-rows-[17rem]">
-          {data.map((usluga) => {
-            return <Usluga usluga={usluga} key={usluga.id} />;
-          })}
-        </div>
-      </div>
-    </section>
-  );
+	return (
+		<section id="usluge" className="mb-12" ref={usluge}>
+			<div className="p-8">
+				<h2 className="text-5xl font-oswald mb-10">Usluge</h2>
+				<div className="custom_grid2 auto-rows-[17rem]">
+					{data.map((usluga) => {
+						return <Usluga usluga={usluga} key={usluga.id} />;
+					})}
+				</div>
+			</div>
+		</section>
+	);
 };
 
 export default Usluge;

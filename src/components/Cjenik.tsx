@@ -2,7 +2,7 @@ const Cjenik = () => {
 	return (
 		<section id="cjenik" className="pb-12 bg-slate-200">
 			<div className="p-8">
-				<h1 className="text-5xl font-oswald mb-10">Cjenik</h1>
+				<h2 className="text-5xl font-oswald mb-10">Cjenik</h2>
 				<div className="flex flex-row flex-wrap justify-between text-white">
 					<div className="flex flex-col gap-10 w-[100%] md:w-[50%] xxl:pr-20 xl:pr-10 md:px-4 py-2">
 						<div>

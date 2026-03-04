@@ -39,7 +39,7 @@ const Main = () => {
 					className="text-3xl sm:text-4xl font-oswald text-stone-50 mb-3"
 					ref={grid1}
 				>
-					Prehabilitation Therapy Center
+					Fizioterapija i rehabilitacija u Zadru i Biogradu
 				</h1>
 				<div ref={grid2}>
 					<h3 className="text-xl sm:text-2xl font-oswald text-stone-50 mb-3 flex gap-3 items-center">
@@ -53,7 +53,9 @@ const Main = () => {
 					className="flex flex-col gap-3 text-stone-50 text-lg sm:text-xl list-disc mb-5"
 					ref={grid3}
 				>
-					<li>Diplomirani fizioterapeut</li>
+					<li>
+						<strong>Nikola Lukić</strong> - Diplomirani fizioterapeut
+					</li>
 					<li>Centar za rehabilitaciju i pripremu</li>
 					<li>Procjena posture, dijagnostika i tretman</li>
 				</ul>
