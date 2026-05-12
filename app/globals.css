@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #121a29;
 }
 
 @theme inline {
@@ -60,6 +60,9 @@ html {
 
 body {
   background: var(--background);
+  /* background: url(/images/logo/background.png);
+  background-repeat: no-repeat;
+  background-size: cover; */
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }

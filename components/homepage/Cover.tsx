@@ -8,7 +8,7 @@ const Cover = () => {
 
   return (
     <div className="absolute inset-0">
-      <div className="absolute top-0 left-0 z-20 h-screen w-[70%] overflow-x-clip bg-linear-to-r from-black shadow-2xl"></div>
+      <div className="from-black_preh absolute top-0 left-0 z-20 h-screen w-[70%] overflow-x-clip bg-linear-to-r shadow-2xl"></div>
       {/* Blurred placeholder */}
       <Image
         src="/images/Nikola/prehab_nikola_low.webp"

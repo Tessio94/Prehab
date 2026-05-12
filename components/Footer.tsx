@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
       <Banner />
-      <footer className="flex flex-col items-center justify-center gap-3 bg-black p-4 py-8 text-stone-50">
+      <footer className="bg-black_preh flex flex-col items-center justify-center gap-3 p-4 py-8 text-stone-50">
         <Link href="/" className="flex items-center gap-4 text-stone-100">
           <img
             src="/images/logo/ikona.png"

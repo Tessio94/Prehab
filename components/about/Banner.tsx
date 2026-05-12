@@ -8,14 +8,14 @@ const Banner = () => {
   return (
     <div className="bg-black_preh py-10 md:px-10 lg:px-16">
       <div className="flex flex-col justify-between gap-15 px-6 max-xl:items-center xl:flex-row 2xl:p-10">
-        <div className="flex flex-col items-center xl:max-w-[280px] xl:items-start">
+        <div className="flex flex-col items-center gap-5 xl:max-w-[280px] xl:items-start">
           <p className="font-oswald text-red_preh text-xl font-semibold uppercase">
             Zašto odabrati nas
           </p>
           <p className="after:bg-red_preh font-oswald relative text-4xl font-bold text-white after:absolute after:top-[110%] after:left-0 after:h-1.5 after:w-20 after:rounded-2xl">
             Vaše zdravlje je naš prioritet
           </p>
-          <p className="font-inter mt-4 text-xl text-white">
+          <p className="font-inter mt-4 text-center text-xl text-white">
             Kombiniramo stručnost, iskustvo i individualni pristup kako bismo
             svakom klijentu omogućili najbolje rezultate.
           </p>
@@ -35,7 +35,7 @@ const Banner = () => {
             <p className="text-center text-2xl font-semibold text-white">
               Stručnost i iskustvo
             </p>
-            <p className="text-center text-2xl text-white">
+            <p className="text-center text-2xl text-white/80">
               Godine prakse i stalne edukacije osiguravaju vrhunsku skrb.
             </p>
           </div>
@@ -44,10 +44,10 @@ const Banner = () => {
               <BiUser className="text-red_preh text-6xl" />
             </div>
             <p className="text-center text-2xl font-semibold text-white">
-              Stručnost i iskustvo
+              Individualan pristup
             </p>
-            <p className="text-center text-2xl text-white">
-              Godine prakse i stalne edukacije osiguravaju vrhunsku skrb.
+            <p className="text-center text-2xl text-white/80">
+              Svaki plan terapije prilagođen je vašim potrebama i ciljevima.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5 border-r border-white p-2 max-lg:w-1/2 max-sm:w-full max-sm:border-r-0 max-sm:border-b max-sm:py-10">
@@ -55,10 +55,10 @@ const Banner = () => {
               <FiTarget className="text-red_preh text-6xl" />
             </div>
             <p className="text-center text-2xl font-semibold text-white">
-              Stručnost i iskustvo
+              Dokazani rezultati
             </p>
-            <p className="text-center text-2xl text-white">
-              Godine prakse i stalne edukacije osiguravaju vrhunsku skrb.
+            <p className="text-center text-2xl text-white/80">
+              Fokusirani smo na ostvarenje mjerljivih i dugoročnih rezultata.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5 p-2 max-lg:w-1/2 max-sm:w-full max-sm:border-r-0 max-sm:border-b max-sm:py-10">
@@ -66,10 +66,10 @@ const Banner = () => {
               <BiHeart className="text-red_preh text-6xl" />
             </div>
             <p className="text-center text-2xl font-semibold text-white">
-              Stručnost i iskustvo
+              Posvećenost i podrška
             </p>
-            <p className="text-center text-2xl text-white">
-              Godine prakse i stalne edukacije osiguravaju vrhunsku skrb.
+            <p className="text-center text-2xl text-white/80">
+              Uz vas smo kroz cijeli proces oporavka - svaki korak je važan.
             </p>
           </div>
         </div>

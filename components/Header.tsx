@@ -62,7 +62,10 @@ const Header = () => {
     // <header className={cn(pathname !== "/" ? "relative h-[7.5rem] w-full" : "absolute")}>
     <header className="relative h-[7.5rem] w-full">
       <div
-        className="relative z-50 flex w-full items-center justify-between bg-black px-10 py-5 transition-all duration-500 md:px-10 lg:px-16"
+        className={cn(
+          "relative z-50 flex w-full items-center justify-between px-10 py-5 transition-all duration-500 md:px-10 lg:px-16",
+          pathname === "/" ? "bg-black_preh/50" : "bg-black_preh",
+        )}
         ref={navbar}
       >
         {/* LOGO */}
