@@ -2,9 +2,9 @@
 
 const Suradnje = () => {
   return (
-    <section id="suradnje" className="bg-slate-200">
-      <div className="p-8 sm:p-16">
-        <h2 className="font-oswald mb-5 text-5xl">Suradnje</h2>
+    <section id="suradnje" className="bg-slate-100/80 py-16 md:px-10 lg:px-16">
+      <div className="p-10">
+        <h2 className="font-oswald text-red_preh mb-5 text-5xl">Suradnje</h2>
         <div className="custom_grid2 auto-rows-max md:auto-rows-[10rem]">
           <div className="group border-red_preh relative overflow-hidden rounded-xl border-4">
             <img

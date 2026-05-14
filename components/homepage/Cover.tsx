@@ -7,9 +7,9 @@ const Cover = () => {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <div className="absolute inset-0">
-      <div className="from-black_preh absolute top-0 left-0 z-20 h-screen w-[70%] overflow-x-clip bg-linear-to-r shadow-2xl"></div>
+    <>
       {/* Blurred placeholder */}
+      <div className="from-black_preh absolute inset-0 z-20 overflow-x-clip bg-linear-to-r from-25% via-[#121a29c5] via-40% to-transparent to-55% shadow-2xl"></div>
       <Image
         src="/images/Nikola/prehab_nikola_low.webp"
         alt="Nikola background"
@@ -29,11 +29,11 @@ const Cover = () => {
         quality={100}
         sizes="100vw"
         onLoad={() => setLoaded(true)}
-        className={`object-cover transition-opacity duration-700 ${
+        className={`left-30! object-cover object-right transition-opacity duration-700 ${
           loaded ? "opacity-100" : "opacity-0"
         }`}
       />
-    </div>
+    </>
   );
 };
 

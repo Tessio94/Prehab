@@ -78,9 +78,9 @@ const Page = () => {
       )}
       <Cover />
       <Main />
-      <Quote />
       <HomeProfile />
       <Intro />
+      <Quote />
       <Usluge />
       <Cjenik />
       <Trening />

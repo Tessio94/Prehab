@@ -1,10 +1,8 @@
-// import { useEffect, useRef } from "react";
-
 const HomeProfile = () => {
   return (
-    <section className="mb-10 bg-slate-100">
-      <div className="custom_grid m-auto w-[90%] gap-4 py-3 sm:w-[80%]">
-        <div className="flex h-[12rem] items-center justify-between gap-4 rounded-lg bg-slate-400 px-5 py-3">
+    <section className="relative z-100 pt-16 md:px-10 lg:px-16">
+      <div className="grid grid-cols-1 gap-4 p-10 pb-0 min-[750px]:grid-cols-2 xl:grid-cols-3">
+        <div className="border-red_preh_t shadow-black_preh/40 flex h-[12rem] items-center justify-between gap-4 rounded-lg border-2 bg-slate-100/80 px-5 py-3 shadow-xl">
           <div className="aspect-square h-full w-full basis-1/2 overflow-hidden">
             <img
               src="/images/Nikola/O_nikoli_2.jpg"
@@ -14,11 +12,13 @@ const HomeProfile = () => {
             />
           </div>
           <div className="flex basis-[45%] flex-col items-start gap-2 sm:basis-[50%]">
-            <h3 className="font-oswald text-3xl">Nikola Lukić</h3>
-            <p className="text-xl">bacc. Physioth.</p>
+            <h3 className="font-oswald text-red_preh text-3xl font-semibold">
+              Nikola Lukić
+            </h3>
+            <p className="font-oswald text-xl font-medium">bacc. Physioth.</p>
           </div>
         </div>
-        <div className="flex h-[12rem] items-center justify-between gap-4 rounded-lg bg-slate-400 px-5 py-3">
+        <div className="border-red_preh_t shadow-black_preh/40 flex h-[12rem] items-center justify-between gap-4 rounded-lg border-2 bg-slate-100/80 px-5 py-3 shadow-xl">
           <div className="rounded-custom_radius aspect-square h-full w-full basis-1/2 overflow-hidden">
             <img
               src="/images/Nikola/masažni_stol_1.jpg"
@@ -28,13 +28,15 @@ const HomeProfile = () => {
             />
           </div>
           <div className="flex basis-[45%] flex-col items-start gap-2 sm:basis-[50%]">
-            <h3 className="font-oswald text-3xl">Radno vrijeme:</h3>
-            <p className="text-md">pon-pet: 08-16 h</p>
+            <h3 className="font-oswald text-red_preh text-3xl font-semibold">
+              Radno vrijeme:
+            </h3>
+            <p className="font-oswald text-xl font-medium">pon-pet: 08-16 h</p>
             <em className="text-sm">*po dogovoru</em>
           </div>
         </div>
 
-        <div className="flex h-[12rem] items-center justify-between gap-4 rounded-lg bg-slate-400 px-5 py-3">
+        <div className="border-red_preh_t shadow-black_preh/40 flex h-[12rem] items-center justify-between gap-4 rounded-lg border-2 bg-slate-100/80 px-5 py-3 shadow-xl min-[750px]:last:col-span-2 min-[750px]:last:mx-auto min-[750px]:last:w-1/2 xl:last:col-span-1 xl:last:w-full">
           <div className="rounded-custom_radius aspect-square h-full w-full basis-1/2 overflow-hidden">
             <img
               src="/images/Nikola/višnjik_1.jpg"
@@ -44,9 +46,11 @@ const HomeProfile = () => {
             />
           </div>
           <div className="flex basis-[45%] flex-col items-start gap-2 sm:basis-[50%]">
-            <h3 className="font-oswald text-3xl">Lokacije:</h3>
-            <p className="text-md">Splitska ulica 3</p>
-            <p className="text-md">Bukovačka 15</p>
+            <h3 className="font-oswald text-red_preh text-3xl font-semibold">
+              Lokacije:
+            </h3>
+            <p className="font-oswald text-xl font-medium">Splitska ulica 3</p>
+            <p className="font-oswald text-xl font-medium">Bukovačka 15</p>
           </div>
         </div>
       </div>
@@ -55,12 +59,3 @@ const HomeProfile = () => {
 };
 
 export default HomeProfile;
-
-/*
-1) naslovnica, staviti na prvi grid prijelaz after elementa sa tipa pogledaj više o meni itd.
-2) Drugo na naslovnici sa velikom slikom ide teskt o prehabu
-3) onda idu usluge (potencijalno grid icon sa ikonama i tekstom)
-3.1) ubaciti u usluge grid di se preko dvije kolumen nalaze plakati
-4) ubaciti hyperplexed slider te dodatno link sa više
-** neam hrvoja, dovrštii stranici na poslu
-*/

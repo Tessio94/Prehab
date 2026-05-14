@@ -3,10 +3,10 @@ import Usluga from "./Usluga";
 
 const Usluge = () => {
   return (
-    <section id="usluge" className="mb-12">
-      <div className="p-8">
-        <h1 className="font-oswald mb-10 text-5xl">Usluge</h1>
-        <div className="custom_grid2 auto-rows-[17rem]">
+    <section id="usluge" className="py-16 md:px-10 lg:px-16">
+      <div className="p-10">
+        <h1 className="font-oswald text-red_preh mb-10 text-5xl">Usluge</h1>
+        <div className="grid auto-rows-[17rem] grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {data.map((usluga) => {
             return <Usluga usluga={usluga} key={usluga.id} />;
           })}

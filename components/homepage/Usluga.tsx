@@ -9,7 +9,7 @@ const Usluga = ({ usluga }) => {
   //   const refs = [useRef(null), useRef(null), useRef(null)];
 
   return (
-    <div className="rounded-xl bg-slate-300 py-5">
+    <div className="border-black_preh shadow-black_preh/60 rounded-xl border-2 bg-slate-100 py-5 shadow-xl">
       <div className="relative flex items-center justify-center">
         <img src={img} alt={imageDesc} className="z-0 w-40" />
       </div>
@@ -34,7 +34,7 @@ const Usluga = ({ usluga }) => {
       <p
         className={`font-oswald text-justify text-xl hyphens-auto transition-all duration-500 ${
           active
-            ? "relative z-10 w-full translate-y-0 rounded-b-xl bg-slate-100 px-5 py-3"
+            ? "bg-black_preh border-black_preh relative z-10 w-full translate-y-0 rounded-b-xl border-2 px-5 py-3 text-white"
             : "translate translate-y-[-120%] opacity-0"
         }`}
       >

@@ -13,7 +13,7 @@ const Button = ({
   header: string;
 }) => {
   const base =
-    "flex gap-1 items-center justify-center text-stone-50 px-4 py-2 rounded-2xl text-lg  border-2 font-semibold shadow-lg  tracking-wide transition-colors duration-300  focus:ring  focus:ring-offset-2 disabled:cursor-not-allowed  outline-none hover:border-2 hover:shadow-lg  w-fit";
+    "flex gap-1 items-center justify-center text-stone-50 px-4 py-2 rounded-lg text-lg  border-2 font-medium shadow-lg tracking-wide transition-colors duration-300  focus:ring  focus:ring-offset-2 disabled:cursor-not-allowed  outline-none hover:border-2 hover:shadow-lg  w-fit";
 
   if (type === "red" && href && header === "header") {
     return (
@@ -21,7 +21,7 @@ const Button = ({
         className={
           base +
           " " +
-          "group !w-[190px] bg-red-500 hover:border-red-500 hover:bg-stone-50 hover:text-red-500 hover:shadow-red-300 focus:ring focus:ring-red-500"
+          "group bg-red_preh hover:border-red_preh hover:text-red_preh focus:ring-red_preh !w-[190px] hover:bg-stone-50 hover:shadow-red-300 focus:ring"
         }
         href={href}
       >
@@ -36,7 +36,7 @@ const Button = ({
         className={
           base +
           " " +
-          "group bg-red-500 hover:border-red-500 hover:bg-stone-50 hover:text-red-500 hover:shadow-red-300 focus:ring focus:ring-red-500"
+          "group bg-red_preh hover:border-red_preh hover:text-red_preh focus:ring-red_preh hover:bg-stone-50 hover:shadow-red-300 focus:ring"
         }
         href={href}
       >
@@ -51,7 +51,7 @@ const Button = ({
         className={
           base +
           " " +
-          " bg-red-500 hover:border-red-500 hover:bg-stone-50 hover:text-red-500 hover:shadow-red-300 focus:ring focus:ring-red-500"
+          " bg-red_preh group hover:border-red_preh hover:text-red_preh focus:ring-red_preh hover:bg-stone-50 hover:shadow-red-300 focus:ring"
         }
       >
         {children}
@@ -65,7 +65,7 @@ const Button = ({
         className={
           base +
           " " +
-          "cursor !w-[190px] bg-blue-900 hover:border-blue-900 hover:bg-stone-50 hover:text-blue-900 hover:shadow-blue-300 focus:ring-blue-900"
+          "cursor bg-black_preh hover:border-black_preh hover:text-black_preh focus:ring-black_preh !w-[190px] hover:bg-stone-50 hover:shadow-blue-300"
         }
         href={href}
       >
@@ -80,7 +80,7 @@ const Button = ({
         className={
           base +
           " " +
-          "cursor bg-blue-900 hover:border-blue-900 hover:bg-stone-50 hover:text-blue-900 hover:shadow-blue-300 focus:ring-blue-900"
+          "cursor bg-black_preh hover:border-black_preh hover:text-black_preh focus:ring-black_preh hover:bg-stone-50 hover:shadow-blue-300"
         }
         href={href}
       >
