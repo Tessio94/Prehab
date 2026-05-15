@@ -33,6 +33,13 @@ const Cover = () => {
           loaded ? "opacity-100" : "opacity-0"
         }`}
       />
+      <Image
+        src="/images/location2.png"
+        alt=""
+        width={609}
+        height={223}
+        className="absolute right-10 bottom-0 z-100"
+      />
     </div>
   );
 };

@@ -61,13 +61,18 @@ const Header = () => {
   return (
     // <header className={cn(pathname !== "/" ? "relative h-[7.5rem] w-full" : "absolute")}>
     <header
-      className={cn("w-full", pathname === "/" ? "absolute" : "relative z-100")}
+      className={cn(
+        "w-full",
+        pathname === "/" || pathname.startsWith("/zdravlje/")
+          ? "absolute"
+          : "relative z-100",
+      )}
     >
       {/* LOGO */}
       <div
         className={cn(
           "relative z-50 flex h-30 w-full items-center justify-between px-10 pt-5 transition-all duration-500",
-          pathname === "/"
+          pathname === "/" || pathname.startsWith("/zdravlje/")
             ? "bg-transparent"
             : pathname !== "/fotogalerija"
               ? "bg-slate-100/80"
@@ -91,7 +96,9 @@ const Header = () => {
           <h1
             className={cn(
               "font-oswald text-2xl font-bold lg:text-3xl",
-              pathname === "/" ? "text-slate-100" : "text-black_preh",
+              pathname === "/" || pathname.startsWith("/zdravlje/")
+                ? "text-slate-100"
+                : "text-black_preh",
             )}
           >
             Prehab
