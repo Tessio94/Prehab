@@ -7,9 +7,9 @@ const Cover = () => {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <>
+    <div className="relative z-10 h-screen max-h-[1080px] w-full overflow-x-clip">
       {/* Blurred placeholder */}
-      <div className="from-black_preh absolute inset-0 z-20 overflow-x-clip bg-linear-to-r from-25% via-[#121a29c5] via-40% to-transparent to-55% shadow-2xl"></div>
+      <div className="absolute inset-0 z-20 bg-[linear-gradient(to_right,_#000_25%,_#121a29c5_40%,_transparent_55%,_transparent_80%,_#121a29c5_90%,_#000_100%)] shadow-2xl"></div>
       <Image
         src="/images/Nikola/prehab_nikola_low.webp"
         alt="Nikola background"
@@ -17,7 +17,7 @@ const Cover = () => {
         priority
         quality={30}
         sizes="100vw"
-        className="scale-105 object-cover blur-xl"
+        className="left-30! scale-105 object-cover blur-xl"
       />
 
       {/* Main image */}
@@ -33,7 +33,7 @@ const Cover = () => {
           loaded ? "opacity-100" : "opacity-0"
         }`}
       />
-    </>
+    </div>
   );
 };
 

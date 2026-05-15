@@ -21,55 +21,64 @@ const Header = () => {
 
   const pathname = usePathname();
 
-  const dropdown = useRef<HTMLUListElement>(null);
-  const navbar = useRef<HTMLDivElement>(null);
+  // const dropdown = useRef<HTMLUListElement>(null);
+  // const navbar = useRef<HTMLDivElement>(null);
 
   // Handle navbar scroll behavior
-  useEffect(() => {
-    if (window.innerWidth < 640) return;
+  // useEffect(() => {
+  //   if (window.innerWidth < 640) return;
 
-    const handleScroll = () => {
-      if (!navbar.current) return;
+  //   const handleScroll = () => {
+  //     if (!navbar.current) return;
 
-      if (window.scrollY > 0 && window.scrollY < 900) {
-        navbar.current.classList.remove("relative");
-        navbar.current.classList.add("fixed");
+  //     if (window.scrollY > 0 && window.scrollY < 900) {
+  //       navbar.current.classList.remove("relative");
+  //       navbar.current.classList.add("fixed");
 
-        navbar.current.classList.toggle("opacity-0", window.scrollY > 700);
-      } else {
-        navbar.current.classList.remove("opacity-0");
-      }
-    };
+  //       navbar.current.classList.toggle("opacity-0", window.scrollY > 700);
+  //     } else {
+  //       navbar.current.classList.remove("opacity-0");
+  //     }
+  //   };
 
-    if (pathname === "/") {
-      window.addEventListener("scroll", handleScroll);
-    } else {
-      navbar.current?.classList.remove("fixed");
-      navbar.current?.classList.add("relative");
-    }
+  //   if (pathname === "/") {
+  //     window.addEventListener("scroll", handleScroll);
+  //   } else {
+  //     navbar.current?.classList.remove("fixed");
+  //     navbar.current?.classList.add("relative");
+  //   }
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [pathname]);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [pathname]);
 
   // Close mobile menu on route change
-  useEffect(() => {
-    setHambActive(false);
-  }, [pathname]);
+  // useEffect(() => {
+  //   setHambActive(false);
+  // }, [pathname]);
 
   return (
     // <header className={cn(pathname !== "/" ? "relative h-[7.5rem] w-full" : "absolute")}>
-    <header className="relative h-[7.5rem] w-full">
+    <header
+      className={cn("w-full", pathname === "/" ? "absolute" : "relative z-100")}
+    >
+      {/* LOGO */}
       <div
         className={cn(
-          "relative z-50 flex w-full items-center justify-between px-10 py-5 transition-all duration-500 md:px-10 lg:px-16",
-          pathname === "/" ? "bg-black_preh/50" : "bg-black_preh",
+          "relative z-50 flex h-30 w-full items-center justify-between px-10 pt-5 transition-all duration-500",
+          pathname === "/"
+            ? "bg-transparent"
+            : pathname !== "/fotogalerija"
+              ? "bg-slate-100/80"
+              : "bg-[url(/images/logo/background.png)]",
         )}
-        ref={navbar}
+        // ref={navbar}
       >
-        {/* LOGO */}
-        <Link href="/" className="flex items-center gap-4 text-stone-100">
+        <div className="absolute inset-0 h-full w-full">
+          <Image src="/images/navbar12.png" alt="logo" fill />
+        </div>
+        <Link href="/" className="z-100 flex items-center gap-4">
           <Image
             src="/images/logo/ikona.png"
             alt="logo"
@@ -79,13 +88,19 @@ const Header = () => {
             className="border-red_preh_t h-20 w-20 rounded-xl border-[2px] shadow-2xl"
           />
 
-          <h1 className="font-oswald text-2xl font-bold lg:text-3xl">Prehab</h1>
+          <h1
+            className={cn(
+              "font-oswald text-2xl font-bold lg:text-3xl",
+              pathname === "/" ? "text-slate-100" : "text-black_preh",
+            )}
+          >
+            Prehab
+          </h1>
         </Link>
-
         {/* NAVIGATION */}
-        {/* <nav> */}
-        {/* HAMBURGER */}
-        {/* <button
+        <nav>
+          {/* HAMBURGER */}
+          {/* <button
             aria-label="Toggle navigation"
             onClick={() => setHambActive((prev) => !prev)}
             id="nav-icon1"
@@ -96,10 +111,10 @@ const Header = () => {
             <span className={hambActive ? "open" : ""}></span>
           </button> */}
 
-        {/* MENU */}
-        {/* <ul
-            ref={dropdown}
-            className={`font-oswald xsm:left-[50%] fixed top-0 left-[50%] z-10 flex h-[100vh] flex-col items-start justify-start gap-10 rounded-bl-xl bg-slate-400 px-10 pt-36 pb-5 text-2xl transition-all duration-500 sm:relative sm:top-0 sm:left-0 sm:h-fit sm:translate-x-0 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:bg-transparent sm:p-0 sm:text-base md:text-lg lg:text-xl xl:gap-6 ${
+          {/* MENU */}
+          <ul
+            // ref={dropdown}
+            className={`font-oswald xsm:left-[50%] fixed top-0 left-[50%] z-10 flex h-[100vh] flex-col items-start justify-start gap-10 rounded-bl-xl bg-slate-400 px-10 pt-36 pb-5 text-2xl font-medium transition-all duration-500 sm:relative sm:top-0 sm:left-0 sm:h-fit sm:translate-x-0 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:bg-transparent sm:p-0 sm:text-base md:text-lg lg:text-xl xl:gap-12 ${
               hambActive ? "translate-x-0" : "translate-x-[100%]"
             }`}
           >
@@ -110,8 +125,10 @@ const Header = () => {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className={`relative transition-all duration-500 before:absolute before:bottom-[-0.2rem] before:left-0 before:h-0.5 before:w-0 before:bg-stone-300 before:transition-all before:duration-500 hover:text-stone-400 hover:before:w-full ${
-                      isActive ? "text-red-500" : "text-stone-100"
+                    className={`font-oswald relative transition-all duration-500 before:absolute before:bottom-[-0.2rem] before:left-0 before:h-0.5 before:w-0 before:bg-stone-300 before:transition-all before:duration-500 ${
+                      isActive
+                        ? "text-black_preh underline"
+                        : "text-stone-100 hover:text-stone-400 hover:before:w-full"
                     }`}
                   >
                     {link.label}
@@ -120,7 +137,7 @@ const Header = () => {
               );
             })}
           </ul>
-        </nav> */}
+        </nav>
 
         {/* CONTACT + SOCIAL */}
         <div className="hidden flex-col items-center justify-center gap-3 md:flex">

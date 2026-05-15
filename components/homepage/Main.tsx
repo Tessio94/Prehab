@@ -5,7 +5,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Main = () => {
   return (
-    <section className="relative z-30 h-[calc(100vh-120px)] max-h-[calc(100vh-120px)] w-full pt-16 md:px-10 lg:px-16">
+    <section className="absolute top-30 z-100 h-[calc(100vh-120px)] max-h-[calc(100vh-120px)] w-full pt-16 md:px-10 lg:px-16">
       <div className="z-10 flex h-[60%] max-h-[600px] min-h-fit flex-col justify-between gap-5 p-10">
         <h1 className="font-oswald text-red_preh text-2xl uppercase sm:text-4xl">
           Prehabilitation Therapy Center
