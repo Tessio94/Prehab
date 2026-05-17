@@ -11,10 +11,10 @@ const Banner = ({
     <section className="py-10 md:px-10 lg:px-16">
       <div className="px-10">
         <div
-          className="flex flex-row items-center justify-between gap-10 rounded-xl p-10"
+          className="flex flex-col items-center justify-between gap-10 rounded-xl p-4 sm:p-8 xl:flex-row xl:p-10"
           style={{ backgroundColor: color }}
         >
-          <div className="flex flex-row items-center gap-10">
+          <div className="flex flex-row items-center sm:gap-6 lg:gap-10">
             <div className="to-red_preh from-red_preh rounded-full bg-linear-to-bl via-slate-100 p-6">
               <RiCalendarScheduleLine className="text-red_preh text-6xl" />
             </div>
@@ -32,7 +32,7 @@ const Banner = ({
           </div>
 
           <Link
-            className="font-inter flex flex-row items-center gap-3 rounded-lg px-5 py-3"
+            className="font-inter flex shrink-0 flex-row items-center gap-3 rounded-lg px-5 py-3"
             style={{ backgroundColor: buttonColor }}
             href="/kontakt"
           >

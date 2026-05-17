@@ -7,7 +7,8 @@
 
 @theme inline {
   /* COLORS */
-  --color-red_preh: #d23366;
+  /* --color-red_preh: #d23366; */
+  --color-red_preh: #c70808;
   --color-red_preh_t: #d233655d;
   --color-black_preh: #121a29;
 
@@ -56,6 +57,7 @@
 
 html {
   scroll-behavior: smooth;
+  /* color: #c70808; */
 }
 
 body {

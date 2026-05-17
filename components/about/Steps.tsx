@@ -9,7 +9,7 @@ const Steps = () => {
           <p className="font-oswald relative text-4xl font-bold text-black">
             Put do vašeg oporavka
           </p>
-          <p className="font-inter mt-4 text-center text-xl text-black">
+          <p className="font-inter mt-4 text-start text-xl text-black">
             Sustavan i provjeren proces koji osigurava siguran povratak pokretu
             i aktivnostima koje volite..
           </p>

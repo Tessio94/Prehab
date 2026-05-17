@@ -80,9 +80,14 @@ const Header = () => {
         )}
         // ref={navbar}
       >
-        <div className="absolute inset-0 h-full w-full">
-          <Image src="/images/navbar12.png" alt="logo" fill />
-        </div>
+        <Image
+          className="absolute top-0 right-0 left-0"
+          src="/images/navbar24.png"
+          alt="logo"
+          width={1952}
+          height={150}
+        />
+
         <Link href="/" className="z-100 flex items-center gap-4">
           <Image
             src="/images/logo/ikona.png"
@@ -134,7 +139,7 @@ const Header = () => {
                     href={link.href}
                     className={`font-oswald relative transition-all duration-500 before:absolute before:bottom-[-0.2rem] before:left-0 before:h-0.5 before:w-0 before:bg-stone-300 before:transition-all before:duration-500 ${
                       isActive
-                        ? "text-black_preh underline"
+                        ? "text-red_preh underline"
                         : "text-stone-100 hover:text-stone-400 hover:before:w-full"
                     }`}
                   >
@@ -147,18 +152,26 @@ const Header = () => {
         </nav>
 
         {/* CONTACT + SOCIAL */}
-        <div className="hidden flex-col items-center justify-center gap-3 md:flex">
-          <div className="text-md text-stone-100">
+        <div className="z-50 hidden flex-col items-center justify-center gap-3 md:flex">
+          <div className="text-md">
             <a
               href="tel:+0959064240"
-              className="flex items-center gap-2 text-stone-100"
+              className={cn(
+                "flex items-center gap-2",
+                pathname !== "/" ? "text-black_preh" : "text-stone-100",
+              )}
             >
               <BsTelephone />
               +095 906 4240
             </a>
           </div>
 
-          <ul className="text-md flex gap-3 text-stone-100">
+          <ul
+            className={cn(
+              "text-md flex gap-3",
+              pathname !== "/" ? "text-black_preh" : "text-stone-100",
+            )}
+          >
             <li className="cursor-pointer text-xl transition-all duration-500 hover:scale-125 hover:text-stone-400">
               <a
                 href="https://www.facebook.com/prehabilitationtherapycenter"

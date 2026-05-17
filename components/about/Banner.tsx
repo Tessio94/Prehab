@@ -15,7 +15,7 @@ const Banner = () => {
           <p className="after:bg-red_preh font-oswald relative text-4xl font-bold text-white after:absolute after:top-[110%] after:left-0 after:h-1.5 after:w-20 after:rounded-2xl">
             Vaše zdravlje je naš prioritet
           </p>
-          <p className="font-inter mt-4 text-center text-xl text-white">
+          <p className="font-inter mt-4 text-start text-xl text-white">
             Kombiniramo stručnost, iskustvo i individualni pristup kako bismo
             svakom klijentu omogućili najbolje rezultate.
           </p>

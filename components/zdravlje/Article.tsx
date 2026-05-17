@@ -26,12 +26,12 @@ const Article = () => {
         <p className="text-black_preh">
           Hidrogen je masu dobra stvar. Dođi na ekploziju u nosu u Prehab.
         </p>
-        <div className="mt-auto flex flex-row items-center gap-8">
-          <div className="text-red_preh flex flex-row items-center gap-3">
+        <div className="mt-auto flex flex-row items-center gap-4">
+          <div className="text-red_preh flex flex-row items-center gap-1.5">
             <CgCalendar className="text-3xl" />
             <time dateTime="">15.05.2025</time>
           </div>
-          <div className="text-red_preh flex flex-row items-center gap-2 font-semibold">
+          <div className="text-red_preh flex flex-row items-center gap-1.5 font-semibold">
             <span className="text-nowrap">Pročitajte više</span>{" "}
             <FaArrowRight className="transition-all duration-300 group-hover:translate-x-3" />
           </div>
