@@ -13,7 +13,7 @@ const Button = ({
   header: string;
 }) => {
   const base =
-    "flex gap-1 items-center justify-center text-stone-50 px-4 py-2 rounded-lg text-lg  border-2 font-medium shadow-lg tracking-wide transition-colors duration-300  focus:ring  focus:ring-offset-2 disabled:cursor-not-allowed  outline-none hover:border-2 hover:shadow-lg  w-fit";
+    "flex gap-1 items-center justify-center text-stone-50 px-4 py-2 max-[850px]:py-1 max-[850px]:px-3 rounded-lg text-lg  border-2 font-medium shadow-lg tracking-wide transition-colors duration-300  focus:ring  focus:ring-offset-2 disabled:cursor-not-allowed  outline-none hover:border-2 hover:shadow-lg  w-fit";
 
   if (type === "red" && href && header === "header") {
     return (

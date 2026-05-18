@@ -1,6 +1,6 @@
 const HomeProfile = () => {
   return (
-    <section className="relative z-100 pt-16 md:px-10 lg:px-16">
+    <section className="relative z-20 pt-16 md:px-10 lg:px-16">
       <div className="grid grid-cols-1 gap-4 p-10 pb-0 min-[750px]:grid-cols-2 xl:grid-cols-3">
         <div className="border-red_preh_t shadow-black_preh/40 flex h-[12rem] items-center justify-between gap-4 rounded-lg border-2 bg-slate-100/80 px-5 py-3 shadow-xl">
           <div className="aspect-square h-full w-full basis-1/2 overflow-hidden">

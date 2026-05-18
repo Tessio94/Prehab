@@ -8,8 +8,6 @@ const Cover = () => {
 
   return (
     <div className="relative z-10 w-full overflow-x-clip">
-      {/* Blurred placeholder */}
-      {/* <div className="absolute inset-0 z-20 bg-[linear-gradient(to_right,_#000_25%,_#121a29c5_40%,_transparent_55%,_transparent_80%,_#121a29c5_90%,_#000_100%)] shadow-2xl"></div> */}
       <div className="from-red_preh absolute inset-0 -z-10 bg-linear-to-b from-50% to-transparent"></div>
       {/* <Image
         src="/images/Nikola/prehab_nikola_low.webp"
@@ -39,19 +37,22 @@ const Cover = () => {
         alt="Nikola background high quality"
         width={1920}
         height={1080}
-        // fill
-        // priority
-        // quality={100}
-        // sizes="100vw"
-        // onLoad={() => setLoaded(true)}
+        className="hidden lg:block"
       />
-      {/* <Image
-        src="/images/location3.png"
-        alt=""
-        width={609}
-        height={223}
-        className="absolute right-5 bottom-0 z-100"
-      /> */}
+      <Image
+        src="/images/group82.png"
+        alt="Nikola background high quality"
+        width={1920}
+        height={1080}
+        className="hidden max-[600px]:hidden! max-lg:block"
+      />
+      <Image
+        src="/images/group8_small.png"
+        alt="Nikola background high quality"
+        width={1920}
+        height={1080}
+        className="hidden max-[600px]:block"
+      />
     </div>
   );
 };

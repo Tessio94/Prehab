@@ -12,7 +12,7 @@ const Articles = () => {
           </div>
           <div></div>
         </div>
-        <div className="grid w-fit items-stretch gap-10 rounded-2xl sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+        <div className="relative z-0 grid w-fit items-stretch gap-10 rounded-2xl sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
           <Article />
           <Article />
           <Article />
