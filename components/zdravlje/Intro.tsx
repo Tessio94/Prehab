@@ -1,13 +1,11 @@
 import Image from "next/image";
 import { GoTriangleDown } from "react-icons/go";
 
-// bg-theme1/10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26
-
 const Intro = () => {
   return (
     <section className="bg-slate-100">
-      <div className="flex w-full flex-col pt-16 pr-0! pl-6 md:px-10 lg:px-16 xl:flex-row">
-        <div className="flex flex-col items-start gap-6 p-10 max-md:p-0 max-md:py-10 sm:pb-16 xl:w-[50%] xl:py-26">
+      <div className="flex w-full flex-col px-6 md:px-10 lg:px-16 xl:flex-row">
+        <div className="flex flex-col items-start gap-6 px-10 max-md:px-0 max-md:py-10 sm:pb-16 xl:py-26">
           <h1 className="text-red_preh text-semibold font-oswald text-4xl max-[400px]:text-4xl">
             Naš blog
           </h1>
@@ -20,7 +18,7 @@ const Intro = () => {
             iz svijeta fizioterapije, rehabilitacije i zdravog načina života
           </p>
         </div>
-        <div className="h-full min-h-160 w-[50%] overflow-hidden rounded-l-full bg-[url(/images/zadar/slika1.jpg)] bg-cover bg-no-repeat max-xl:hidden"></div>
+        {/* <div className="h-full min-h-160 w-[50%] overflow-hidden rounded-l-full bg-[url(/images/zadar/slika1.jpg)] bg-cover bg-no-repeat max-xl:hidden"></div> */}
       </div>
     </section>
   );

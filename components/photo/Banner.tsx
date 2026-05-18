@@ -32,11 +32,11 @@ const Banner = ({
           </div>
 
           <Link
-            className="font-inter flex shrink-0 flex-row items-center gap-3 rounded-lg px-5 py-3"
+            className="font-inter flex shrink-0 flex-row items-center gap-2 rounded-lg px-5 py-3 sm:gap-3"
             style={{ backgroundColor: buttonColor }}
             href="/kontakt"
           >
-            <span className="text-2xl font-semibold text-white">
+            <span className="text-xl font-semibold text-white sm:text-2xl">
               Kontaktirajte nas
             </span>
             <BsArrowRight className="text-center text-3xl font-semibold text-white" />
