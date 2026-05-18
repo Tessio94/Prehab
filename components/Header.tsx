@@ -204,19 +204,19 @@ const Header = () => {
             <span
               className={cn(
                 "transition-300 border-theme1 absolute left-0 block h-[4px] w-full rounded-[9px] border bg-slate-100 transition-all ease-in-out",
-                hambActive ? "top-[16px] rotate-135" : "top-0 rotate-0",
+                hambActive ? "top-[13px] rotate-135" : "top-0 rotate-0",
               )}
             ></span>
             <span
               className={cn(
-                "transition-300 border-theme1 absolute top-[15px] block h-[4px] w-full rotate-0 rounded-[9px] border bg-slate-100 transition-all ease-in-out",
+                "transition-300 border-theme1 absolute top-[13px] block h-[4px] w-full rotate-0 rounded-[9px] border bg-slate-100 transition-all ease-in-out",
                 hambActive ? "-left-[60px] opacity-0" : "left-0 opacity-100",
               )}
             ></span>
             <span
               className={cn(
                 "transition-300 border-theme1 absolute left-0 block h-[4px] w-full rounded-[9px] border bg-slate-100 transition-all ease-in-out",
-                hambActive ? "top-[16px] -rotate-135" : "top-[30px] rotate-0",
+                hambActive ? "top-[13px] -rotate-135" : "top-[26px] rotate-0",
               )}
             ></span>
           </div>

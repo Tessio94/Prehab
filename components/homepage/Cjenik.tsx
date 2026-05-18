@@ -1,12 +1,15 @@
 const Cjenik = () => {
   return (
-    <section id="cjenik" className="bg-slate-100/80 py-16 md:px-10 lg:px-16">
-      <div className="p-10">
+    <section
+      id="cjenik"
+      className="bg-slate-100/80 px-6 py-16 md:px-10 lg:px-16"
+    >
+      <div className="p-10 max-md:p-0 max-md:py-10">
         <h1 className="font-oswald text_red_preh text-red_preh mb-10 text-5xl">
           Cjenik
         </h1>
-        <div className="flex flex-row flex-wrap justify-between text-white">
-          <div className="xxl:pr-20 flex w-[100%] flex-col gap-10 py-2 md:w-[50%] md:px-4 xl:pr-10">
+        <div className="flex flex-col flex-row flex-wrap justify-between text-white">
+          <div className="xxl:pr-20 flex w-[100%] flex-col gap-10 py-2 md:w-[50%] md:pr-5 xl:pr-10">
             <div>
               <h4 className="bg-red_preh rounded-xl py-2 text-center text-3xl text-white">
                 Masaže
@@ -144,7 +147,7 @@ const Cjenik = () => {
               </ul>
             </div>
           </div>
-          <div className="xxl:pl-20 flex w-[100%] flex-col gap-10 py-2 md:w-[50%] md:px-4 xl:pl-10">
+          <div className="xxl:pl-20 flex w-[100%] flex-col gap-10 py-2 md:w-[50%] md:pl-5 xl:pl-10">
             <div>
               <h4 className="bg-red_preh rounded-xl py-2 text-center text-3xl text-white">
                 Rehabilitacija

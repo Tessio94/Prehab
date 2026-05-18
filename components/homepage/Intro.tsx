@@ -74,9 +74,9 @@ const Intro = () => {
   return (
     <section
       id="intro"
-      className="relative overflow-hidden py-16 md:px-10 lg:px-16"
+      className="relative overflow-hidden px-6 py-16 md:px-10 lg:px-16"
     >
-      <div className="relative p-10">
+      <div className="relative p-10 max-md:p-0 max-md:py-10">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex items-stretch">
             {/* SLIDE 1 */}
@@ -212,7 +212,7 @@ const Intro = () => {
                     />
                   </div>
 
-                  <div className="relative hidden h-[320px] w-full sm:block lg:h-1/2">
+                  <div className="relative block h-[320px] w-full lg:h-1/2">
                     <Image
                       src="/images/certifikati/slika7.jpg"
                       alt="diplome prehab"
@@ -361,7 +361,7 @@ const Intro = () => {
 
         {/* PREV BUTTON */}
         <button
-          className="font-oswald text-black_preh hover:bg-black_preh bg-red_preh_t hover:text-red_preh absolute top-1/2 left-0 z-10 flex translate-y-[-50%] items-center rounded-xl px-8 py-3 text-4xl transition-all duration-500"
+          className="font-oswald text-black_preh hover:bg-black_preh bg-red_preh_t hover:text-red_preh absolute top-1/2 left-0 z-10 flex translate-y-[-50%] items-center rounded-xl px-8 py-3 text-4xl transition-all duration-500 max-md:-translate-x-4 max-md:px-2 max-md:py-6"
           onClick={scrollPrev}
         >
           <RiArrowLeftWideFill />
@@ -369,7 +369,7 @@ const Intro = () => {
 
         {/* NEXT BUTTON */}
         <button
-          className="font-oswald text-black_preh hover:bg-black_preh group bg-red_preh_t hover:text-red_preh absolute top-1/2 right-0 z-10 flex translate-y-[-50%] items-center rounded-xl px-8 py-3 text-4xl transition-all duration-500"
+          className="font-oswald text-black_preh hover:bg-black_preh group bg-red_preh_t hover:text-red_preh absolute top-1/2 right-0 z-10 flex translate-y-[-50%] items-center rounded-xl px-8 py-3 text-4xl transition-all duration-500 max-md:translate-x-4 max-md:px-2 max-md:py-6"
           onClick={scrollNext}
         >
           <RiArrowRightWideFill />

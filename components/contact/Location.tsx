@@ -7,8 +7,8 @@ const Location = () => {
   const [lokacija, setLokacija] = useState(true);
 
   return (
-    <div className="custom_grid mb-10 px-10 py-5">
-      <div className="flex flex-col items-start justify-center px-4 py-5">
+    <div className="custom_grid px-6 pt-16 md:px-10 lg:px-16">
+      <div className="flex flex-col items-start justify-center p-10 max-md:p-0 max-md:pt-10 max-md:pr-3 max-sm:pr-0">
         <h3 className="font-oswald text-red_preh mb-3 text-3xl font-bold">
           Potražite nas na mapi
         </h3>

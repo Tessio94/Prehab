@@ -1,7 +1,7 @@
 const Steps = () => {
   return (
-    <div className="bg-white py-10 md:px-10 lg:px-16">
-      <div className="flex flex-col items-center justify-between gap-15 px-6 xl:flex-row 2xl:p-10">
+    <div className="bg-white px-6 py-10 md:px-10 lg:px-16">
+      <div className="flex flex-col items-center justify-between gap-15 p-10 max-md:p-0 max-md:py-10 xl:flex-row">
         <div className="flex flex-col items-center gap-5 xl:max-w-[280px] xl:items-start">
           <p className="font-oswald text-red_preh text-xl font-semibold uppercase">
             Naš pristup

@@ -6,8 +6,8 @@ import { LuShieldCheck } from "react-icons/lu";
 
 const Banner = () => {
   return (
-    <div className="bg-black_preh py-10 md:px-10 lg:px-16">
-      <div className="flex flex-col justify-between gap-15 px-6 max-xl:items-center xl:flex-row 2xl:p-10">
+    <div className="bg-black_preh px-6 py-10 md:px-10 lg:px-16">
+      <div className="flex flex-col justify-between gap-15 p-10 max-xl:items-center max-md:p-0 max-md:py-10 xl:flex-row">
         <div className="flex flex-col items-center gap-5 xl:max-w-[280px] xl:items-start">
           <p className="font-oswald text-red_preh text-xl font-semibold uppercase">
             Zašto odabrati nas

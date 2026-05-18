@@ -61,9 +61,9 @@ const ContactForm = ({ setSuccess }) => {
   };
   return (
     <div className="relative mt-12 flex w-full flex-col-reverse items-center justify-center gap-20 bg-slate-100 bg-[url(/images/zadar/slika1.jpg)] bg-cover bg-no-repeat px-10 pt-10 pb-10 sm:flex-row">
-      <div className="from-black_preh absolute inset-0 z-0 bg-linear-to-l to-transparent backdrop-blur-xs"></div>
-      <div className="w-[100%] sm:w-[55%] md:w-[40%]"></div>
-      <div className="z-20 w-[100%] sm:w-[55%] md:w-[40%]">
+      <div className="from-black_preh via-black_preh/80 absolute inset-0 z-0 bg-linear-to-l to-transparent backdrop-blur-xs"></div>
+      {/* <div className="w-[100%] sm:w-[55%] md:w-[40%]"></div> */}
+      <div className="z-20 ml-auto w-[100%] sm:w-[55%] md:w-[40%]">
         <form
           className="flex flex-col gap-7"
           name="contact"
@@ -71,7 +71,7 @@ const ContactForm = ({ setSuccess }) => {
           data-netlify-honeypot="botfield"
           onSubmit={handleSubmit}
         >
-          <h6 className="font-oswald text-red_preh mb-3 text-center text-3xl font-bold underline">
+          <h6 className="font-oswald mb-3 text-center text-3xl font-bold text-slate-100 underline">
             Ispunite formu
           </h6>
           <input type="hidden" name="form-name" value="contact" />

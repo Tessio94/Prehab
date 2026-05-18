@@ -6,8 +6,8 @@ import { GoTriangleDown } from "react-icons/go";
 const Intro = () => {
   return (
     <section className="bg-slate-100 bg-[url(/images/logo/background.png)] bg-cover bg-no-repeat">
-      <div className="flex w-full flex-col pt-16 md:px-10 lg:px-16 xl:flex-row">
-        <div className="flex flex-col items-start gap-6 p-6 sm:p-10 sm:pb-16 xl:w-[50%] xl:pb-26">
+      <div className="flex w-full flex-col px-6 pt-16 md:px-10 lg:px-16 xl:flex-row">
+        <div className="flex flex-col items-start gap-6 p-10 max-md:p-0 sm:pb-16 xl:w-[50%] xl:pb-26">
           <h1 className="text-red_preh text-semibold font-oswald text-4xl">
             Fotogalerija
           </h1>

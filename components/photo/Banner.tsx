@@ -8,17 +8,17 @@ const Banner = ({
   headerColor = "#ffffff",
 }) => {
   return (
-    <section className="py-10 md:px-10 lg:px-16">
-      <div className="px-10">
+    <section className="px-6 py-10 md:px-10 lg:px-16">
+      <div className="px-10 max-md:px-0">
         <div
-          className="flex flex-col items-center justify-between gap-10 rounded-xl p-4 sm:p-8 xl:flex-row xl:p-10"
+          className="flex flex-col items-center justify-between gap-6 rounded-xl p-4 sm:gap-10 sm:p-8 xl:flex-row xl:p-10"
           style={{ backgroundColor: color }}
         >
           <div className="flex flex-row items-center sm:gap-6 lg:gap-10">
-            <div className="to-red_preh from-red_preh rounded-full bg-linear-to-bl via-slate-100 p-6">
+            <div className="to-red_preh from-red_preh rounded-full bg-linear-to-bl via-slate-100 p-6 max-sm:hidden">
               <RiCalendarScheduleLine className="text-red_preh text-6xl" />
             </div>
-            <div>
+            <div className="flex flex-col items-start gap-3">
               <p
                 className="text-3xl font-semibold"
                 style={{ color: headerColor }}

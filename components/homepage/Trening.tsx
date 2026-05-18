@@ -7,9 +7,9 @@ const Trening = () => {
     <>
       <section
         id="trening"
-        className="relative overflow-hidden py-16 md:px-10 lg:px-16"
+        className="relative overflow-hidden px-6 py-16 md:px-10 lg:px-16"
       >
-        <div className="p-10">
+        <div className="p-10 max-md:p-0 max-md:py-10">
           <h2 className="font-oswald text-red_preh mb-10 text-5xl">Trening</h2>
 
           <div className="">

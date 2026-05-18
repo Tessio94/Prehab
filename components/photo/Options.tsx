@@ -1,7 +1,7 @@
 const Options = () => {
   return (
-    <section className="py-10 md:px-10 lg:px-16">
-      <div className="flex flex-row flex-wrap items-center justify-start gap-8 rounded-xl px-10">
+    <section className="px-6 pt-10 md:px-10 lg:px-16">
+      <div className="flex flex-row flex-wrap items-center justify-start gap-5 rounded-xl px-10 max-md:px-0 md:gap-6 xl:gap-8">
         <div className="bg-red_preh font-inter rounded-xl px-5 py-3 text-2xl text-white">
           Svi
         </div>

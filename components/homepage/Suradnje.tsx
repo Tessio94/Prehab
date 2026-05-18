@@ -2,8 +2,11 @@
 
 const Suradnje = () => {
   return (
-    <section id="suradnje" className="bg-slate-100/80 py-16 md:px-10 lg:px-16">
-      <div className="p-10">
+    <section
+      id="suradnje"
+      className="bg-slate-100/80 px-6 py-16 md:px-10 lg:px-16"
+    >
+      <div className="p-10 max-md:p-0 max-md:py-10">
         <h2 className="font-oswald text-red_preh mb-5 text-5xl">Suradnje</h2>
         <div className="custom_grid2 auto-rows-max md:auto-rows-[10rem]">
           <div className="group border-red_preh relative overflow-hidden rounded-xl border-4">
