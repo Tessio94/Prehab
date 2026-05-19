@@ -15,7 +15,6 @@ const Intro = () => {
             obrazac - javljamo se u najkraćem mogućem roku
           </p>
         </div>
-        {/* <div className="h-full min-h-160 w-[50%] overflow-hidden rounded-l-full bg-[url(/images/zadar/slika1.jpg)] bg-cover bg-no-repeat max-xl:hidden"></div> */}
       </div>
     </section>
   );

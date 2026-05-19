@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { GoArrowRight, GoTriangleRight } from "react-icons/go";
 import Button from "../shared/Button";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -23,7 +22,6 @@ const features = [
     card: "c3",
     title: "Rehabilitacija i sportska priprema",
     text: "	Rad s vrhunskim mladim sportašima pružio mi je dragocjeno iskustvo i uvid u potrebe visokih performansi, a taj duh i posvećenost prenosim i na svakog pacijenta u svojoj privatnoj praksi. Ovdje u Prehabilitation Therapy Centeru, posvećujem se vašem zdravlju i dobrobiti, pružajući individualno prilagođene terapeutske tretmane.",
-    // image: "/images/masazni_stol.jpg",
     icon: "/images/ikone/rehab.svg",
   },
 ];

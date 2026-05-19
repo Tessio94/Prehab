@@ -2,8 +2,6 @@ import Image from "next/image";
 import { GoTriangleDown } from "react-icons/go";
 import Button from "../shared/Button";
 
-// bg-theme1/10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26
-
 const Intro = () => {
   return (
     <section className="bg-slate-100">

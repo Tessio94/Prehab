@@ -4,7 +4,6 @@ import { CiLocationOn, CiLock } from "react-icons/ci";
 const Cover = () => {
   return (
     <section className="relative h-fit">
-      {/* <Image src="/images/skolioza.png" width={1920} height={560} alt="" /> */}
       <div className="max-h-150 min-h-fit w-full bg-[url(/images/skolioza.png)] bg-cover bg-no-repeat max-[1650px]:bg-position-[40%] max-[900px]:bg-position-[80%]! max-xl:bg-position-[60%]">
         <div className="xxl:w-1/2 mt-auto flex w-fit flex-col items-start gap-5 p-10 pt-55 text-xl font-medium max-md:px-6 lg:w-2/3">
           <p className="font-oswald mt-2 text-4xl font-medium text-slate-100 underline lg:text-5xl">

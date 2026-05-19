@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import Button from "../shared/Button";
 import { CgCalendar } from "react-icons/cg";
 import { FaArrowRight } from "react-icons/fa";
 

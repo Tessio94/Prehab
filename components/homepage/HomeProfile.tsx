@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const HomeProfile = () => {
   return (
     <section className="relative z-20 px-6 pt-16 md:px-10 lg:px-16">

@@ -9,7 +9,7 @@ import {
   RiArrowLeftWideFill,
 } from "react-icons/ri";
 
-import { GoDotFill, GoDot, GoTriangleDown } from "react-icons/go";
+import { GoDotFill, GoDot } from "react-icons/go";
 
 import Image from "next/image";
 import { FaArrowDown, FaArrowRight } from "react-icons/fa";
@@ -32,7 +32,7 @@ const Intro = () => {
   }, [emblaApi]);
 
   const scrollTo = useCallback(
-    (index) => {
+    (index: number) => {
       if (emblaApi) emblaApi.scrollTo(index);
     },
     [emblaApi],
@@ -295,7 +295,7 @@ const Intro = () => {
                           Usluge:
                         </span>{" "}
                         Listu usluga i dodatne informacije pogledajte u sekciji
-                        "Usluge"
+                        &quot;Usluge&quot;
                       </p>
                       <div className="mx-auto mt-1.5">
                         <Button type="red" href="#usluge">
@@ -310,7 +310,7 @@ const Intro = () => {
                           Cjenik:
                         </span>{" "}
                         Vrste treninga i dodatne informacije pronađite u sekciji
-                        "Trening"
+                        &quot;Trening&quot;
                       </p>
                       <div className="mx-auto mt-1.5">
                         <Button type="red" href="#cjenik">

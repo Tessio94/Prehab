@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
 import { FaArrowRight } from "react-icons/fa";
 import { IoCalendarOutline } from "react-icons/io5";
 

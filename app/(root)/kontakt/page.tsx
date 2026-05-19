@@ -23,7 +23,8 @@ const Page = () => {
       <Intro />
       <Info />
       <Location />
-      <ContactForm setSuccess={setSuccess} />
+      {/* <ContactForm setSuccess={setSuccess} /> */}
+      <ContactForm />
     </>
   );
 };
