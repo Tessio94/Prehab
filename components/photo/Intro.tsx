@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { GoTriangleDown } from "react-icons/go";
-
-// bg-theme1/10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26
+import Button from "../shared/Button";
 
 const Intro = () => {
   return (
@@ -19,10 +18,10 @@ const Intro = () => {
             Zavirite u naš prostor, opremu i svakodnevne aktivnosti kroz
             fotografije koje prikazuju predanost, stručnost i rezultate.
           </p>
-          <button className="font-oswald border-red_preh mt-3 flex flex-row items-center gap-2 rounded-xl border bg-black px-5 py-1 text-2xl font-semibold text-white">
-            <span>Više o meni</span>
+          <Button type="black" href="fotogalerija#galerija">
+            <span>Pogledaj galeriju</span>
             <GoTriangleDown />
-          </button>
+          </Button>
         </div>
         <div className="max-lg:py-10 max-sm:hidden xl:w-[50%]">
           <Image

@@ -20,7 +20,7 @@ const Location = () => {
             Nalazimo se na Zatvorenom bazenskom plivalištu u Zadru, na adresi{" "}
             <FaArrowRight className="mx-2 inline" />
             <strong
-              className="inline cursor-pointer font-bold text-blue-600 underline hover:text-blue-400 hover:transition-all hover:duration-300"
+              className="text-red_preh hover:text-red_preh_t inline cursor-pointer font-bold underline hover:transition-all hover:duration-300"
               onClick={() => setLokacija(true)}
             >
               Splitska ulica 3
@@ -35,7 +35,7 @@ const Location = () => {
             Nalazimo se na Zatvorenom bazenskom plivalištu u Zadru, na adresi{" "}
             <FaArrowRight className="mx-2 inline" />
             <strong
-              className="inline cursor-pointer font-bold text-blue-600 underline hover:text-blue-400 hover:transition-all hover:duration-300"
+              className="text-red_preh hover:text-red_preh_t inline cursor-pointer font-bold underline hover:transition-all hover:duration-300"
               onClick={() => setLokacija(false)}
             >
               Bukovačka 15, BnM

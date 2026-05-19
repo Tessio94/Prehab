@@ -8,10 +8,16 @@ const Page = () => {
   return (
     <>
       <Intro />
-      <Options />
+      <Options
+        data={[
+          { label: "Svi", tab: "t1" },
+          { label: "Edukacija", tab: "t2" },
+          { label: "Trening", tab: "t3" },
+        ]}
+      />
       <MainArticle />
       <Articles />
-      <Banner color="#121a29" buttonColor="#d23366" headerColor="#d23366" />
+      <Banner color="#121a29" buttonColor="#c70808" headerColor="#c70808" />
     </>
   );
 };

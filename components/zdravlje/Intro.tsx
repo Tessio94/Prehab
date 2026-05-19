@@ -1,6 +1,3 @@
-import Image from "next/image";
-import { GoTriangleDown } from "react-icons/go";
-
 const Intro = () => {
   return (
     <section className="bg-slate-100">
@@ -18,7 +15,6 @@ const Intro = () => {
             iz svijeta fizioterapije, rehabilitacije i zdravog načina života
           </p>
         </div>
-        {/* <div className="h-full min-h-160 w-[50%] overflow-hidden rounded-l-full bg-[url(/images/zadar/slika1.jpg)] bg-cover bg-no-repeat max-xl:hidden"></div> */}
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-// import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 const Suradnje = () => {
   return (
@@ -7,12 +7,12 @@ const Suradnje = () => {
       className="bg-slate-100/80 px-6 py-16 md:px-10 lg:px-16"
     >
       <div className="p-10 max-md:p-0 max-md:py-10">
-        <h2 className="font-oswald text-red_preh mb-5 text-5xl">Suradnje</h2>
-        <div className="custom_grid2 auto-rows-max md:auto-rows-[10rem]">
-          <div className="group border-red_preh relative overflow-hidden rounded-xl border-4">
-            <img
-              src="/images/suradnje/Nk Rudeš.jpg"
-              className="h-full w-full sm:object-cover md:object-fill"
+        <h2 className="font-oswald text-red_preh mb-10 text-5xl">Suradnje</h2>
+        <div className="grid grid-cols-5 gap-7 max-[1700px]:grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
+          <div className="group border-red_preh relative aspect-video overflow-hidden rounded-xl border-4">
+            <Image
+              src="/images/suradnje/NkRudes.jpg"
+              fill
               alt="NK Rudeš"
               loading="lazy"
             />
@@ -20,10 +20,10 @@ const Suradnje = () => {
               NK Rudeš
             </div>
           </div>
-          <div className="group border-red_preh relative overflow-hidden rounded-xl border-4">
-            <img
+          <div className="group border-red_preh relative aspect-video overflow-hidden rounded-xl border-4">
+            <Image
               src="/images/suradnje/abeceda.jpg"
-              className="h-full w-full"
+              fill
               alt="NK Abeceda"
               loading="lazy"
             />
@@ -31,10 +31,10 @@ const Suradnje = () => {
               NK Abeceda
             </div>
           </div>
-          <div className="group border-red_preh relative overflow-hidden rounded-xl border-4">
-            <img
+          <div className="group border-red_preh relative aspect-video overflow-hidden rounded-xl border-4">
+            <Image
               src="/images/suradnje/sonik.jpg"
-              className="h-full w-full sm:object-cover md:object-fill"
+              fill
               alt="KK Aleta Puntamika"
               loading="lazy"
             />
@@ -42,10 +42,10 @@ const Suradnje = () => {
               KK Aleta Puntamika
             </div>
           </div>
-          <div className="group border-red_preh relative overflow-hidden rounded-xl border-4">
-            <img
-              src="/images/suradnje/plivački klub zadar.png"
-              className="h-full w-full"
+          <div className="group border-red_preh relative aspect-video overflow-hidden rounded-xl border-4">
+            <Image
+              src="/images/suradnje/plivacki-klub-zadar.jpg"
+              fill
               alt="PK Zadar"
               loading="lazy"
             />
@@ -53,10 +53,10 @@ const Suradnje = () => {
               PK Zadar
             </div>
           </div>
-          <div className="group border-red_preh relative overflow-hidden rounded-xl border-4">
-            <img
-              src="/images/suradnje/vaterpolo klub zadar.png"
-              className="h-full w-full"
+          <div className="group border-red_preh relative aspect-video overflow-hidden rounded-xl border-4">
+            <Image
+              src="/images/suradnje/vaterpolo-klub-zadar.jpg"
+              fill
               alt="VK Zadar"
               loading="lazy"
             />

@@ -1,13 +1,9 @@
-import Link from "next/link";
-import { BiHeart, BiTargetLock, BiUser } from "react-icons/bi";
-import { BsArrowRight } from "react-icons/bs";
+import { BiUser } from "react-icons/bi";
 import { FaQuoteLeft } from "react-icons/fa";
-import { FiTarget } from "react-icons/fi";
-import { LuShieldCheck } from "react-icons/lu";
 
 const Reviews = () => {
   return (
-    <div className="bg-slate-200/40 px-6 py-10 md:px-10 lg:px-16">
+    <section className="bg-slate-200/40 px-6 py-10 md:px-10 lg:px-16">
       <div className="flex flex-col gap-15 p-10 max-xl:items-center max-md:p-0 max-md:py-10">
         <div className="flex flex-col items-center">
           <p className="font-oswald text-red_preh text-xl font-semibold uppercase">
@@ -74,7 +70,7 @@ const Reviews = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

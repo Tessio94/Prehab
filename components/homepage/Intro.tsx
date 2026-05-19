@@ -260,7 +260,7 @@ const Intro = () => {
                     ))}
                   </ul>
 
-                  <Button type="red" href="o-nama" header="header">
+                  <Button type="red" href="o-nama">
                     <span className="text-nowrap">Pročitajte više</span>{" "}
                     <FaArrowRight className="transition-all duration-300 group-hover:translate-x-3" />
                   </Button>
@@ -298,7 +298,7 @@ const Intro = () => {
                         "Usluge"
                       </p>
                       <div className="mx-auto mt-1.5">
-                        <Button type="red" href="#usluge" header="header">
+                        <Button type="red" href="#usluge">
                           <span className="text-nowrap">Usluge</span>{" "}
                           <FaArrowDown className="transition-all duration-300 group-hover:translate-y-1.5" />
                         </Button>
@@ -313,7 +313,7 @@ const Intro = () => {
                         "Trening"
                       </p>
                       <div className="mx-auto mt-1.5">
-                        <Button type="red" href="#cjenik" header="header">
+                        <Button type="red" href="#cjenik">
                           <span className="text-nowrap">Pročitajte više</span>{" "}
                           <FaArrowDown className="transition-all duration-300 group-hover:translate-y-1.5" />
                         </Button>

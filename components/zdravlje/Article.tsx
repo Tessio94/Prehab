@@ -24,7 +24,8 @@ const Article = () => {
           Što je hidrogen?
         </h5>
         <p className="text-black_preh">
-          Hidrogen je masu dobra stvar. Dođi na ekploziju u nosu u Prehab.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit,
+          quasi?.
         </p>
         <div className="mt-auto flex flex-row items-center gap-4">
           <div className="text-red_preh flex flex-row items-center gap-1.5">

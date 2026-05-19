@@ -1,4 +1,4 @@
-import Banner from "@/components/about/Banner";
+import Skills from "@/components/about/Skills";
 import Description from "@/components/about/Description";
 import Intro from "@/components/about/Intro";
 import Reviews from "@/components/about/Reviews";
@@ -9,7 +9,7 @@ const Page = () => {
     <>
       <Intro />
       <Description />
-      <Banner />
+      <Skills />
       <Steps />
       <Reviews />
     </>

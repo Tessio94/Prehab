@@ -126,23 +126,25 @@ const Header = () => {
         </Link>
         {/* NAVIGATION */}
         <nav className="max-md:hidden">
-          {/* MENU */}
           <ul
             // ref={dropdown}
             className="font-oswald z-10 flex max-[1100px]:-mt-1 max-[1024px]:mr-25 max-[950px]:-mt-4 max-[950px]:mr-15 max-[850px]:mr-5 max-[800px]:mr-0 md:relative md:top-0 md:left-0 md:h-fit md:translate-x-0 md:flex-row md:items-center md:justify-between md:gap-10 md:bg-transparent md:p-0 md:text-base md:text-xl lg:gap-10 lg:text-xl lg:font-medium xl:gap-12"
           >
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
+              const isZdravlje =
+                link.href === "/zdravlje" && pathname.startsWith("/zdravlje");
 
               return (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className={`font-oswald relative transition-all duration-500 before:absolute before:bottom-[-0.2rem] before:left-0 before:h-0.5 before:w-0 before:bg-stone-300 before:transition-all before:duration-500 ${
-                      isActive
+                    className={cn(
+                      "font-oswald relative transition-all duration-500 before:absolute before:bottom-[-0.2rem] before:left-0 before:h-0.5 before:w-0 before:bg-stone-300 before:transition-all before:duration-500",
+                      isActive || isZdravlje
                         ? "text-red_preh underline"
-                        : "text-stone-100 hover:text-stone-400 hover:before:w-full"
-                    }`}
+                        : "text-stone-100 hover:text-stone-400 hover:before:w-full",
+                    )}
                   >
                     {link.label}
                   </Link>
@@ -255,16 +257,20 @@ const Header = () => {
               <ul className="flex flex-col gap-6 px-3 text-2xl">
                 {navLinks.map((link) => {
                   const isActive = pathname === link.href;
+                  const isZdravlje =
+                    link.href === "/zdravlje" &&
+                    pathname.startsWith("/zdravlje");
 
                   return (
                     <li key={link.href}>
                       <Link
                         href={link.href}
-                        className={`font-oswald relative transition-all duration-500 before:absolute before:bottom-[-0.2rem] before:left-0 before:h-0.5 before:w-0 before:bg-stone-300 before:transition-all before:duration-500 ${
-                          isActive
+                        className={cn(
+                          "font-oswald relative transition-all duration-500 before:absolute before:bottom-[-0.2rem] before:left-0 before:h-0.5 before:w-0 before:bg-stone-300 before:transition-all before:duration-500",
+                          isActive || isZdravlje
                             ? "text-red_preh underline"
-                            : "text-stone-100 hover:text-stone-400 hover:before:w-full"
-                        }`}
+                            : "text-stone-100 hover:text-stone-400 hover:before:w-full",
+                        )}
                       >
                         {link.label}
                       </Link>

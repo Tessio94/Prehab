@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { GoTriangleDown } from "react-icons/go";
+import Button from "../shared/Button";
 
 // bg-theme1/10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26
 
@@ -20,10 +21,10 @@ const Intro = () => {
             mi na prvom mjestu, te se radujem prilici da vam pomognem ostvariti
             vaše najbolje zdravstvene rezultate.
           </p>
-          <button className="font-oswald border-red_preh mt-3 flex flex-row items-center gap-2 rounded-xl border bg-black px-5 py-1 text-2xl font-semibold text-white">
+          <Button type="black" href="o-nama#uvod">
             <span>Više o meni</span>
             <GoTriangleDown />
-          </button>
+          </Button>
         </div>
         <div className="bg-contain bg-bottom bg-no-repeat max-lg:p-10 max-lg:pb-0 max-sm:p-6 max-sm:pb-0 min-[1280px]:bg-[url('/images/o-nama-intro-uska4.png')] min-[1650px]:bg-[url('/images/o-nama-intro5.png')] xl:w-[50%]">
           <Image
@@ -33,13 +34,6 @@ const Intro = () => {
             height={658}
             alt="Fizioterapeut Nikola Lukić"
           />
-          {/* <Image
-            src="/images/o-nama-intro-uska.png"
-            className="hidden max-sm:block"
-            width={565}
-            height={766}
-            alt="Fizioterapeut Nikola Lukić"
-          /> */}
           <Image
             src="/images/o-nama-intro-uska4.png"
             className="hidden max-sm:block"

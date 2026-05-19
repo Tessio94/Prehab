@@ -1,5 +1,8 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { GoArrowRight, GoTriangleRight } from "react-icons/go";
+import Button from "../shared/Button";
+import { FaArrowRight } from "react-icons/fa";
 
 const features = [
   {
@@ -27,7 +30,7 @@ const features = [
 
 const Description = () => {
   return (
-    <section className="mx-auto px-6 py-10 md:px-10 lg:px-16">
+    <section className="mx-auto px-6 py-10 md:px-10 lg:px-16" id="uvod">
       <div className="grid grid-cols-1 gap-10 p-10 max-md:p-0 max-md:py-10 lg:grid-cols-12">
         {features.map((feature, index) => (
           <div
@@ -56,12 +59,13 @@ const Description = () => {
 
               <div className="mb-6 h-1 w-14 bg-red-500" />
 
-              <p className="leading-7 text-stone-600">{feature.text}</p>
+              <p className="mb-2 leading-7 text-stone-600">{feature.text}</p>
 
               {index === 2 && (
-                <button className="mt-8 w-fit rounded-xl bg-blue-900 px-6 py-3 text-white">
-                  Saznajte više →
-                </button>
+                <Button type="red" href="zdravlje">
+                  <span>Saznajte više</span>
+                  <FaArrowRight className="transition-all duration-300 group-hover:translate-x-3" />
+                </Button>
               )}
             </div>
 

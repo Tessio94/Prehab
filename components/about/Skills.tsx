@@ -1,10 +1,10 @@
-import Link from "next/link";
-import { BiHeart, BiTargetLock, BiUser } from "react-icons/bi";
-import { BsArrowRight } from "react-icons/bs";
+import { BiHeart, BiUser } from "react-icons/bi";
 import { FiTarget } from "react-icons/fi";
 import { LuShieldCheck } from "react-icons/lu";
+import Button from "../shared/Button";
+import { FaArrowRight } from "react-icons/fa";
 
-const Banner = () => {
+const Skills = () => {
   return (
     <div className="bg-black_preh px-6 py-10 md:px-10 lg:px-16">
       <div className="flex flex-col justify-between gap-15 p-10 max-xl:items-center max-md:p-0 max-md:py-10 xl:flex-row">
@@ -19,13 +19,10 @@ const Banner = () => {
             Kombiniramo stručnost, iskustvo i individualni pristup kako bismo
             svakom klijentu omogućili najbolje rezultate.
           </p>
-          <Link
-            className="font-inter bg-red_preh mt-3 flex flex-row gap-3 rounded-lg p-3 font-semibold text-white"
-            href="/kontakt"
-          >
+          <Button type="red" href="kontakt">
             <span>Kontaktirajte nas</span>
-            <BsArrowRight className="text-center text-2xl text-white" />
-          </Link>
+            <FaArrowRight className="transition-all duration-300 group-hover:translate-x-3" />
+          </Button>
         </div>
         <div className="flex flex-row items-center max-lg:flex-wrap max-lg:gap-y-10 max-sm:gap-y-0">
           <div className="flex flex-col items-center gap-5 border-r border-white p-2 max-lg:w-1/2 max-sm:w-full max-sm:border-r-0 max-sm:border-b max-sm:py-10">
@@ -78,4 +75,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default Skills;

@@ -20,11 +20,11 @@ const Main = () => {
           <br /> treninzi i edukacija na jednom mjestu.
         </p>
         <div className="flex flex-col gap-5 max-[420px]:mt-1.5 max-[420px]:gap-3 min-[500px]:w-full min-[500px]:flex-row">
-          <Button type="red" href="#intro" header="header">
+          <Button type="red" href="#intro">
             <span className="text-nowrap">Pročitajte više</span>{" "}
             <GoTriangleDown />
           </Button>
-          <Button type="blue" href="#cjenik" header="header">
+          <Button type="black" href="#cjenik">
             <span className="text-nowrap">Pogledaj cjenik</span>{" "}
             <GoTriangleDown />
           </Button>
