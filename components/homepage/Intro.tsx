@@ -54,7 +54,7 @@ const Intro = () => {
   }, [emblaApi]);
 
   useEffect(() => {
-    const handleKeyEvent = (e) => {
+    const handleKeyEvent = (e: KeyboardEvent) => {
       if (e.key === "ArrowRight") {
         scrollNext();
       }
