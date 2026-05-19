@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import metadata from "@/data/metaData.js";
+// import metadata from "@/data/metaData.js";
 import Main from "@/components/homepage/Main";
 import Quote from "@/components/homepage/Quote";
 import HomeProfile from "@/components/homepage/HomeProfile";

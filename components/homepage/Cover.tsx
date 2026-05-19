@@ -1,10 +1,10 @@
-"use client";
+// "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+// import { useState } from "react";
 
 const Cover = () => {
-  const [loaded, setLoaded] = useState(false);
+  // const [loaded, setLoaded] = useState(false);
 
   return (
     <div className="relative z-10 w-full overflow-x-clip">

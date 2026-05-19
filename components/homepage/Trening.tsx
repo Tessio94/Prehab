@@ -34,11 +34,11 @@ const Trening = () => {
                 sportske rehabilitacije.
               </p>
             </div>
-            <div className="flex flex-col gap-2 rounded-b-xl bg-slate-300 px-5 py-4">
-              <h4 className="font-oswald text-black_preh text-2xl font-bold">
+            <div className="bg-black_preh flex flex-col gap-2 rounded-b-xl px-5 py-4">
+              <h4 className="font-oswald text-2xl font-bold text-slate-100">
                 Lumbar Health terapija | 448 kHz
               </h4>
-              <p className="font-oswald text-lg">
+              <p className="font-oswald text-lg text-slate-100">
                 Lumbar Health terapija na frekvenciji 448 kHz predstavlja
                 inovativan pristup tretiranju bolova i disfunkcija kralježnice.{" "}
                 <br />

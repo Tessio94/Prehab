@@ -1,7 +1,6 @@
 // import { useEffect, useRef } from "react";
 import Button from "@/components/shared/Button";
 import { GoTriangleDown } from "react-icons/go";
-import { FaLocationDot } from "react-icons/fa6";
 
 const Main = () => {
   return (
