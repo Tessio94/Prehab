@@ -1,14 +1,19 @@
 import { useState } from "react";
 import { GoTriangleDown, GoTriangleUp } from "react-icons/go";
-import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-const Usluga = ({ usluga }) => {
+type Usluga = {
+  id: number;
+  name: string;
+  img: string;
+  description: string;
+  imageDesc: string;
+};
+
+const Usluga = ({ usluga }: { usluga: Usluga }) => {
   const { id, name, img, description, imageDesc } = usluga;
   const [active, setActive] = useState(false);
-
-  //   const refs = [useRef(null), useRef(null), useRef(null)];
 
   return (
     <div className="border-black_preh shadow-black_preh/60 rounded-xl border-2 bg-slate-100 py-5 shadow-xl">
