@@ -9,7 +9,7 @@ const Cover = ({
 }) => {
   return (
     <div className="relative z-10 w-full overflow-x-clip">
-      <div className="from-red_preh absolute top-0 right-0 -bottom-20 left-0 -z-10 bg-linear-to-b from-60% to-transparent"></div>
+      <div className="from-red_preh absolute inset-0 -z-10 bg-linear-to-b from-60% to-transparent"></div>
       <Image
         src="/images/Nikola/cover4.png"
         alt="Nikola background high quality"
