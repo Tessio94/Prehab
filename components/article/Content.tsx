@@ -79,10 +79,10 @@ const Content = () => {
                   <p>Individualizirane vježbe i terapije</p>
                 </li>
               </ul>
-              <div className="flex flex-row items-center justify-center rounded-xl bg-slate-100/80 px-20 py-5">
-                <div className="flex flex-row items-start gap-7">
-                  <FaQuoteLeft className="text-red_preh text-5xl" />
-                  <p className="font-inter text-3xl">
+              <div className="flex flex-row items-center justify-center rounded-xl bg-slate-100/80 px-10 py-3.5 sm:px-3.5 lg:px-20">
+                <div className="flex flex-row items-start gap-4 sm:gap-5 lg:gap-7">
+                  <FaQuoteLeft className="text-red_preh shrink-0 text-4xl lg:text-5xl" />
+                  <p className="font-inter text-2xl lg:text-3xl">
                     Fokusirani smo na individualni pristup i stvaranje zdravih
                     navika koje možete ponijeti sa sobom kući.
                   </p>
