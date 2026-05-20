@@ -58,25 +58,35 @@ const Content = () => {
                 Što vas očekuje u kampu
               </h4>
               <ul className="mt-2 flex flex-col items-start gap-3">
-                <li className="flex flex-row items-center gap-3">
-                  <CgCheck className="text-red_preh font-inter text-2xl" />
-                  <p>Individualizirane vježbe i terapije</p>
+                <li className="xsm:gap-3 flex flex-row items-center gap-2">
+                  <CgCheck className="text-red_preh shrink-0 text-3xl" />
+                  <p className="font-inter text-lg xl:text-[22px]">
+                    Individualizirane vježbe i terapije
+                  </p>
                 </li>
-                <li className="flex flex-row items-center gap-3">
-                  <CgCheck className="text-red_preh font-inter text-2xl" />
-                  <p>Individualizirane vježbe i terapije</p>
+                <li className="xsm:gap-3 flex flex-row items-center gap-2">
+                  <CgCheck className="text-red_preh shrink-0 text-3xl" />
+                  <p className="font-inter text-lg xl:text-[22px]">
+                    Individualizirane vježbe i terapije
+                  </p>
                 </li>
-                <li className="flex flex-row items-center gap-3">
-                  <CgCheck className="text-red_preh font-inter text-2xl" />
-                  <p>Individualizirane vježbe i terapije</p>
+                <li className="xsm:gap-3 flex flex-row items-center gap-2">
+                  <CgCheck className="text-red_preh shrink-0 text-3xl" />
+                  <p className="font-inter text-lg xl:text-[22px]">
+                    Individualizirane vježbe i terapije
+                  </p>
                 </li>
-                <li className="flex flex-row items-center gap-3">
-                  <CgCheck className="text-red_preh font-inter text-2xl" />
-                  <p>Individualizirane vježbe i terapije</p>
+                <li className="xsm:gap-3 flex flex-row items-center gap-2">
+                  <CgCheck className="text-red_preh shrink-0 text-3xl" />
+                  <p className="font-inter text-lg xl:text-[22px]">
+                    Individualizirane vježbe i terapije
+                  </p>
                 </li>
-                <li className="flex flex-row items-center gap-3">
-                  <CgCheck className="text-red_preh font-inter text-2xl" />
-                  <p>Individualizirane vježbe i terapije</p>
+                <li className="xsm:gap-3 flex flex-row items-center gap-2">
+                  <CgCheck className="text-red_preh shrink-0 text-3xl" />
+                  <p className="font-inter text-lg xl:text-[22px]">
+                    Individualizirane vježbe i terapije
+                  </p>
                 </li>
               </ul>
               <div className="flex flex-row items-center justify-center rounded-xl bg-slate-100/80 px-10 py-3.5 sm:px-3.5 lg:px-20">
