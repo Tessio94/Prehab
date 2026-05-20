@@ -80,10 +80,10 @@ const Intro = () => {
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex items-stretch">
             {/* SLIDE 1 */}
-            <div className="min-w-0 flex-[0_0_100%] px-2">
-              <div className="border-red_preh_t flex min-h-[750px] flex-col overflow-hidden rounded-xl border-2 bg-slate-100/80 lg:flex-row">
+            <div className="min-h-full min-w-0 flex-[0_0_100%] px-2">
+              <div className="border-red_preh_t flex h-full min-h-[750px] flex-col justify-between overflow-hidden rounded-xl border-2 bg-slate-100/80 lg:flex-row">
                 <div className="flex w-full flex-col lg:w-[50%]">
-                  <div className="xsm:px-8 relative flex grow flex-col items-stretch rounded-t-xl bg-slate-100/80 px-4 py-4 lg:rounded-t-none lg:bg-transparent xl:py-10">
+                  <div className="xsm:px-8 relative flex grow flex-col items-stretch rounded-t-xl bg-slate-100/80 px-4 max-lg:gap-3 max-lg:py-10 max-sm:py-4 lg:rounded-t-none lg:bg-transparent xl:py-10">
                     <div>
                       <h2 className="font-oswald xsm:mt-0 text-red_preh mt-5 mb-8 text-center text-5xl xl:text-6xl">
                         Prehab Zadar
@@ -99,11 +99,12 @@ const Intro = () => {
                       </p>
                     </div>
 
-                    <ul className="flex grow flex-col items-start justify-between gap-7 py-4">
-                      <li className="font-oswald flex flex-row items-center gap-6 text-xl xl:text-2xl">
+                    <ul className="flex grow flex-col items-start justify-between gap-4 py-4 sm:gap-7">
+                      <li className="font-oswald flex flex-col items-center gap-2 text-xl sm:flex-row sm:gap-6 xl:text-2xl">
                         <Image
                           src="/images/ikone/injury-prevention.svg"
                           alt="prevencija ozljede"
+                          className="max-sm:h-10 max-sm:w-10"
                           width={55}
                           height={55}
                         />
@@ -121,10 +122,11 @@ const Intro = () => {
                         </div>
                       </li>
 
-                      <li className="font-oswald flex flex-row items-center gap-6 text-xl xl:text-2xl">
+                      <li className="font-oswald flex flex-col items-center gap-2 text-xl sm:flex-row sm:gap-6 xl:text-2xl">
                         <Image
                           src="/images/ikone/recovery.svg"
                           alt="brži oporavak"
+                          className="max-sm:h-10 max-sm:w-10"
                           width={55}
                           height={55}
                         />
@@ -142,10 +144,11 @@ const Intro = () => {
                         </div>
                       </li>
 
-                      <li className="font-oswald flex flex-row items-center gap-6 text-xl xl:text-2xl">
+                      <li className="font-oswald flex flex-col items-center gap-2 text-xl sm:flex-row sm:gap-6 xl:text-2xl">
                         <Image
                           src="/images/ikone/quality-of-life.svg"
                           alt="kvaliteta života"
+                          className="max-sm:h-10 max-sm:w-10"
                           width={55}
                           height={55}
                         />
@@ -187,7 +190,7 @@ const Intro = () => {
                     </div>
                   </div>
                 </div>
-                <div className="relative min-h-[320px] w-full lg:min-h-full lg:w-1/2">
+                <div className="relative min-h-[320px] w-full max-lg:grow lg:min-h-full lg:w-1/2">
                   <Image
                     src="/images/zadar/slika1.jpg"
                     alt="prehab zadar klinika"
@@ -200,10 +203,10 @@ const Intro = () => {
             </div>
 
             {/* SLIDE 2 */}
-            <div className="min-w-0 flex-[0_0_100%] px-2">
-              <div className="border-red_preh_t flex min-h-[750px] flex-col overflow-hidden rounded-xl border-2 bg-slate-100/80 lg:flex-row">
-                <div className="relative min-h-[320px] w-full lg:min-h-full lg:w-1/2">
-                  <div className="relative hidden h-[250px] w-full lg:block lg:h-1/2">
+            <div className="min-h-full min-w-0 flex-[0_0_100%] px-2">
+              <div className="border-red_preh_t flex h-full min-h-[750px] flex-col justify-between overflow-hidden rounded-xl border-2 bg-slate-100/80 lg:flex-row">
+                <div className="relative min-h-[320px] w-full max-lg:grow lg:min-h-full lg:w-1/2">
+                  <div className="relative block w-full max-lg:h-1/2 lg:h-1/2">
                     <Image
                       src="/images/certifikati/slika12.jpg"
                       alt="certifikati"
@@ -212,7 +215,7 @@ const Intro = () => {
                     />
                   </div>
 
-                  <div className="relative block h-[320px] w-full lg:h-1/2">
+                  <div className="relative block w-full max-lg:h-1/2 lg:h-1/2">
                     <Image
                       src="/images/certifikati/slika7.jpg"
                       alt="diplome prehab"
@@ -221,23 +224,19 @@ const Intro = () => {
                     />
                   </div>
                 </div>
-                <div className="xsm:px-8 flex w-full basis-[60%] flex-col items-stretch overflow-hidden rounded-b-xl bg-slate-100/80 px-4 py-4 lg:w-[50%] lg:rounded-none lg:rounded-r-xl lg:bg-transparent xl:py-10">
-                  <div>
-                    <h2 className="font-oswald text-red_preh mb-5 text-center text-5xl lg:mb-7 lg:text-6xl">
-                      Obrazovanje
-                    </h2>
+                <div className="xsm:px-8 flex w-full flex-col gap-5 overflow-hidden rounded-b-xl bg-slate-100/80 px-4 max-lg:py-10 max-sm:py-4 lg:w-[50%] lg:rounded-none lg:rounded-r-xl lg:bg-transparent xl:py-10">
+                  <h2 className="font-oswald text-red_preh text-center text-5xl lg:text-6xl">
+                    Obrazovanje
+                  </h2>
 
-                    <p className="font-oswald text-justify text-xl md:text-xl lg:text-2xl xl:text-3xl">
-                      <strong className="text-red_preh">
-                        Moje obrazovanje
-                      </strong>{" "}
-                      započelo je sa završenim fakultetom, gdje sam stekao
-                      temeljna znanja i vještine potrebne za moj profesionalni
-                      razvoj. Nakon uspješnog završetka fakulteta, nastavio sam
-                      ulagati u svoje znanje i kompetencije putem različitih
-                      certifikata.
-                    </p>
-                  </div>
+                  <p className="font-oswald text-justify text-xl md:text-xl lg:text-2xl xl:text-3xl">
+                    <strong className="text-red_preh">Moje obrazovanje</strong>{" "}
+                    započelo je sa završenim fakultetom, gdje sam stekao
+                    temeljna znanja i vještine potrebne za moj profesionalni
+                    razvoj. Nakon uspješnog završetka fakulteta, nastavio sam
+                    ulagati u svoje znanje i kompetencije putem različitih
+                    certifikata.
+                  </p>
 
                   <ul className="flex grow flex-col gap-7 py-4">
                     {[
@@ -269,10 +268,10 @@ const Intro = () => {
             </div>
 
             {/* SLIDE 3 */}
-            <div className="min-w-0 flex-[0_0_100%] px-2">
-              <div className="border-red_preh_t flex min-h-[750px] flex-col overflow-hidden rounded-xl border-2 bg-slate-100/80 lg:flex-row">
-                <div className="flex min-h-full w-full flex-col justify-between lg:w-[50%]">
-                  <div className="xsm:px-8 relative flex grow flex-col items-stretch justify-between px-4 py-4 xl:py-10">
+            <div className="min-h-full min-w-0 flex-[0_0_100%] px-2">
+              <div className="border-red_preh_t flex h-full min-h-[750px] flex-col justify-between overflow-hidden rounded-xl border-2 bg-slate-100/80 lg:flex-row">
+                <div className="flex w-full flex-col justify-between lg:min-h-full lg:w-[50%]">
+                  <div className="xsm:px-8 relative flex grow flex-col items-stretch justify-between px-4 max-lg:gap-5 max-lg:py-10 max-sm:py-4 xl:py-10">
                     <div>
                       <h2 className="font-oswald text-red_preh mb-7 text-center text-5xl">
                         Usluge
@@ -290,10 +289,14 @@ const Intro = () => {
                     </div>
 
                     <div className="font-oswald flex grow flex-col items-start justify-center gap-3 text-xl">
-                      <p className="xxl:text-2xl xsm:no-underline flex items-center gap-1 text-justify text-lg underline lg:text-2xl">
-                        <span className="text-red_preh xsm:block mr-2 hidden text-3xl font-bold underline">
-                          Usluge:
-                        </span>{" "}
+                      <p className="xxl:text-2xl xsm:no-underline flex flex-col items-center gap-2 text-justify text-lg underline max-sm:w-full sm:flex-row lg:text-2xl">
+                        <Image
+                          src="/images/ikone/usluge.svg"
+                          alt="brži oporavak"
+                          className="max-sm:h-10 max-sm:w-10"
+                          width={55}
+                          height={55}
+                        />
                         Listu usluga i dodatne informacije pogledajte u sekciji
                         &quot;Usluge&quot;
                       </p>
@@ -305,16 +308,20 @@ const Intro = () => {
                       </div>
                     </div>
                     <div className="font-oswald flex grow flex-col items-start justify-center gap-3 text-xl">
-                      <p className="xxl:text-2xl xsm:no-underline flex items-center gap-1 text-justify text-lg underline lg:text-2xl">
-                        <span className="text-red_preh xsm:block mr-2 hidden text-3xl font-bold underline">
-                          Cjenik:
-                        </span>{" "}
-                        Vrste treninga i dodatne informacije pronađite u sekciji
-                        &quot;Trening&quot;
+                      <p className="xxl:text-2xl xsm:no-underline flex flex-col items-center gap-2 text-justify text-lg underline max-sm:w-full sm:flex-row lg:text-2xl">
+                        <Image
+                          src="/images/ikone/cjenik.svg"
+                          alt="brži oporavak"
+                          className="max-sm:h-10 max-sm:w-10"
+                          width={55}
+                          height={55}
+                        />
+                        Cijene i dodatne informacije pronađite u sekciji
+                        &quot;Cjenik&quot;
                       </p>
                       <div className="mx-auto mt-1.5">
                         <Button type="red" href="#cjenik">
-                          <span className="text-nowrap">Pročitajte više</span>{" "}
+                          <span className="text-nowrap">Cjenik</span>{" "}
                           <FaArrowDown className="transition-all duration-300 group-hover:translate-y-1.5" />
                         </Button>
                       </div>
@@ -345,7 +352,7 @@ const Intro = () => {
                   </div>
                 </div>
 
-                <div className="relative min-h-[320px] w-full lg:min-h-full lg:w-1/2">
+                <div className="relative min-h-[320px] w-full max-lg:grow lg:min-h-full lg:w-1/2">
                   <Image
                     src="/images/zadar/slika2.jpg"
                     alt="prehab klinika"

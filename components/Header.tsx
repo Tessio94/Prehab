@@ -160,7 +160,7 @@ const Header = () => {
             <a
               href="tel:+0959064240"
               className={cn(
-                "flex items-center gap-2",
+                "flex items-center gap-2 font-medium",
                 pathname !== "/" ? "text-black_preh" : "text-stone-100",
               )}
             >
