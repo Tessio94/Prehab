@@ -104,7 +104,6 @@ const Intro = () => {
                         <Image
                           src="/images/ikone/injury-prevention.svg"
                           alt="prevencija ozljede"
-                          className="max-sm:h-10 max-sm:w-10"
                           width={55}
                           height={55}
                         />
@@ -126,7 +125,6 @@ const Intro = () => {
                         <Image
                           src="/images/ikone/recovery.svg"
                           alt="brži oporavak"
-                          className="max-sm:h-10 max-sm:w-10"
                           width={55}
                           height={55}
                         />
@@ -148,7 +146,6 @@ const Intro = () => {
                         <Image
                           src="/images/ikone/quality-of-life.svg"
                           alt="kvaliteta života"
-                          className="max-sm:h-10 max-sm:w-10"
                           width={55}
                           height={55}
                         />
@@ -293,7 +290,6 @@ const Intro = () => {
                         <Image
                           src="/images/ikone/usluge.svg"
                           alt="brži oporavak"
-                          className="max-sm:h-10 max-sm:w-10"
                           width={55}
                           height={55}
                         />
@@ -312,7 +308,6 @@ const Intro = () => {
                         <Image
                           src="/images/ikone/cjenik.svg"
                           alt="brži oporavak"
-                          className="max-sm:h-10 max-sm:w-10"
                           width={55}
                           height={55}
                         />

@@ -9,31 +9,7 @@ const Cover = ({
 }) => {
   return (
     <div className="relative z-10 w-full overflow-x-clip">
-      <div className="from-red_preh absolute inset-0 -z-10 bg-linear-to-b from-50% to-transparent"></div>
-      {/* <Image
-        src="/images/Nikola/prehab_nikola_low.webp"
-        alt="Nikola background"
-        fill
-        priority
-        quality={30}
-        sizes="100vw"
-        className="left-30! scale-105 object-cover blur-xl"
-      /> */}
-
-      {/* Main image */}
-      {/* <Image
-        src="/images/Nikola/cover4.png"
-        alt="Nikola background high quality"
-        fill
-        priority
-        quality={100}
-        sizes="100vw"
-        onLoad={() => setLoaded(true)}
-        className={`object-cover object-right transition-opacity duration-700 ${
-          loaded ? "opacity-100" : "opacity-0"
-        }`}
-      /> */}
-
+      <div className="from-red_preh absolute top-0 right-0 -bottom-20 left-0 -z-10 bg-linear-to-b from-60% to-transparent"></div>
       <Image
         src="/images/Nikola/cover4.png"
         alt="Nikola background high quality"
