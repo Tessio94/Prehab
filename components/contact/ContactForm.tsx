@@ -68,8 +68,8 @@ const ContactForm = () => {
         <form
           className="flex flex-col gap-7"
           name="contact"
-          data-netlify="true"
-          data-netlify-honeypot="botfield"
+          // data-netlify="true"
+          // data-netlify-honeypot="botfield"
           // onSubmit={handleSubmit}
         >
           <h6 className="font-oswald mb-3 text-center text-3xl font-bold text-slate-100 underline">
