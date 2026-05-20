@@ -4,7 +4,7 @@ import Intro from "@/components/about/Intro";
 import Reviews from "@/components/about/Reviews";
 import Steps from "@/components/about/Steps";
 
-const Page = () => {
+const Page = async () => {
   return (
     <>
       <Intro />

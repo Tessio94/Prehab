@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <>
       <Banner />
-      <footer className="bg-black_preh p-4 px-6 py-8 text-stone-50 sm:px-10">
+      <footer className="bg-black_preh px-6 pt-16 text-stone-50 sm:px-10">
         <div className="flex flex-row flex-wrap items-stretch justify-between gap-5 max-[830px]:gap-12 max-sm:flex-col max-sm:items-center">
           <div className="flex flex-col items-start justify-between gap-5 max-[830px]:mx-auto max-[830px]:w-1/2! max-xl:w-[45%] max-sm:w-fit!">
             <a href="#" className="flex items-center gap-4 text-stone-100">
@@ -24,7 +24,7 @@ const Footer = () => {
               />
               <h1 className="font-oswald text-3xl font-bold">Prehab</h1>
             </a>
-            <p className="text-xl text-slate-100">
+            <p className="font-inter text-xl text-slate-100">
               Fizioterapija, rehabilitacija
               <br /> i individualan pristup vašem zdravlju.
             </p>
@@ -77,21 +77,16 @@ const Footer = () => {
             <a
               href="https://www.facebook.com/prehabilitationtherapycenter"
               target="_blank"
-              className="text-2xl transition-all duration-500 hover:scale-125 hover:text-stone-400"
             >
-              <FaFacebook />
+              <FaFacebook className="text-2xl transition-all duration-500 hover:scale-115 hover:text-stone-400" />
             </a>
-            <a
-              href="https://www.instagram.com/prehabcentar/"
-              target="_blank"
-              className="text-2xl transition-all duration-500 hover:scale-125 hover:text-stone-400"
-            >
-              <FaInstagram />
+            <a href="https://www.instagram.com/prehabcentar/" target="_blank">
+              <FaInstagram className="text-2xl transition-all duration-500 hover:scale-115 hover:text-stone-400" />
             </a>
           </div>
         </div>
         <hr className="mt-5 w-full pb-5 text-white" />
-        <p className="text-center">
+        <p className="font-oswald pb-5 text-center">
           © {date} <i>Tessio94</i>
         </p>
       </footer>

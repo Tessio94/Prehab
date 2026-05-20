@@ -13,11 +13,15 @@ import Trening from "@/components/homepage/Trening";
 import Suradnje from "@/components/homepage/Suradnje";
 import { FaArrowUp } from "react-icons/fa";
 import Cover from "@/components/homepage/Cover";
+import Image from "next/image";
 
 const Page = () => {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
 
-  const location = usePathname();
+  const [loaded, setLoaded] = useState(false);
+  const [minTimePassed, setMinTimePassed] = useState(false);
+
+  // const location = usePathname();
 
   //   const meta = metadata[location.pathname];
 
@@ -36,6 +40,14 @@ const Page = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setMinTimePassed(true);
+    }, 1500);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -67,6 +79,35 @@ const Page = () => {
 						`}
         </script>
       </Helmet> */}
+      <div
+        className={`fixed inset-0 z-[9999] flex items-center justify-center bg-black transition-all duration-700 ${
+          loaded && minTimePassed
+            ? "pointer-events-none translate-y-[-100%] opacity-0"
+            : "translate-y-0 opacity-100"
+        }`}
+      >
+        {/* BACK LOGO */}
+        <div className="absolute flex items-center justify-center">
+          <Image
+            src="/images/logo/ikona3.svg"
+            alt="Prehab ikona"
+            width={240}
+            height={240}
+            className="border-red_preh rounded-2xl border-2 opacity-15"
+          />
+        </div>
+
+        {/* FILLING LOGO */}
+        <div className="logo-fill-wrapper absolute flex items-center justify-center">
+          <Image
+            src="/images/logo/ikona3.svg"
+            alt="Prehab ikona"
+            width={240}
+            height={240}
+            className="logo-fill border-red_preh rounded-2xl border-2"
+          />
+        </div>
+      </div>
 
       {showScrollToTop && (
         <div
@@ -76,7 +117,7 @@ const Page = () => {
           <FaArrowUp className="text-red_preh text-5xl" />
         </div>
       )}
-      <Cover />
+      <Cover setLoaded={setLoaded} />
       <Main />
       <HomeProfile />
       <Intro />

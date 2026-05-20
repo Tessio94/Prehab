@@ -138,6 +138,37 @@ header .active {
   color: red;
 }
 
+.logo-fill-wrapper {
+  overflow: hidden;
+  animation:
+    logoReveal 1.4s ease forwards,
+    logoScale 1.4s ease forwards;
+}
+
+@keyframes logoScale {
+  0% {
+    transform: scale(0.92);
+  }
+
+  70% {
+    transform: scale(1.03);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes logoReveal {
+  0% {
+    clip-path: inset(100% 0 0 0);
+  }
+
+  100% {
+    clip-path: inset(0% 0 0 0);
+  }
+}
+
 @media screen and (max-width: 640px) {
   .custom_grid2 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
