@@ -1,5 +1,5 @@
 const Banner = () => {
-	return <div className="banner h-[3rem] w-max-[70%]"></div>;
+  return <div className="banner w-max-[70%] h-[3rem]"></div>;
 };
 
 export default Banner;

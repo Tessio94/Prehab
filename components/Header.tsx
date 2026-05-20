@@ -4,8 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { BsMailbox, BsTelephone } from "react-icons/bs";
-import { useEffect, useRef, useState } from "react";
+import { BsTelephone } from "react-icons/bs";
+import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { BiMailSend } from "react-icons/bi";
 

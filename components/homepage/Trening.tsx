@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
+import Button from "../shared/Button";
 // import Button from "@/components/shared/Button";
 
 const Trening = () => {
@@ -52,12 +53,12 @@ const Trening = () => {
         <div className="xxl:-right-75 h absolute -top-70 right-[-28%] hidden aspect-square h-200 overflow-hidden rounded-full xl:block">
           <Image src="/images/zadar/slika2.jpg" alt="čučanj vježba" fill />
         </div>
-        <button className="bg-red_preh font-oswald hover:text-red_preh hover:border-red_preh group mx-auto block rounded-xl border-2 px-5 py-2 text-xl font-bold text-white transition-all duration-500 hover:border-2 hover:bg-slate-100">
-          <a href="/kontakt" className="flex items-center gap-2">
-            Kontaktirajte nas{" "}
+        <div className="mx-auto w-fit">
+          <Button href="kontakt" type="black">
+            <span>Kontaktirajte nas</span>
             <FaArrowRight className="transform transition-transform duration-500 group-hover:translate-x-2" />
-          </a>
-        </button>
+          </Button>
+        </div>
       </section>
     </>
   );
