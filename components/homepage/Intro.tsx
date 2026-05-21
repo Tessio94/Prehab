@@ -81,9 +81,9 @@ const Intro = () => {
           <div className="flex items-stretch">
             {/* SLIDE 1 */}
             <div className="min-h-full min-w-0 flex-[0_0_100%] px-2">
-              <div className="border-red_preh_t flex h-full min-h-[750px] flex-col justify-between overflow-hidden rounded-xl border-2 bg-slate-100/80 lg:flex-row">
-                <div className="flex w-full flex-col lg:w-[50%]">
-                  <div className="xsm:px-8 relative flex grow flex-col items-stretch rounded-t-xl bg-slate-100/80 px-4 max-lg:gap-3 max-lg:py-10 max-sm:py-4 lg:rounded-t-none lg:bg-transparent xl:py-10">
+              <div className="border-red_preh_t flex h-full flex-col justify-between overflow-hidden rounded-xl border-2 bg-slate-100/80 lg:min-h-[750px] lg:flex-row">
+                <div className="flex min-h-full w-full flex-col lg:w-[50%]">
+                  <div className="xsm:px-8 relative flex grow flex-col items-stretch rounded-t-xl bg-slate-100/80 px-4 py-10 max-lg:gap-3 max-sm:py-4 lg:rounded-t-none lg:bg-transparent">
                     <div>
                       <h2 className="font-oswald xsm:mt-0 text-red_preh mt-5 mb-8 text-center text-5xl xl:text-6xl">
                         Prehab Zadar
@@ -106,6 +106,7 @@ const Intro = () => {
                           alt="prevencija ozljede"
                           width={55}
                           height={55}
+                          className="max-sm:hidden"
                         />
 
                         <div>
@@ -127,6 +128,7 @@ const Intro = () => {
                           alt="brži oporavak"
                           width={55}
                           height={55}
+                          className="max-sm:hidden"
                         />
 
                         <div>
@@ -148,6 +150,7 @@ const Intro = () => {
                           alt="kvaliteta života"
                           width={55}
                           height={55}
+                          className="max-sm:hidden"
                         />
 
                         <div>
@@ -187,7 +190,7 @@ const Intro = () => {
                     </div>
                   </div>
                 </div>
-                <div className="relative min-h-[320px] w-full max-lg:grow lg:min-h-full lg:w-1/2">
+                <div className="relative min-h-[320px] w-full max-lg:hidden lg:min-h-full lg:w-1/2">
                   <Image
                     src="/images/zadar/slika1.jpg"
                     alt="prehab zadar klinika"
@@ -201,8 +204,8 @@ const Intro = () => {
 
             {/* SLIDE 2 */}
             <div className="min-h-full min-w-0 flex-[0_0_100%] px-2">
-              <div className="border-red_preh_t flex h-full min-h-[750px] flex-col justify-between overflow-hidden rounded-xl border-2 bg-slate-100/80 lg:flex-row">
-                <div className="relative min-h-[320px] w-full max-lg:grow lg:min-h-full lg:w-1/2">
+              <div className="border-red_preh_t flex h-full flex-col justify-between overflow-hidden rounded-xl border-2 bg-slate-100/80 lg:min-h-[750px] lg:flex-row">
+                <div className="relative min-h-[320px] w-full max-lg:hidden lg:min-h-full lg:w-1/2">
                   <div className="relative block w-full max-lg:h-1/2 lg:h-1/2">
                     <Image
                       src="/images/certifikati/slika12.jpg"
@@ -221,7 +224,7 @@ const Intro = () => {
                     />
                   </div>
                 </div>
-                <div className="xsm:px-8 flex w-full flex-col gap-5 overflow-hidden rounded-b-xl bg-slate-100/80 px-4 max-lg:py-10 max-sm:py-4 lg:w-[50%] lg:rounded-none lg:rounded-r-xl lg:bg-transparent xl:py-10">
+                <div className="xsm:px-8 flex min-h-full w-full flex-col gap-5 overflow-hidden rounded-b-xl bg-slate-100/80 px-4 py-10 max-sm:py-4 lg:w-[50%] lg:rounded-none lg:rounded-r-xl lg:bg-transparent">
                   <h2 className="font-oswald text-red_preh text-center text-5xl lg:text-6xl">
                     Obrazovanje
                   </h2>
@@ -266,9 +269,9 @@ const Intro = () => {
 
             {/* SLIDE 3 */}
             <div className="min-h-full min-w-0 flex-[0_0_100%] px-2">
-              <div className="border-red_preh_t flex h-full min-h-[750px] flex-col justify-between overflow-hidden rounded-xl border-2 bg-slate-100/80 lg:flex-row">
-                <div className="flex w-full flex-col justify-between lg:min-h-full lg:w-[50%]">
-                  <div className="xsm:px-8 relative flex grow flex-col items-stretch justify-between px-4 max-lg:gap-5 max-lg:py-10 max-sm:py-4 xl:py-10">
+              <div className="border-red_preh_t flex h-full flex-col justify-between overflow-hidden rounded-xl border-2 bg-slate-100/80 lg:min-h-[750px] lg:flex-row">
+                <div className="flex min-h-full w-full flex-col justify-between lg:w-[50%]">
+                  <div className="xsm:px-8 relative flex grow flex-col items-stretch justify-between px-4 py-10 max-lg:gap-5 max-sm:py-4">
                     <div>
                       <h2 className="font-oswald text-red_preh mb-7 text-center text-5xl">
                         Usluge
@@ -286,7 +289,7 @@ const Intro = () => {
                     </div>
 
                     <div className="font-oswald flex grow flex-col items-start justify-center gap-3 text-xl">
-                      <p className="xxl:text-2xl xsm:no-underline flex flex-col items-center gap-2 text-justify text-lg underline max-sm:w-full sm:flex-row lg:text-2xl">
+                      <p className="xxl:text-2xl flex flex-col items-center gap-2 text-justify text-lg max-sm:w-full sm:flex-row lg:text-2xl">
                         <Image
                           src="/images/ikone/usluge.svg"
                           alt="brži oporavak"
@@ -304,7 +307,7 @@ const Intro = () => {
                       </div>
                     </div>
                     <div className="font-oswald flex grow flex-col items-start justify-center gap-3 text-xl">
-                      <p className="xxl:text-2xl xsm:no-underline flex flex-col items-center gap-2 text-justify text-lg underline max-sm:w-full sm:flex-row lg:text-2xl">
+                      <p className="xxl:text-2xl flex flex-col items-center gap-2 text-justify text-lg max-sm:w-full sm:flex-row lg:text-2xl">
                         <Image
                           src="/images/ikone/cjenik.svg"
                           alt="brži oporavak"
@@ -347,7 +350,7 @@ const Intro = () => {
                   </div>
                 </div>
 
-                <div className="relative min-h-[320px] w-full max-lg:grow lg:min-h-full lg:w-1/2">
+                <div className="relative min-h-[320px] w-full max-lg:hidden lg:min-h-full lg:w-1/2">
                   <Image
                     src="/images/zadar/slika2.jpg"
                     alt="prehab klinika"

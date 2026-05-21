@@ -225,7 +225,7 @@ const Header = () => {
         </div>
         <nav
           className={cn(
-            "border-theme3 bg-theme4 fixed top-0 bottom-0 left-0 z-9999 w-[300px] border-r-2 bg-[url(/logo_transparent.png)] bg-contain bg-repeat shadow-[inset_-50px_0_50px_-50px_var(--theme3)] transition-all duration-300 max-[410px]:w-[260px] sm:w-[330px] lg:hidden",
+            "border-theme3 bg-theme4 fixed top-0 bottom-0 left-0 z-9999 w-[300px] border-r-2 bg-contain bg-repeat shadow-[inset_-50px_0_50px_-50px_var(--theme3)] transition-all duration-300 max-[410px]:w-[260px] sm:w-[330px] lg:hidden",
             hambActive ? "translate-x-0" : "-translate-x-full",
           )}
         >

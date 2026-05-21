@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 
 const Info = () => {
   return (
-    <section className="py-16">
+    <section className="xxl:py-16 py-0 sm:py-5 lg:py-10">
       <div className="mx-auto flex flex-col items-stretch justify-between px-10 py-10 sm:flex-row sm:gap-0 sm:px-0">
         <div className="border-red_preh_t flex h-[10rem] w-full basis-[33.3%] flex-col items-center justify-start gap-3 border-b-2 pb-5 sm:border-r-2 sm:border-b-0 sm:pb-0">
           <div className="bg-red_preh_t/80 flex flex-row items-center justify-center rounded-full p-3.5">

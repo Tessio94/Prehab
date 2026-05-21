@@ -1,8 +1,8 @@
 const Intro = () => {
   return (
     <section className="bg-slate-100">
-      <div className="flex w-full flex-col px-6 md:px-10 lg:px-16 xl:flex-row">
-        <div className="flex flex-col items-start gap-6 px-10 py-16 max-md:px-0 xl:py-26">
+      <div className="flex w-full flex-col px-6 py-16 md:px-10 lg:px-16 xl:flex-row">
+        <div className="flex flex-col items-start gap-6 p-10 max-md:px-0 max-md:py-10">
           <h1 className="text-red_preh text-semibold font-oswald text-4xl max-[400px]:text-3xl">
             Kontakt
           </h1>
