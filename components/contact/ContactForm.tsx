@@ -19,12 +19,14 @@ const ContactForm = ({
   const [loading, setLoading] = useState(false);
   const [formValues, setFormValues] = useState(initialValues);
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
     try {
       e.preventDefault();
       setLoading(true);
