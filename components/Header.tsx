@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { BsTelephone } from "react-icons/bs";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { BiMailSend } from "react-icons/bi";
 
@@ -65,7 +65,11 @@ const Header = () => {
           height={150}
         />
 
-        <Link href="/" className="z-100 flex items-center gap-4">
+        <Link
+          onClick={() => setHambActive(false)}
+          href="/"
+          className="z-100 flex items-center gap-4"
+        >
           <Image
             src="/images/logo/ikona.png"
             alt="logo"
@@ -100,6 +104,7 @@ const Header = () => {
               return (
                 <li key={link.href}>
                   <Link
+                    onClick={() => setHambActive(false)}
                     href={link.href}
                     className={cn(
                       "font-oswald relative transition-all duration-500 before:absolute before:bottom-[-0.2rem] before:left-0 before:h-0.5 before:w-0 before:bg-stone-300 before:transition-all before:duration-500",
@@ -195,7 +200,11 @@ const Header = () => {
 
           <div className="scrollbar-slate flex h-full max-h-screen flex-col justify-between gap-15 overflow-y-auto pt-6 pb-12">
             <div className="flex flex-col items-start gap-10">
-              <Link href="/" className="z-100 flex items-center gap-4 px-3">
+              <Link
+                onClick={() => setHambActive(false)}
+                href="/"
+                className="z-100 flex items-center gap-4 px-3"
+              >
                 <Image
                   src="/images/logo/ikona.png"
                   alt="logo"
@@ -226,6 +235,7 @@ const Header = () => {
                   return (
                     <li key={link.href}>
                       <Link
+                        onClick={() => setHambActive(false)}
                         href={link.href}
                         className={cn(
                           "font-oswald relative transition-all duration-500 before:absolute before:bottom-[-0.2rem] before:left-0 before:h-0.5 before:w-0 before:bg-stone-300 before:transition-all before:duration-500",
