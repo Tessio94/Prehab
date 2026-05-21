@@ -22,45 +22,7 @@ const Header = () => {
 
   const pathname = usePathname();
 
-  // const dropdown = useRef<HTMLUListElement>(null);
-  // const navbar = useRef<HTMLDivElement>(null);
-
-  // Handle navbar scroll behavior
-  // useEffect(() => {
-  //   if (window.innerWidth < 640) return;
-
-  //   const handleScroll = () => {
-  //     if (!navbar.current) return;
-
-  //     if (window.scrollY > 0 && window.scrollY < 900) {
-  //       navbar.current.classList.remove("relative");
-  //       navbar.current.classList.add("fixed");
-
-  //       navbar.current.classList.toggle("opacity-0", window.scrollY > 700);
-  //     } else {
-  //       navbar.current.classList.remove("opacity-0");
-  //     }
-  //   };
-
-  //   if (pathname === "/") {
-  //     window.addEventListener("scroll", handleScroll);
-  //   } else {
-  //     navbar.current?.classList.remove("fixed");
-  //     navbar.current?.classList.add("relative");
-  //   }
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, [pathname]);
-
-  // Close mobile menu on route change
-  // useEffect(() => {
-  //   setHambActive(false);
-  // }, [pathname]);
-
   return (
-    // <header className={cn(pathname !== "/" ? "relative h-[7.5rem] w-full" : "absolute")}>
     <header
       className={cn(
         "w-full",
