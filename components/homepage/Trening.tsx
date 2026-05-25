@@ -18,7 +18,7 @@ const Trening = () => {
               Moderna terapijska rješenja za brži oporavak i zdravlje
               kralježnice
             </h4>
-            <p className="mb-10 text-xl">
+            <p className="mb-10 text-xl xl:max-w-2/3">
               U našu ponudu uvodimo suvremene terapijske metode usmjerene na
               smanjenje boli, ubrzanje oporavka i poboljšanje funkcionalnosti
               lokomotornog sustava.
