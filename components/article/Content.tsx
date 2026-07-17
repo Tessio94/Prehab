@@ -12,29 +12,48 @@ import {
 import { IoInformation } from "react-icons/io5";
 import { TfiWorld } from "react-icons/tfi";
 import Button from "../shared/Button";
+import ShareButton from "./ShareButton";
 
 const Content = () => {
+  const articleUrl = encodeURIComponent(
+    "https://prehabilitationtherapycenter.hr/zdravlje/skolioza-kamp",
+  );
+  const articleTitle = encodeURIComponent("Skolioza kamp Biograd na moru");
+
   return (
     <section className="px-6 py-16 md:px-10 lg:px-26">
       <div className="mx-auto flex w-full flex-col gap-8 px-10 max-md:px-0 xl:flex-row">
-        <aside className="order-1 flex flex-col items-start gap-5 xl:sticky xl:top-[110px] xl:max-h-[calc(100vh-110px)] xl:w-fit xl:items-center xl:self-start xl:overflow-y-auto xl:pb-20">
+        <aside className="order-1 flex flex-col items-start gap-5 xl:sticky xl:top-[110px] xl:max-h-[calc(100vh-110px)] xl:w-fit xl:items-center xl:self-start xl:pb-20">
           <p className="font-inter text-black_preh text-xl font-medium">
             Podijeli članak
           </p>
           <div className="shadow-black_preh/60 w-fit rounded-xl bg-slate-100/80 p-5 shadow-xl">
             <div className="flex w-fit flex-row items-center gap-8 xl:flex-col">
-              <a href="" className="group inline-block">
+              <a
+                href={`https://www.facebook.com/sharer/sharer.php?u=${articleUrl}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-block"
+              >
                 <FaFacebook className="text-black_preh text-2xl transition-all duration-300 group-hover:scale-110 group-hover:text-blue-600" />
               </a>
-              <a href="" className="group inline-block">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-block"
+              >
                 <FaInstagram className="text-black_preh text-2xl transition-all duration-300 group-hover:scale-110 group-hover:text-pink-600" />
               </a>
-              <a href="" className="group inline-block">
+              <a
+                href={`https://wa.me/?text=${articleTitle}%20${articleUrl}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-block"
+              >
                 <FaWhatsapp className="text-black_preh text-2xl transition-all duration-300 group-hover:scale-110 group-hover:text-green-400" />
               </a>
-              <a href="" className="group inline-block">
-                <FaLink className="text-black_preh text-2xl transition-all duration-300 group-hover:scale-110 group-hover:text-blue-600" />
-              </a>
+              <ShareButton />
             </div>
           </div>
         </aside>
@@ -153,7 +172,12 @@ const Content = () => {
               <div className="flex flex-row items-center gap-2">
                 <TfiWorld className="text-red_preh text-xl" />
 
-                <a href="" target="__blank">
+                <a
+                  href="https://www.ridesanum.hr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
                   www.ridesanum.hr
                 </a>
               </div>
@@ -162,7 +186,9 @@ const Content = () => {
                 <div>
                   <span>Ridesanum</span>
                   <span className="px-1">|</span>
-                  <a href="">091/9355-858</a>
+                  <a href="tel:+385919355858" className="hover:underline">
+                    091/9355-858
+                  </a>
                 </div>
               </div>
               <div className="flex flex-row items-center gap-2">
@@ -170,7 +196,9 @@ const Content = () => {
                 <div>
                   <span>Balboa Gym</span>
                   <span className="px-1">|</span>
-                  <a href="">091/9355-858</a>
+                  <a href="tel:+385919355858" className="hover:underline">
+                    091/9355-858
+                  </a>
                 </div>
               </div>
               <div className="flex flex-row items-center gap-2">
@@ -178,7 +206,9 @@ const Content = () => {
                 <div>
                   <span>Prehab Centar</span>
                   <span className="px-1">|</span>
-                  <a href="">091/9355-858</a>
+                  <a href="tel:+385919355858" className="hover:underline">
+                    091/9355-858
+                  </a>
                 </div>
               </div>
             </div>
