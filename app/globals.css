@@ -159,6 +159,17 @@ header .active {
   }
 }
 
+@media (min-width: 1920px) {
+  body {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  body header {
+    max-width: 1920px;
+  }
+}
+
 @media (min-width: 2100px) {
   .navbar-shape::before {
     background-size: 100% calc(2vw + 120px);
