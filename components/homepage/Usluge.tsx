@@ -27,7 +27,7 @@ export default function Usluge() {
     <section
       id="usluge"
       aria-labelledby="services-heading"
-      className="text-black_preh scroll-mt-24 bg-slate-50 px-6 py-20 md:px-10 lg:px-16 lg:py-28"
+      className="text-black_preh scroll-mt-24 bg-slate-50 px-6 py-16 md:px-10 lg:px-16"
     >
       <div className="md:px-10">
         <div className="mb-10 flex flex-col justify-between gap-5 md:mb-14 md:flex-row md:items-end">
