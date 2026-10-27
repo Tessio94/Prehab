@@ -21,8 +21,8 @@ const Content = () => {
   const articleTitle = encodeURIComponent("Skolioza kamp Biograd na moru");
 
   return (
-    <section className="px-6 py-16 md:px-10 lg:px-26">
-      <div className="mx-auto flex w-full flex-col gap-8 px-10 max-md:px-0 xl:flex-row">
+    <section className="mx-auto max-w-7xl px-6 py-16 sm:px-10 lg:px-16">
+      <div className="mx-auto flex w-full flex-col gap-8 xl:flex-row">
         <aside className="order-1 flex flex-col items-start gap-5 xl:sticky xl:top-[110px] xl:max-h-[calc(100vh-110px)] xl:w-fit xl:items-center xl:self-start xl:pb-20">
           <p className="font-inter text-black_preh text-xl font-medium">
             Podijeli članak
@@ -86,25 +86,19 @@ const Content = () => {
                 <li className="xsm:gap-3 flex flex-row items-center gap-2">
                   <CgCheck className="text-red_preh shrink-0 text-3xl" />
                   <p className="font-inter text-lg xl:text-[22px]">
-                    Individualizirane vježbe i terapije
+                    Prekrasan morski ambijent i priroda
                   </p>
                 </li>
                 <li className="xsm:gap-3 flex flex-row items-center gap-2">
                   <CgCheck className="text-red_preh shrink-0 text-3xl" />
                   <p className="font-inter text-lg xl:text-[22px]">
-                    Individualizirane vježbe i terapije
+                    Stručno vodstvo i cjelovita podrška svima
                   </p>
                 </li>
                 <li className="xsm:gap-3 flex flex-row items-center gap-2">
                   <CgCheck className="text-red_preh shrink-0 text-3xl" />
                   <p className="font-inter text-lg xl:text-[22px]">
-                    Individualizirane vježbe i terapije
-                  </p>
-                </li>
-                <li className="xsm:gap-3 flex flex-row items-center gap-2">
-                  <CgCheck className="text-red_preh shrink-0 text-3xl" />
-                  <p className="font-inter text-lg xl:text-[22px]">
-                    Individualizirane vježbe i terapije
+                    Lekcije o pravilnom držanju i jačanju mišića.
                   </p>
                 </li>
               </ul>

@@ -1,43 +1,40 @@
-import Image from "next/image";
-import { CgCalendar } from "react-icons/cg";
-import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
+import { FiArrowUpRight, FiClock } from "react-icons/fi";
+import { campArticle, type HealthArticle } from "@/data/articles";
+import ArticleVisual from "./ArticleVisual";
 
-const Article = () => {
+export default function Article({
+  article = campArticle,
+}: {
+  article?: HealthArticle;
+}) {
   return (
-    <a
-      href=""
-      className="group border-red_preh_t shadow-red_preh_t/60 z-100 flex cursor-pointer flex-col overflow-hidden rounded-2xl border-2 shadow-xl"
+    <Link
+      href={`/zdravlje/${article.slug}`}
+      className="group text-black_preh hover:border-red_preh/30 focus-visible:outline-red_preh flex h-full min-w-0 flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white transition duration-200 hover:-translate-y-1 hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-4 motion-reduce:transform-none"
     >
-      <div className="shrink-0 overflow-hidden">
-        <Image
-          src="/images/novosti/skolioza_banner.jpg"
-          className="transition-all duration-300 group-hover:scale-105"
-          alt=""
-          width={3840}
-          height={2160}
-        />
-      </div>
-      <div className="flex grow flex-col justify-between gap-6 bg-slate-100/80 p-3">
-        <h5 className="font-oswald text-black_preh text-2xl font-semibold">
-          Što je hidrogen?
-        </h5>
-        <p className="text-black_preh">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit,
-          quasi?.
+      <ArticleVisual visual={article.visual} />
+      <div className="flex grow flex-col items-start p-6 sm:p-7">
+        <p className="text-red_preh mb-3 text-xs font-semibold tracking-wider uppercase">
+          {article.category}
         </p>
-        <div className="mt-auto flex flex-row items-center gap-4">
-          <div className="text-red_preh flex flex-row items-center gap-1.5">
-            <CgCalendar className="text-3xl" />
-            <time dateTime="">15.05.2025</time>
-          </div>
-          <div className="text-red_preh flex flex-row items-center gap-1.5 font-semibold">
-            <span className="text-nowrap">Pročitajte više</span>{" "}
-            <FaArrowRight className="transition-all duration-300 group-hover:translate-x-3" />
-          </div>
+        <h3 className="font-oswald text-2xl leading-snug font-medium">
+          {article.title}
+        </h3>
+        <p className="font-inter mt-3 text-sm leading-relaxed text-slate-600">
+          {article.excerpt}
+        </p>
+        <div className="mt-auto flex w-full flex-wrap items-center justify-between gap-3 pt-7 text-sm">
+          <span className="flex items-center gap-2 text-slate-500">
+            <FiClock aria-hidden="true" />
+            {article.readTime}
+          </span>
+          <span className="text-red_preh inline-flex items-center gap-2 font-semibold">
+            Pročitajte više
+            <FiArrowUpRight aria-hidden="true" />
+          </span>
         </div>
       </div>
-    </a>
+    </Link>
   );
-};
-
-export default Article;
+}

@@ -1,55 +1,32 @@
-import Image from "next/image";
+import { otherArticles } from "@/data/articles";
 import Article from "../zdravlje/Article";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
 
-const ConnectedArticles = () => {
+export default function ConnectedArticles({
+  currentSlug,
+}: {
+  currentSlug?: string;
+}) {
+  const related = otherArticles
+    .filter((article) => article.slug !== currentSlug)
+    .slice(0, 2);
   return (
-    <section>
-      <div className="max-lg: flex flex-col items-stretch gap-16 bg-slate-100/80 px-6 py-16 md:px-10 lg:flex-row lg:items-start lg:px-16 2xl:items-stretch">
-        <div className="flex px-10 max-md:px-0">
-          <div>
-            <p className="text-black_preh mb-10 text-3xl font-semibold">
-              Možda će vas zanimati i ovo
-            </p>
-            <div className="relative z-0 grid w-fit grid-cols-1 items-stretch gap-10 rounded-2xl lg:grid-cols-2 2xl:grid-cols-3">
-              <Article />
-              <Article />
-              <Article />
-            </div>
-          </div>
-        </div>
-        <div className="bg-red_preh_t flex shrink-0 flex-col items-center justify-between gap-5 rounded-xl px-15 py-5">
-          <p className="text-red_preh text-2xl font-semibold">Autor članka</p>
-          <div className="overflow-hidden rounded-full border-2 border-slate-100 bg-slate-100/80">
-            <Image
-              src="/images/animacija/pocetna.png"
-              alt=""
-              width={200}
-              height={200}
-            />
-          </div>
-          <strong className="text-2xl">Nikola Lukić</strong>
-          <p className="text-xl">Diplomirani fizioterapeut</p>
-          <div className="flex flex-row items-center gap-3">
-            <a
-              href="https://www.facebook.com/prehabilitationtherapycenter"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebook className="rounded-full border border-transparent text-3xl transition-all duration-300 hover:border-slate-100 hover:bg-slate-100 hover:text-blue-600" />
-            </a>
-            <a
-              href="https://www.instagram.com/prehabcentar/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram className="rounded-lg text-3xl transition-all duration-300 hover:bg-slate-100 hover:text-pink-600" />
-            </a>
-          </div>
+    <section
+      aria-labelledby="related-heading"
+      className="text-black_preh bg-slate-50 px-6 py-16 md:px-10 lg:px-26"
+    >
+      <div className="mx-auto max-w-6xl">
+        <h2
+          id="related-heading"
+          className="font-oswald mb-8 text-3xl font-medium"
+        >
+          Možda će vas zanimati i ovo
+        </h2>
+        <div className="grid gap-6 md:grid-cols-2">
+          {related.map((article) => (
+            <Article key={article.slug} article={article} />
+          ))}
         </div>
       </div>
     </section>
   );
-};
-
-export default ConnectedArticles;
+}

@@ -1,26 +1,23 @@
-import { GrArticle } from "react-icons/gr";
+import { otherArticles } from "@/data/articles";
 import Article from "./Article";
 
-const Articles = () => {
+export default function Articles() {
   return (
-    <section className="px-6 py-10 md:px-10 lg:px-16">
-      <div className="px-10 max-md:px-0">
-        <div className="flex w-full flex-row items-center justify-between">
-          <div className="mb-5 flex flex-row items-center gap-5">
-            <GrArticle className="text-red_preh text-5xl" />
-            <h5 className="font-oswald text-3xl font-semibold">Svi članci</h5>
-          </div>
-          <div></div>
-        </div>
-        <div className="relative z-0 grid w-fit items-stretch gap-10 rounded-2xl sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-          <Article />
-          <Article />
-          <Article />
-          <Article />
-        </div>
+    <section
+      aria-labelledby="articles-heading"
+      className="px-6 py-14 md:px-10 lg:px-26"
+    >
+      <h2
+        id="articles-heading"
+        className="font-oswald mb-8 text-3xl font-semibold"
+      >
+        Svi članci
+      </h2>
+      <div className="grid items-stretch gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {otherArticles.map((article) => (
+          <Article key={article.slug} article={article} />
+        ))}
       </div>
     </section>
   );
-};
-
-export default Articles;
+}

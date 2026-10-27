@@ -128,7 +128,9 @@ const Header = () => {
               href="tel:+0959064240"
               className={cn(
                 "flex items-center gap-2 font-medium",
-                pathname !== "/" ? "text-black_preh" : "text-stone-100",
+                pathname === "/" || pathname.startsWith("/zdravlje/")
+                  ? "text-slate-100"
+                  : "text-black_preh",
               )}
             >
               <BsTelephone />
@@ -139,7 +141,9 @@ const Header = () => {
           <ul
             className={cn(
               "text-md flex gap-3",
-              pathname !== "/" ? "text-black_preh" : "text-stone-100",
+              pathname === "/" || pathname.startsWith("/zdravlje/")
+                ? "text-slate-100"
+                : "text-black_preh",
             )}
           >
             <li className="cursor-pointer text-xl transition-all duration-500 hover:scale-125 hover:text-stone-400">

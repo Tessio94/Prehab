@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { GoTriangleDown, GoTriangleUp } from "react-icons/go";
-import Image from "next/image";
-import { cn } from "@/lib/utils";
+"use client";
 
-type Usluga = {
+import { FiArrowUpRight } from "react-icons/fi";
+import ServiceIcon from "../services/ServiceIcon";
+
+export type Service = {
   id: number;
   name: string;
   img: string;
@@ -11,50 +11,35 @@ type Usluga = {
   imageDesc: string;
 };
 
-const Usluga = ({ usluga }: { usluga: Usluga }) => {
-  const { id, name, img, description, imageDesc } = usluga;
-  const [active, setActive] = useState(false);
-
+export default function Usluga({
+  usluga,
+  onSelect,
+}: {
+  usluga: Service;
+  onSelect: (service: Service) => void;
+}) {
   return (
-    <div className="border-black_preh shadow-black_preh/60 rounded-xl border-2 bg-slate-100 py-5 shadow-xl">
-      <div className="relative flex items-center justify-center">
-        <Image
-          src={img}
-          alt={imageDesc}
-          className="z-0"
-          width={160}
-          height={160}
-        />
-      </div>
-      <h2 className="font-oswald mb-3 text-center text-[1.2rem] font-bold">
-        {name}
-      </h2>
-      <div className="flex items-center justify-center">
-        <button
-          onClick={() => setActive(!active)}
-          className={cn(
-            "font-oswald z-20 flex items-center justify-center gap-1 rounded-xl border-2 px-5 py-1 transition-all duration-500",
-            active
-              ? "text-red_preh lg:hover:bg-red_preh border-red_preh bg-slate-100 lg:hover:text-slate-100"
-              : "bg-red_preh lg:hover:text-red_preh border-red_preh text-slate-100 lg:hover:bg-slate-100",
-          )}
-        >
-          {active ? "Minimiziraj" : "Pogledaj više"}
-          <span>{active ? <GoTriangleUp /> : <GoTriangleDown />}</span>
-        </button>
-      </div>
-      <p
-        className={cn(
-          "font-oswald text-justify text-xl hyphens-auto transition-all duration-500",
-          active
-            ? "bg-black_preh border-black_preh relative z-10 w-full translate-y-0 rounded-b-xl border-2 px-5 py-3 text-white"
-            : "translate translate-y-[-120%] opacity-0",
-        )}
-      >
-        {description}
-      </p>
-    </div>
+    <button
+      type="button"
+      onClick={() => onSelect(usluga)}
+      aria-haspopup="dialog"
+      className="service-card group text-black_preh hover:border-red_preh/30 hover:shadow-black_preh/5 focus-visible:outline-red_preh flex h-full w-full flex-col items-start rounded-3xl border border-slate-200 bg-white p-6 text-left transition duration-200 hover:-translate-y-1 hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-4 motion-reduce:transform-none sm:p-7"
+    >
+      <span className="mb-7 flex w-full items-start justify-between gap-3">
+        <span className="text-red_preh group-hover:bg-red_preh inline-flex size-16 items-center justify-center rounded-2xl bg-red-50 transition-colors group-hover:text-white">
+          <ServiceIcon id={usluga.id} className="size-12" />
+        </span>
+      </span>
+      <span className="font-oswald text-2xl leading-snug font-medium">
+        {usluga.name}
+      </span>
+      <span className="font-inter mt-3 line-clamp-2 text-sm leading-relaxed text-slate-600">
+        {usluga.description}
+      </span>
+      <span className="text-red_preh mt-auto flex w-full items-center justify-between gap-3 pt-6 text-sm font-semibold">
+        Otkrijte više
+        <FiArrowUpRight className="size-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 motion-reduce:transform-none" />
+      </span>
+    </button>
   );
-};
-
-export default Usluga;
+}

@@ -2,7 +2,7 @@ const usluge = [
   {
     id: 1,
     name: "Dijagnostika problema",
-    img: "/images/ikone/noun-physiotherapy-2007750 (1).svg",
+    img: "/images/ikone/noun-physiotherapy-2007750.svg",
     description:
       "Dijagnostika u fizioterapiji uključuje detaljnu procjenu pacijentovog zdravstvenog stanja, analizu pokreta, identifikaciju uzroka boli i funkcionalnih ograničenja, te izradu personaliziranog plana tretmana za optimalan oporavak.",
     imageDesc: "Dijagnostika ikona",
@@ -34,7 +34,7 @@ const usluge = [
   {
     id: 5,
     name: "Konzultacije oko zdravlja",
-    img: "/images/ikone/noun-physiotherapy-center-3636364 (1).svg",
+    img: "/images/ikone/noun-physiotherapy-center-3636364.svg",
     description:
       "Konzultacijama omogućujemo našim pacijentima da dobiju stručne savjete o prevenciji povreda, rehabilitaciji, pravilnoj tjelesnoj aktivnosti, te usvajanju zdravih životnih navika za dugoročno zdravlje.",
     imageDesc: "Konzultacije za zdravlje ikona",
@@ -68,7 +68,7 @@ const usluge = [
     name: "Terapijske vjezbe u vodi",
     img: "/images/ikone/noun-pool-437965.svg",
     description:
-      "Terapijske vježbe u vodi koriste svojstva vode za smanjenje opterećenja na zglobove, poboljšanje pokretljivosti, jačanje mišića i rehabilitaciju. Ova metoda je idealna za pacijente s ograničenom mobilnošću..",
+      "Terapijske vježbe u vodi koriste svojstva vode za smanjenje opterećenja na zglobove, poboljšanje pokretljivosti, jačanje mišića i rehabilitaciju. Ova metoda je idealna za pacijente s ograničenom mobilnošću.",
     imageDesc: "Terapija u vodi ikona",
   },
   {

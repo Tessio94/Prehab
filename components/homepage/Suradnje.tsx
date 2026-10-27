@@ -6,7 +6,7 @@ const Suradnje = () => {
       id="suradnje"
       className="bg-slate-100/80 px-6 py-16 md:px-10 lg:px-16"
     >
-      <div className="p-10 max-md:p-0 max-md:py-10">
+      <div className="px-10 max-md:p-0 max-md:py-10">
         <h2 className="font-oswald text-red_preh mb-10 text-5xl">Suradnje</h2>
         <div className="grid grid-cols-5 gap-7 max-[1700px]:grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
           <div className="group border-red_preh relative aspect-video overflow-hidden rounded-xl border-4">

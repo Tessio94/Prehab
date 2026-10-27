@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description:
       "Pročitajte Prehab blog i saznajte više o novostima, terapijama i našem svakodnevnom radu.",
 
-    url: "https://prehabilitationtherapycenter.hr/o-nama",
+    url: "https://prehabilitationtherapycenter.hr/zdravlje",
     siteName: "Prehab Zadar",
     images: [
       {
