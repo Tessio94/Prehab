@@ -29,7 +29,7 @@ export default function Usluge() {
       aria-labelledby="services-heading"
       className="text-black_preh scroll-mt-24 bg-slate-50 px-6 py-20 md:px-10 lg:px-16 lg:py-28"
     >
-      <div className="px-10">
+      <div className="md:px-10">
         <div className="mb-10 flex flex-col justify-between gap-5 md:mb-14 md:flex-row md:items-end">
           <div>
             <p className="font-inter text-red_preh mb-4 text-xs font-semibold tracking-[0.2em] uppercase">
