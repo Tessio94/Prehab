@@ -23,7 +23,7 @@ export default function Usluga({
       type="button"
       onClick={() => onSelect(usluga)}
       aria-haspopup="dialog"
-      className="service-card group text-black_preh hover:border-red_preh/30 hover:shadow-black_preh/5 focus-visible:outline-red_preh flex h-full w-full flex-col items-start rounded-3xl border border-slate-200 bg-white p-6 text-left transition duration-200 hover:-translate-y-1 hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-4 motion-reduce:transform-none sm:p-7"
+      className="service-card group text-black_preh hover:border-red_preh/30 hover:shadow-black_preh/5 focus-visible:outline-red_preh flex h-full w-full flex-col items-start rounded-3xl border-2 border-slate-200 bg-white p-6 text-left transition duration-200 hover:-translate-y-1 hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-4 motion-reduce:transform-none sm:p-7"
     >
       <span className="mb-7 flex w-full items-start justify-between gap-3">
         <span className="text-red_preh group-hover:bg-red_preh inline-flex size-16 items-center justify-center rounded-2xl bg-red-50 transition-colors group-hover:text-white">
