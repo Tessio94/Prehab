@@ -5,16 +5,24 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { BsTelephone } from "react-icons/bs";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { BiMailSend } from "react-icons/bi";
+
+import {
+  RiGalleryLine,
+  RiHealthBookLine,
+  RiHome4Line,
+  RiInformation2Line,
+  RiMailLine,
+  RiPhoneLine,
+} from "react-icons/ri";
 
 const navLinks = [
-  { href: "/", label: "Naslovnica" },
-  { href: "/o-nama", label: "O nama" },
-  { href: "/zdravlje", label: "Zdravlje" },
-  { href: "/fotogalerija", label: "Fotogalerija" },
-  { href: "/kontakt", label: "Kontakt" },
+  { href: "/", label: "Naslovnica", icon: RiHome4Line },
+  { href: "/o-nama", label: "O nama", icon: RiInformation2Line },
+  { href: "/zdravlje", label: "Zdravlje", icon: RiHealthBookLine },
+  { href: "/fotogalerija", label: "Fotogalerija", icon: RiGalleryLine },
+  { href: "/kontakt", label: "Kontakt", icon: RiMailLine },
 ];
 
 const Header = () => {
@@ -229,25 +237,30 @@ const Header = () => {
                   Prehab
                 </h1>
               </Link>
-              <ul className="flex flex-col gap-6 px-3 text-2xl">
+              <ul className="flex w-full flex-col px-3 text-2xl">
                 {navLinks.map((link) => {
                   const isActive = pathname === link.href;
                   const isZdravlje =
                     link.href === "/zdravlje" &&
                     pathname.startsWith("/zdravlje");
+                  const Icon = link.icon;
 
                   return (
-                    <li key={link.href}>
+                    <li
+                      key={link.href}
+                      className="border-b-2 border-slate-100 py-2"
+                    >
                       <Link
                         onClick={() => setHambActive(false)}
                         href={link.href}
                         className={cn(
-                          "font-oswald relative transition-all duration-500 before:absolute before:bottom-[-0.2rem] before:left-0 before:h-0.5 before:w-0 before:bg-stone-300 before:transition-all before:duration-500",
+                          "font-oswald relative flex flex-row items-center gap-5 transition-all duration-500 before:absolute before:bottom-[-0.2rem] before:left-0 before:h-0.5 before:w-0 before:bg-stone-300 before:transition-all before:duration-500",
                           isActive || isZdravlje
                             ? "text-red_preh underline"
                             : "text-stone-100 hover:text-stone-400 hover:before:w-full",
                         )}
                       >
+                        <Icon />
                         {link.label}
                       </Link>
                     </li>
@@ -255,38 +268,38 @@ const Header = () => {
                 })}
               </ul>
             </div>
-            <div className="flex flex-col gap-5">
-              <div className="px-3 py-1 transition-all duration-500">
+            <div className="flex flex-col px-3">
+              <div className="border-b-2 border-slate-100 py-2 transition-all duration-500">
                 <a
                   href="tel:+385989648532"
                   className="flex cursor-pointer items-center gap-2 text-lg tracking-wider text-slate-100 capitalize sm:text-xl"
                 >
-                  <BsTelephone className="shrink-0 text-2xl text-slate-100 sm:text-3xl" />
+                  <RiPhoneLine className="shrink-0 text-2xl text-slate-100 sm:text-3xl" />
                   +385 98 964 8532
                 </a>
               </div>
-              <div className="px-3 py-1 transition-all duration-500">
+              <div className="py-2 transition-all duration-500">
                 <a
                   href="mailto:info@zivotbezboli.com"
                   className="flex cursor-pointer items-center gap-2 text-lg tracking-wider text-slate-100 sm:text-xl"
                 >
-                  <BiMailSend className="shrink-0 text-2xl text-slate-100 sm:text-3xl" />
+                  <RiMailLine className="shrink-0 text-2xl text-slate-100 sm:text-3xl" />
                   info@zivotbezboli.com
                 </a>
               </div>
 
-              <div className="ml-3 flex w-fit items-center gap-3 rounded-4xl bg-slate-100 px-5 py-2">
+              <div className="mx-auto mt-3 flex w-fit items-center gap-5 rounded-4xl bg-slate-100 px-5 py-2">
                 <a
                   href="https://www.instagram.com/ivan_radicev/"
                   target="_blank"
-                  className="group text-2xl text-pink-600"
+                  className="group text-3xl text-pink-600"
                 >
                   <FaInstagram className="transition-all duration-300 group-hover:scale-120" />
                 </a>
                 <a
                   href="https://web.facebook.com/RadicevIvan/?locale=hr_HR&_rdc=1&_rdr#"
                   target="_blank"
-                  className="group text-2xl text-blue-600"
+                  className="group text-3xl text-blue-600"
                 >
                   <FaFacebook className="transition-all duration-300 group-hover:scale-120" />
                 </a>

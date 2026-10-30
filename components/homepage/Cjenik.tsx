@@ -4,7 +4,7 @@ const Cjenik = () => {
       id="cjenik"
       className="bg-slate-100/80 px-6 py-16 md:px-10 lg:px-16"
     >
-      <div className="px-10 max-md:p-0 max-md:py-10">
+      <div className="px-10 max-md:p-0">
         <h1 className="font-oswald text_red_preh text-red_preh mb-10 text-5xl">
           Cjenik
         </h1>

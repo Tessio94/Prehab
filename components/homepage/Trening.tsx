@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 import Button from "../shared/Button";
+import { FiActivity, FiRadio } from "react-icons/fi";
 // import Button from "@/components/shared/Button";
 
 const Trening = () => {
@@ -10,7 +11,7 @@ const Trening = () => {
         id="novo"
         className="relative overflow-hidden px-6 py-16 md:px-10 lg:px-16"
       >
-        <div className="p-10 max-md:p-0 max-md:py-10">
+        <div className="p-10 max-md:p-0">
           <h2 className="font-oswald text-red_preh mb-10 text-5xl">Novo</h2>
 
           <div className="">
@@ -18,16 +19,17 @@ const Trening = () => {
               Moderna terapijska rješenja za brži oporavak i zdravlje
               kralježnice
             </h4>
-            <p className="mb-10 text-xl xl:max-w-2/3">
+            <p className="font-inter mb-10 text-xl xl:max-w-2/3">
               U našu ponudu uvodimo suvremene terapijske metode usmjerene na
               smanjenje boli, ubrzanje oporavka i poboljšanje funkcionalnosti
               lokomotornog sustava.
             </p>
             <div className="bg-red_preh_t flex flex-col gap-2 rounded-t-xl px-5 py-4">
-              <h4 className="font-oswald text-black_preh text-red_preh text-2xl font-bold">
-                TECAR terapija
+              <h4 className="font-oswald text-black_preh text-red_preh flex flex-row items-center gap-2 text-2xl font-bold">
+                <FiRadio className="bg-black_preh rounded-full p-1 text-3xl" />
+                PEMF terapija
               </h4>
-              <p className="font-oswald text-lg">
+              <p className="font-inter text-lg">
                 TECAR terapija koristi radiofrekvencijsku energiju za poticanje
                 prirodnih procesa regeneracije tkiva, smanjenje boli i
                 ubrzavanje oporavka nakon ozljeda i kroničnih tegoba. <br />
@@ -36,10 +38,11 @@ const Trening = () => {
               </p>
             </div>
             <div className="bg-black_preh flex flex-col gap-2 rounded-b-xl px-5 py-4">
-              <h4 className="font-oswald text-2xl font-bold text-slate-100">
+              <h4 className="font-oswald flex flex-row items-center gap-2 text-2xl font-bold text-slate-100">
+                <FiActivity className="bg-red_preh_t rounded-full p-1 text-3xl" />
                 Lumbar Health terapija | 448 kHz
               </h4>
-              <p className="font-oswald text-lg text-slate-100">
+              <p className="font-inter text-lg text-slate-100">
                 Lumbar Health terapija na frekvenciji 448 kHz predstavlja
                 inovativan pristup tretiranju bolova i disfunkcija kralježnice.{" "}
                 <br />

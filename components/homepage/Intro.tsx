@@ -76,7 +76,7 @@ const Intro = () => {
       id="intro"
       className="relative overflow-hidden px-6 py-16 md:px-10 lg:px-16"
     >
-      <div className="relative p-10 max-md:p-0 max-md:py-10">
+      <div className="relative p-10 max-md:p-0 max-md:pt-10">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex items-stretch">
             {/* SLIDE 1 */}
@@ -89,7 +89,7 @@ const Intro = () => {
                         Prehab Zadar
                       </h2>
 
-                      <p className="font-oswald xxl:mb-10 text-justify text-2xl lg:mb-5 xl:text-3xl">
+                      <p className="font-oswald xxl:mb-10 text-start text-2xl tracking-wide sm:text-justify lg:mb-5 xl:text-3xl">
                         <strong className="text-red_preh">
                           Prehabilitation
                         </strong>{" "}
@@ -100,7 +100,7 @@ const Intro = () => {
                     </div>
 
                     <ul className="flex grow flex-col items-start justify-between gap-4 py-4 sm:gap-7">
-                      <li className="font-oswald flex flex-col items-center gap-2 text-xl sm:flex-row sm:gap-6 xl:text-2xl">
+                      <li className="font-inter flex flex-col items-center gap-2 text-lg sm:flex-row sm:gap-6 xl:text-[22px]">
                         <Image
                           src="/images/ikone/injury-prevention.svg"
                           alt="prevencija ozljede"
@@ -122,7 +122,7 @@ const Intro = () => {
                         </div>
                       </li>
 
-                      <li className="font-oswald flex flex-col items-center gap-2 text-xl sm:flex-row sm:gap-6 xl:text-2xl">
+                      <li className="font-inter flex flex-col items-center gap-2 text-lg sm:flex-row sm:gap-6 xl:text-[22px]">
                         <Image
                           src="/images/ikone/recovery.svg"
                           alt="brži oporavak"
@@ -144,7 +144,7 @@ const Intro = () => {
                         </div>
                       </li>
 
-                      <li className="font-oswald flex flex-col items-center gap-2 text-xl sm:flex-row sm:gap-6 xl:text-2xl">
+                      <li className="font-inter flex flex-col items-center gap-2 text-lg sm:flex-row sm:gap-6 xl:text-[22px]">
                         <Image
                           src="/images/ikone/quality-of-life.svg"
                           alt="kvaliteta života"
@@ -229,7 +229,7 @@ const Intro = () => {
                     Obrazovanje
                   </h2>
 
-                  <p className="font-oswald text-justify text-xl md:text-xl lg:text-2xl xl:text-3xl">
+                  <p className="font-oswald text-start text-xl tracking-wide sm:text-justify md:text-xl lg:text-2xl xl:text-3xl">
                     <strong className="text-red_preh">Moje obrazovanje</strong>{" "}
                     započelo je sa završenim fakultetom, gdje sam stekao
                     temeljna znanja i vještine potrebne za moj profesionalni
@@ -248,7 +248,7 @@ const Intro = () => {
                     ].map((item, index) => (
                       <li
                         key={index}
-                        className="xsm:text-xl font-oswald flex flex-row items-center gap-2.5 text-lg lg:text-2xl"
+                        className="xsm:text-lg font-inter flex flex-row items-center gap-2.5 text-lg lg:text-xl 2xl:text-[22px]"
                       >
                         <span className="text-red_preh">
                           <RiArrowRightSLine className="text-4xl" />
@@ -277,7 +277,7 @@ const Intro = () => {
                         Usluge
                       </h2>
 
-                      <p className="font-oswald text-justify text-2xl lg:text-2xl xl:text-3xl">
+                      <p className="font-oswald text-start text-2xl tracking-wide sm:text-justify lg:text-2xl xl:text-3xl">
                         U{" "}
                         <strong className="text-red_preh">
                           Prehabilitation
@@ -288,8 +288,8 @@ const Intro = () => {
                       </p>
                     </div>
 
-                    <div className="font-oswald flex grow flex-col items-start justify-center gap-3 text-xl">
-                      <p className="xxl:text-2xl flex flex-col items-center gap-2 text-justify text-lg max-sm:w-full sm:flex-row lg:text-2xl">
+                    <div className="font-inter flex grow flex-col items-start justify-center gap-3 text-xl">
+                      <p className="xxl:text-[22px] flex flex-col items-center gap-2 text-start text-lg max-sm:w-full sm:flex-row lg:text-xl">
                         <Image
                           src="/images/ikone/usluge.svg"
                           alt="brži oporavak"
@@ -306,8 +306,8 @@ const Intro = () => {
                         </Button>
                       </div>
                     </div>
-                    <div className="font-oswald flex grow flex-col items-start justify-center gap-3 text-xl">
-                      <p className="xxl:text-2xl flex flex-col items-center gap-2 text-justify text-lg max-sm:w-full sm:flex-row lg:text-2xl">
+                    <div className="font-inter flex grow flex-col items-start justify-center gap-3 text-xl">
+                      <p className="xxl:text-[22px] flex flex-col items-center gap-2 text-start text-lg max-sm:w-full sm:flex-row lg:text-xl">
                         <Image
                           src="/images/ikone/cjenik.svg"
                           alt="brži oporavak"
