@@ -6,6 +6,8 @@ import { FiArrowRight, FiX } from "react-icons/fi";
 import data from "@/data/data.js";
 import Usluga, { type Service } from "./Usluga";
 import ServiceIcon from "../services/ServiceIcon";
+import { FaArrowRight } from "react-icons/fa";
+import Button from "@/components/shared/Button";
 
 export default function Usluge() {
   const [selected, setSelected] = useState<Service | null>(null);
@@ -27,7 +29,7 @@ export default function Usluge() {
     <section
       id="usluge"
       aria-labelledby="services-heading"
-      className="text-black_preh scroll-mt-24 bg-slate-50 px-6 py-16 md:px-10 lg:px-16"
+      className="text-black_preh scroll-mt-24 px-6 py-16 md:px-10 lg:px-16"
     >
       <div className="md:px-10">
         <div className="mb-10 flex flex-col justify-between gap-5 md:mb-14 md:flex-row md:items-end">
@@ -52,20 +54,17 @@ export default function Usluge() {
             <Usluga key={service.id} usluga={service} onSelect={setSelected} />
           ))}
         </div>
-        <div className="mt-10 flex flex-col items-start justify-between gap-5 rounded-2xl border border-slate-200 px-6 py-6 sm:flex-row sm:items-center">
+        <div className="mt-10 flex flex-col items-start justify-between gap-5 rounded-2xl border-2 border-slate-200 bg-slate-100/80 px-6 py-6 sm:flex-row sm:items-center">
           <div>
             <p className="font-oswald text-xl">Niste sigurni odakle početi?</p>
             <p className="font-inter mt-1 text-sm text-slate-600">
               Javite nam se i zajedno pronađimo prvi korak.
             </p>
           </div>
-          <Link
-            href="/kontakt"
-            className="bg-black_preh hover:bg-red_preh focus-visible:outline-red_preh inline-flex items-center gap-3 rounded-xl px-5 py-3 text-sm font-semibold text-white transition-colors focus-visible:outline-2 focus-visible:outline-offset-4"
-          >
-            Kontaktirajte nas
-            <FiArrowRight aria-hidden="true" />
-          </Link>
+          <Button href="kontakt" type="black">
+            <span>Kontaktirajte nas</span>
+            <FaArrowRight className="transform transition-transform duration-500 group-hover:translate-x-2" />
+          </Button>
         </div>
       </div>
       <dialog
